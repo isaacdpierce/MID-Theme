@@ -66,16 +66,16 @@
     </div>
     <div class="product__info-wrapper grid__item">
       <ul>
-        <li>Film Maker: {{ product.metafields.film_info.film_maker }}</li>
-        <li>Release Date: {{ product.metafields.film_info.release_date }}</li>
-        <li>Running Time: {{ product.metafields.film_info.running_time }}</li>
-        <li>Subjects: {{ product.metafields.film_info.subjects }}</li>
-        <li>Closed Captions: {{ product.metafields.film_info.closed_captions }}</li>
-        <li>Availability: {{ product.metafields.film_info.availability }}</li>
-        <li>Formats: {{ product.metafields.film_info.formats }}</li>
-        <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards }}</li>
-        <li>Author Biography: {{ product.metafields.film_info.author_biography }}</li>
-        <li>Credits: {{ product.metafields.film_info.credits }}</li>
+        <li>Film Maker: {{ product.metafields.film_info.film_maker.value }}</li>
+        <li>Release Date: {{ product.metafields.film_info.release_date.value }}</li>
+        <li>Running Time: {{ product.metafields.film_info.running_time.value }}</li>
+        <li>Subjects: {{ product.metafields.film_info.subjects.value }}</li>
+        <li>Closed Captions: {{ product.metafields.film_info.closed_captions.value }}</li>
+        <li>Availability: {{ product.metafields.film_info.availability.value }}</li>
+        <li>Formats: {{ product.metafields.film_info.formats.value }}</li>
+        <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards.value }}</li>
+        <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
+        <li>Credits: {{ product.metafields.film_info.credits.value }}</li>
         
       </ul>
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
