@@ -10,7 +10,7 @@ BASE CODE SET UP ONLY >>> NO STYLING OR FUNCTIONALITY
   <div class="gdc-slideshow__wrapper">
     {% for block in section.blocks %}
       {% if block.type == "slide" %}
-        {%- render 'gdc-block-slide-image-text',  
+        {%- render 'gdc-block-slide-image-text',
                     id: block.id,
                     section_height: section.settings.section_height
                     slide_width: section.settings.slide_width

@@ -2,9 +2,6 @@
   assign section_width = section.settings.section_width
   assign column_count = section.settings.column_count
   assign grid_gap = section.settings.grid_gap 
-  assign grid_gap_variance = column_count | minus: 1 | times: 1.00
-  assign width_deducer =  grid_gap | divided_by: grid_gap_variance
-  assign gap_pixel_variance =  grid_gap | minus: width_deducer
   assign header_section = false
   assign side_gutters = section.settings.enable_side_gutters
 

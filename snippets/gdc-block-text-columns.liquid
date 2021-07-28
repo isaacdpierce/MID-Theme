@@ -1,7 +1,7 @@
 {%- assign column_count = 0 -%}
 
-<div class="gdc-block__text-columns-section block--{{ block.id}} {{ hide_mobile }} {{ hide_tablets }}">
-  <div class="gdc-block__text-columns block--{{ block.id}}">
+<div class="gdc-block__text-columns-section block--{{ block.id }} {{ hide_mobile }} {{ hide_tablets }}">
+  <div class="gdc-block__text-columns block--{{ block.id }}">
     {% for i in (1..4) %}
       {% capture titleNum %}title_{{ i }}{% endcapture %}
       {% assign title = block.settings[titleNum] %}
@@ -11,7 +11,7 @@
       {% if title != blank or text != blank %}
         {% assign column_count = column_count | plus: 1 %}
         <div class="gdc-block__text-column block--{{ block.id }}">
-          {% render 'gdc-block-paragraph',  block: block, title: title, text: text %}
+          {% render 'gdc-block-paragraph', block: block, title: title, text: text %}
         </div>
       {% endif %}
     {% endfor %}
@@ -40,13 +40,13 @@
     text-align: {{ block.settings.text_align }};
   }
 
-  .gdc-block__text-column.block--{{ block.id}} {
+  .gdc-block__text-column.block--{{ block.id }} {
     width: calc(100% / {{ column_count }});
   }
 
-  {% if column_count == 3 and block.settings.mobile_wrap == 'stack'%}
+  {% if column_count == 3 and block.settings.mobile_wrap == 'stack' %}
       @media (max-width: 800px) {
-        .gdc-block__text-column.block--{{ block.id}} { 
+        .gdc-block__text-column.block--{{ block.id }} { 
           width: 100%;
         }
       }

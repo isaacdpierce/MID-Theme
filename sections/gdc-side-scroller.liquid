@@ -6,7 +6,7 @@
   <div class="gdc-row-scroller">
     {% for block in section.blocks %}
       {% if block.type == "card" %}
-        {%- render 'gdc-block-card-image-text',  
+        {%- render 'gdc-block-card-image-text',
                     id: block.id,
                     card_width: section.settings.card_width,
                     card_image_width: section.settings.card_image_width,
