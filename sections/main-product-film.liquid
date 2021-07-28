@@ -65,7 +65,6 @@
       {%- endif -%}
     </div>
     <div class="product__info-wrapper grid__item">
-      TITLE {{ product.title }}
       <ul>
         <li>Film Maker: {{ product.metafields.film_info.film_maker.value }}</li>
         <li>Release Date: {{ product.metafields.film_info.release_date.value }}</li>
@@ -77,11 +76,9 @@
         <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards.value }}</li>
         <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
         <li>Credits: {{ product.metafields.film_info.credits.value }}</li>
-        
       </ul>
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
