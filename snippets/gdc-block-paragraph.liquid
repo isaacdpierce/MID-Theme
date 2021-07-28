@@ -1,0 +1,30 @@
+<div class="gdc-block__paragraph-section block--{{ block.id }} {{ hide_mobile }} {{ hide_tablets }}">
+  <div class="gdc-block__paragraph block--{{ block.id }}">
+    {% if title %}
+      <h2>{{ title }}</h2>
+    {% endif %}
+    {% if text %}
+      {{ text }}
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .gdc-block__paragraph-section.block--{{ block.id }} {
+    margin-top: {{ block.settings.t_margin }}px;
+    margin-bottom: {{ block.settings.b_margin }}px;
+    padding-top: {{ block.settings.t_padding }}px;
+    padding-bottom: {{ block.settings.b_padding }}px;
+    background-color: {{ block.settings.bg_color }};
+  }
+
+  .gdc-block__paragraph.block--{{ block.id }} h2 {
+    color: {{ block.settings.font_color }};
+    text-align: {{ block.settings.title_align }};
+  }
+
+  .gdc-block__paragraph.block--{{ block.id }} p {
+    color: {{ block.settings.font_color }};
+    text-align: {{ block.settings.text_align }};
+  }
+</style>

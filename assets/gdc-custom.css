@@ -1,0 +1,576 @@
+/* ===================== LOGO LIST ======================= */
+
+.gdc-logo-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.gdc-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+  max-width: 90vw;
+}
+
+.gdc-logo-list__item {
+  padding: 10px;
+  text-align: center;
+  width: calc(100% / 4)
+}
+
+.gdc-logo-list__item h6 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: none;
+  margin: 0;
+}
+
+.gdc-logo-list__item a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gdc-logo-list__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+
+}
+
+.gdc-logo-list__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+  .gdc-logo-list__item {
+    width: calc(100% / 2);
+  }
+}
+
+/* ============= GDC HERO IMAGE TEXT ================= */
+
+.gdc-hero-image-text__wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  overflow: hidden;
+}
+
+.gdc-hero-image-text__image {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100vw;
+}
+
+.gdc-hero-image-text__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gdc-hero-image-text__text-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+
+.gdc-hero-image-text__text {
+  display: inline-block;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.gdc-hero-image-text__text p, 
+.gdc-hero-image-text__text h2, 
+.gdc-hero-image-text__text h3 {
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .gdc-hero-image-text__text h2 {
+    font-size: 36px;
+  }
+
+  .gdc-hero-image-text__text h3 {
+    font-size: 24px;
+  }
+
+  .gdc-hero-image-text__text p {
+    font-size: 14px;
+  }
+}
+
+/* ============= HERO SPLIT ================= */
+
+.gdc-hero-split__section-wrapper {
+  display: flex;
+}
+
+.gdc-hero-split__side-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  width: 50vw;
+  overflow: hidden;
+}
+
+
+.gdc-hero-split__image-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gdc-hero-split__image {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-hero-split__image--left img {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-hero-split__image--right img {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-hero-split__text-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  z-index: 5;
+}
+
+.gdc-hero-split__text {
+  padding: 20px;
+  min-width: 150px;
+}
+
+.gdc-hero-split__text p,
+.gdc-hero-split__text h2,
+.gdc-hero-split__text h3 {
+  margin: 0;
+  line-height: 1;
+}
+
+.gdc-hero-split__text h2,
+.gdc-hero-split__text h3 {
+  margin-bottom: 10px;
+}
+
+.gdc-hero-split__btn {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .gdc-hero-split__section-wrapper {
+    flex-direction: column;
+  }
+
+  .gdc-hero-split__side-wrapper {
+    width: 100vw;
+  }
+
+  .gdc-hero-split__image--right img,
+  .gdc-hero-split__image--left img {
+    object-position: 50% 50%;
+  }
+
+  .gdc-hero-split__text-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .gdc-hero-split__text {
+    max-width: 90vw;
+  }
+}
+
+/* =============== GDC Image Grid ========================== */
+
+.gdc-image-text-grid__section-wrapper {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.gdc-image-text-grid__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gdc-image-text-grid__section-wrapper header {
+  width: 900px;
+  max-width: 90%;
+}
+
+.gdc-image-text-grid__wrapper {
+  display: grid;
+}
+
+.gdc-image-text-grid__item {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  overflow: hidden;
+}
+
+.gdc-image-text-grid__text {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.gdc-image-text-grid__text p {
+  margin-bottom: 0;
+}
+
+.gdc-image-text-grid__text h3 {
+  margin-bottom: 10px;
+}
+
+.gdc-image-text-grid__image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gdc-image-text-grid__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-image-text-grid__text-overlay {
+  grid-column: 1;
+  grid-row: 1; 
+  display: flex;
+  align-items: center;
+  align-self: end;
+  padding: 10px;
+  width: 100%;
+  min-height: 30%;
+  z-index: 5;
+}
+
+.gdc-image-text-grid__text-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.gdc-image-text-grid__text-overlay p {
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 900px){
+  .gdc-hide-on-tablets {
+    display: none;
+  }
+}
+
+/* =============== GDC MOBILE Image Grid ========================== */
+
+
+
+.gdc-image-text-grid-mobile__wrapper {
+  grid-template-columns:  50vw 50vw;
+  grid-auto-rows: 50vw;
+}
+
+.gdc-image-text-grid-mobile__section-wrapper {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.gdc-image-text-grid-mobile__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gdc-image-text-grid-mobile__section-wrapper header {
+  width: 900px;
+  max-width: 90%;
+}
+
+.gdc-image-text-grid-mobile__wrapper {
+  display: grid;
+}
+
+.gdc-image-text-grid-mobile__item {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  overflow: hidden;
+}
+
+.gdc-image-text-grid-mobile__text {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.gdc-image-text-grid-mobile__text p {
+  margin-bottom: 0;
+}
+
+.gdc-image-text-grid-mobile__text h3 {
+  margin-bottom: 10px;
+}
+
+.gdc-image-text-grid-mobile__image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.gdc-image-text-grid-mobile__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-image-text-grid-mobile__text-overlay {
+  grid-column: 1;
+  grid-row: 1; 
+  display: flex;
+  align-items: center;
+  align-self: end;
+  padding: 10px;
+  width: 100%;
+  min-height: 30%;
+  z-index: 5;
+}
+
+.gdc-image-text-grid-mobile__text-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.gdc-image-text-grid-mobile__text-overlay p {
+  margin-bottom: 3px;
+}
+
+
+/* ============= SECTION HEADER  ================= */
+.gdc-text-section__wrapper,
+.gdc-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gdc-section-header {
+  width: 940px;
+  max-width: 90vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.gdc-section-header__title {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.gdc-section-header p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* ============= Text Blocks ================= */
+
+.gdc-text-blocks {
+  width: 940px;
+  max-width: 90vw;
+}
+
+/* ============= Paragraph Block ================= */
+
+.gdc-block__paragraph-section {
+  display: flex;
+  justify-content: center;
+}
+
+.gdc-block__paragraph,
+.gdc-block__title,
+.gdc-block__button {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+} 
+
+
+.gdc-block__title h2 {
+  display: inline-block; 
+  margin: 0;
+  line-height: 1; 
+}  
+
+.gdc-block__paragraph h2 {
+  margin: 10px 0;
+}
+
+.gdc-block__paragraph p {
+  margin: 0;
+} 
+
+/* ============= TEXT COLUMNS ================= */
+
+.gdc-block__text-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gdc-block__text-column {
+  min-width: 180px;
+}
+
+/* ============= BUTTON BLOCK  ================= */
+
+.gdc-block__button {
+  display: flex;
+}
+
+.gdc-block__button a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.gdc-block__button a span {
+  cursor: pointer;
+}
+
+.gdc-button {
+  padding: 0.9rem 3rem 1.1rem;
+}
+
+.button-animation {
+  transition: all .3s ease-in-out;
+}
+
+/* ============= SIDE SCROLLER ================= */
+
+.gdc-side-scroller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gdc-side-scroller-text {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.gdc-row-scroller {
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color:#c0c0c0 rgba(0, 0, 0, 0.151);
+  -webkit-overflow-scrolling: touch;
+}
+
+.gdc-row-scroller::-webkit-scrollbar {
+  width: 1em;
+}
+
+.gdc-row-scroller::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.151);
+}
+
+.gdc-row-scroller::-webkit-scrollbar-thumb {
+  position: relative;
+  background-color:#c0c0c0;
+  border-radius: 10px;
+}
+
+/* ============= IMAGE CARD ================= */
+
+.gdc-card__wrapper {
+  text-align: center;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gdc-card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gdc-card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.gdc-card__wrapper h5 {
+  font-size: 16px;
+  text-transform: none;
+  margin: 0;
+}
+
+.gdc-card__wrapper p {
+  font-size: 14px;
+}
+
+.gdc-card__link-wrapper {
+  text-decoration: none;
+  color: currentColor;
+}
+
+
+/* ============= GLOBAL SETTINGS ================= */
+.gdc-section-header,
+.gdc-section-header--center {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gdc-section-header--center {
+  text-align: center;
+}
+
+/* ============= Hide for phones ================= */
+@media only screen and (max-width: 600px){
+  .hide-600 {
+    display: none !important;
+  }
+}
+
+/* ============= Hide for tablets ================= */
+@media only screen and (max-width: 1000px) {
+  .hide-1000 {
+    display: none !important;
+  }
+}

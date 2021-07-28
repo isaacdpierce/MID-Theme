@@ -1,0 +1,424 @@
+{% if section.settings.enable_section %}
+  {% render 'gdc-grid-image-text-mobile' %}
+  {% render 'gdc-grid-image-text-desktop' %}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "GDC: Grid Image & Text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Global Grid Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_section",
+        "label": "Enable Grid Section",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "section_width",
+        "min": 60,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Section Width",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "t_margin",
+        "label": "Section top margin",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "b_margin",
+        "label": "Section bottom margin",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "t_padding",
+        "label": "Top Padding",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "b_padding",
+        "label": "Bottom Padding",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "column_count",
+        "min": 3,
+        "max": 6,
+        "step": 1,
+        "label": "Column Count", 
+        "default": 6
+      },
+      {
+        "type": "range",
+        "id": "grid_gap",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Gap between grid items",
+        "default": 6
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_side_gutters",
+        "label": "Enable Side Spacing",
+        "default": false,
+        "info": "(Desktop Only) Creates space on either side of the grid the same width as grid Gap (above)."
+      },
+      {
+        "type": "text", 
+        "id": "title",
+        "label": "Section Title" 
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Section Text"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "options": [
+          { "value": "left", "label": "Left"},
+          { "value": "center", "label": "Center"},  
+          { "value": "right", "label": "Right"}
+        ],
+        "label": "Text alignment"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "font_color",
+        "label": "Font color",
+        "default": "#000"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "grid-item",
+        "name": "Grid Item",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Grid Item Settings"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide_tablets",
+            "label": "Hide grid item on tablets",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "hide_phones",
+            "label": "Hide grid item on phones",
+            "default": false
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Section URL",
+            "info": "Makes entire grid item link to url."
+          },
+          {
+            "type": "range",
+            "id": "column_span",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "label": "Column Span",
+            "default": 3
+          },
+          {
+            "type": "range",
+            "id": "row_span",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "label": "Row Span",
+            "default": 1
+          },
+          {
+            "type": "range",
+            "id": "padding",
+            "min": 0,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Padding",
+            "default": 20
+          },
+          {
+            "type": "header",
+            "content": "Grid Image Settings"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "image_fill",
+            "options": [
+              { "value": "cover", "label": "Cover"},
+              { "value": "contain", "label": "Contain"}
+            ],
+            "label": "Image Fill"
+          },
+          {
+            "type": "range",
+            "id": "img_h_position",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Image Horizontal Position",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "img_v_position",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Image Vertical Position",
+            "default": 50
+          },
+          {
+            "type": "header",
+            "content": "Grid Text Full Overlay Settings"
+          },
+          {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "font_color",
+            "label": "Font color",
+            "default": "#000"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "range",
+            "id": "title_font_size",
+            "min": 12,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Title Font size",
+            "default": 18
+          },
+          {
+            "type": "range",
+            "id": "mobile_title_font_size",
+            "min": 12,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Mobile Title Font size",
+            "default": 18
+          },
+          {
+            "type": "richtext", 
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 10,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "mobile_font_size",
+            "min": 10,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Mobile Font size",
+            "default": 16
+          },
+          {
+            "type": "select",
+            "id": "text_align",
+            "options": [
+              { "value": "left", "label": "Left"},
+              { "value": "center", "label": "Center"},
+              { "value": "right", "label": "Right"}
+            ],
+            "label": "Text alignment"
+          },
+          {
+            "type": "select",
+            "id": "text_h_place",
+            "options": [
+              { "value": "start", "label": "Left"},
+              { "value": "center", "label": "Center"},
+              { "value": "flex-end", "label": "Right"}
+            ],
+            "label": "Text Horizontal Placement" 
+          },
+          {
+            "type": "select",
+            "id": "text_v_place",
+            "options": [
+              { "value": "start", "label": "Top"},
+              { "value": "center", "label": "Center"},
+              { "value": "flex-end", "label": "Bottom"}
+            ],
+            "label": "Text Vertical Placement" 
+          },
+          {
+            "type": "color",
+            "id": "overlay_color",
+            "label": "Whole Item Overlay color"
+          },
+          {
+            "type": "range",
+            "id": "overlay_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Whole Item Overlay Opacity",
+            "default": 30
+          },
+          {
+            "type": "range",
+            "id": "overlay_hover_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Whole Item Overlay Hover Opacity",
+            "default": 30
+          },
+          {
+            "type": "header",
+            "content": "Bottom Text Overlay Settings",
+            "info": "Optional"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_text_overlay",
+            "label": "Enable Bottom Text Overlay",
+            "default": false
+          },
+          {
+            "type": "color",
+            "id": "bottom_overlay_font_color",
+            "label": "Bottom Item Overlay Font Color"
+          },
+          {
+            "type": "text",
+            "id": "bottom_overlay_title",
+            "label": "Bottom Overlay Title"
+          },
+          {
+            "type": "range",
+            "id": "bottom_title_size",
+            "min": 10,
+            "max": 98,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom Overlay Title Size",
+            "default": 18
+          },
+          {
+            "type": "richtext", 
+            "id": "bottom_overlay_text",
+            "label": "Bottom Overlay Text" 
+          },
+          {
+            "type": "range",
+            "id": "bottom_text_size",
+            "min": 10,
+            "max": 48,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom Overlay Text Size",
+            "default": 16
+          },
+          {
+            "type": "color",
+            "id": "bottom_overlay_color",
+            "label": "Bottom Item Overlay color"
+          },
+          {
+            "type": "range",
+            "id": "bottom_overlay_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Bottom Overlay Opacity",
+            "default": 30
+          },
+          {
+            "type": "range",
+            "id": "bottom_hover_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Bottom Overlay Hover Opacity",
+            "default": 30
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "GDC: Grid Image & Text",
+        "category": "GDC Custom Components"
+      }
+    ]
+  }
+{% endschema %}

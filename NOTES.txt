@@ -1,0 +1,57 @@
+# NOTES
+
+## TODO
+
+ADD CURRENCY CONVERTER 
+
+SEE VIDEO — https://www.youtube.com/watch?v=qvzKKM1HPZc
+OR TUT (convert JQuery to JS)— https://incomestreamsurfer.medium.com/how-to-custom-build-a-shopify-developer-store-for-free-and-add-a-currency-converter-and-metafields-1bbf6797a35a
+
+Build:
+
+COMPONENTS:
+
+- Super Text section (BLOCKS (rows): paragraphs, columns, title (full width), button (full width))
+      *** title (full width) - HUGE font size, color, shadow, underline options
+- Cards section
+- Cards Slider - same as TRA (Optional click to scroll buttons, dots, etc)
+- Image Slider (full width) - (Optional click to scroll buttons, dots, etc)
+
+THEME SETTING COMPONENTS
+
+- A text header that can be put in every component but controlled at a theme level
+    contains - title, subtitle, text
+    settings - margin below title, uppercase, color, underline, title font. 
+
+For Therese:
+
+1) A list of al theme level settings she would like
+
+  * Colours:
+    - buttons, links, etc.
+
+  * Typography:
+    - Font sizes, spacing (between sections, headers, etc).
+
+## ADDED
+
+Theme Settings:
+
+Button shape controller
+Input Shape controller
+Disable Search Option in Header
+Search Result Customizer
+
+Sections Built:
+
+Hero Image Text Section
+Hero Split
+Logo List
+Grid Section
+
+
+############################################
+
+HERO SPLIT
+
+make border selector radio

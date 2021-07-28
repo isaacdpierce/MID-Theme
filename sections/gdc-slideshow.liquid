@@ -1,0 +1,160 @@
+{% comment %}
+BASE CODE SET UP ONLY >>> NO STYLING OR FUNCTIONALITY
+{% endcomment %}
+
+<section class="gdc-side-scroller">
+  <header class="gdc-section-header--center">
+    <h2>{{ section.settings.title }}</h2>
+  </header>
+
+  <div class="gdc-slideshow__wrapper">
+    {% for block in section.blocks %}
+      {% if block.type == "slide" %}
+        {%- render 'gdc-block-slide-image-text',  
+                    id: block.id,
+                    section_height: section.settings.section_height
+                    slide_width: section.settings.slide_width
+                    image: block.settings.image, 
+                    fit: block.settings.image_fit, 
+                    text: block.settings.text,
+                    title: block.settings.title,
+                    bg_color: block.settings.bg_color,
+                    url: block.settings.url 
+        -%}
+      {% endif %} 
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .gdc-slideshow__wrapper {
+    background-color: {{ section.settings.bg_color }};
+    margin-top: {{ section.settings.t_margin }}px;
+    margin-bottom: {{ section.settings.b_margin }}px;
+    padding-top: {{ section.settings.t_padding }}px;
+    padding-bottom: {{ section.settings.b_padding }}px; 
+  }
+</style>
+
+{% schema %}
+{
+  "name": "GDC: Slideshow",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"  
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "label": "Section Height",
+      "default": 300,
+      "min": 250,
+      "max": 750,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "slide_width",
+      "label": "Slide Width",
+      "default": 300,
+      "min": 250,
+      "max": 750,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "t_margin",
+      "label": "Section top margin",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "b_margin",
+      "label": "Section bottom margin",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "t_padding",
+      "label": "Top Padding",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "b_padding",
+      "label": "Bottom Padding",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",   
+      "default": "Section Title"
+    }
+  ],  
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Slide Link"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Slide Image Background color"
+        }, 
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Slide Title"
+        }, 
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Slide text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GDC: Slideshow",
+      "category": "GDC Custom Components"
+    }
+  ]
+}
+{% endschema %}    

@@ -1,0 +1,215 @@
+{%- liquid
+  assign section_width = section.settings.section_width
+  assign column_count = section.settings.column_count
+  assign grid_gap = section.settings.grid_gap 
+  assign grid_gap_variance = column_count | minus: 1 | times: 1.00
+  assign width_deducer =  grid_gap | divided_by: grid_gap_variance
+  assign gap_pixel_variance =  grid_gap | minus: width_deducer
+  assign header_section = false
+  assign side_gutters = section.settings.enable_side_gutters
+
+  if section.settings.title != blank or section.settings.text != blank
+      assign header_section = true
+  endif
+
+-%}
+
+<section class="gdc-image-text-grid__section-wrapper section--{{ section.id }}">
+  <div class="gdc-image-text-grid__side-padding section--{{ section.id }}">
+    <div class="gdc-image-text-grid__section section--{{ section.id }}">
+    {%  if header_section %}
+      <header>
+          {%  if section.settings.title != blank %}
+            <h2>{{ section.settings.title }}</h2>
+          {% endif %}
+          {%  if section.settings.text != blank %}
+            <p>{{ section.settings.text }}</p>
+          {% endif %}
+      </header>
+    {% endif %}
+
+      <div class="gdc-image-text-grid__wrapper section--{{ section.id }}">
+        {% for block in section.blocks %}
+
+          {% if block.settings.url != blank %}
+            <a href="{{ block.settings.url }}" 
+                class="gdc-image-text-grid__item block--{{ block.id }} 
+                {% if block.settings.hide_tablets %}
+                  hide-1000
+                {% endif %}
+                {% if block.settings.hide_phones %}
+                  hide-600
+                {% endif %} 
+                no-link-animation" 
+                target="_blank">
+          {% endif %}
+
+              <div class="gdc-image-text-grid__item block--{{ block.id }} 
+                  {% if block.settings.hide_tablets %}
+                    hide-1000
+                  {% endif %}
+                  {% if block.settings.hide_phones %}
+                    hide-600
+                  {% endif %}">
+              <div class="gdc-image-text-grid__text block--{{ block.id }}">
+                <div>
+                  {% if block.settings.title != blank %}
+                    <h3>{{ block.settings.title }}</h3>
+                  {% endif %}
+                  {% if block.settings.text != blank %}
+                    {{ block.settings.text }}
+                  {% endif %}
+                </div>
+              </div>
+              {% if block.settings.image %}
+              <div class="gdc-image-text-grid__image block--{{ block.id }}">
+                <img
+                src="{{ block.settings.image | img_url: '500x' }}"
+                alt="{{ block.settings.image.alt }}"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+                loading="lazy"
+                >
+              </div>
+              {% endif %}
+              {% if block.settings.enable_text_overlay %}
+              <div class="gdc-image-text-grid__text-overlay block--{{ block.id }}">
+                <div>
+                  {% if block.settings.bottom_overlay_title != blank %}
+                    <h3>{{ block.settings.bottom_overlay_title }}</h3>
+                  {% endif %}
+                  {% if block.settings.bottom_overlay_text != blank %}
+                    {{ block.settings.bottom_overlay_text }}
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+            </div>
+
+          {% if block.settings.url != blank %}
+          </a>
+          {% endif %}
+
+          <style>
+          .gdc-image-text-grid__item.block--{{ block.id }} {
+            background-color: {{ block.settings.background_color }};
+            color: {{ block.settings.font_color }};
+            grid-column:  span {{ block.settings.column_span }};
+            grid-row: span {{ block.settings.row_span }};
+          }
+
+          .gdc-image-text-grid__text.block--{{ block.id }} {
+            text-align: {{ block.settings.text_align }};
+            padding: {{ block.settings.padding }}px;
+            justify-content: {{ block.settings.text_v_place }};
+            align-items: {{ block.settings.text_h_place }};
+            {% if block.settings.overlay_opacity < 100 %}
+              background-color: {{ block.settings.overlay_color }}{{ block.settings.overlay_opacity }};
+            {% else %}
+              background-color: {{ block.settings.overlay_color }};
+            {% endif %};
+            transition: background-color .5s;
+          }
+
+          .gdc-image-text-grid__text.block--{{ block.id }}:hover {
+            {% if block.settings.overlay_hover_opacity < 100 %}
+              background-color: {{ block.settings.overlay_color }}{{ block.settings.overlay_hover_opacity }};
+            {% else %}
+              background-color: {{ block.settings.overlay_color }};
+            {% endif %};
+          }
+
+          .gdc-image-text-grid__text.block--{{ block.id }} h3 { 
+            font-size: {{ block.settings.title_font_size }}px;
+          }
+
+          .gdc-image-text-grid__text.block--{{ block.id }} p {
+            font-size: {{ block.settings.font_size }}px;
+          }
+
+          .gdc-image-text-grid__image.block--{{ block.id }} img {
+            object-fit: {{ block.settings.image_fill }};
+            object-position: {{ block.settings.img_h_position }}% {{ block.settings.img_v_position }}%;
+          }
+
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} {
+            {% if block.settings.bottom_overlay_opacity < 100 %}
+              background-color: {{ block.settings.bottom_overlay_color }}{{ block.settings.bottom_overlay_opacity }};
+            {% else %}
+              background-color: {{ block.settings.bottom_overlay_color }};
+            {% endif %};
+            color: {{ block.settings.bottom_overlay_font_color }};
+            transition: background-color .5s;
+          }
+
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }}:hover {
+            {% if block.settings.bottom_hover_opacity < 100 %}
+              background-color: {{ block.settings.bottom_overlay_color }}{{ block.settings.bottom_hover_opacity }};
+            {% else %}
+              background-color: {{ block.settings.bottom_overlay_color }};
+            {% endif %};
+          }
+
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} h3 {
+            font-size: {{ block.settings.bottom_title_size }}px;
+          }
+
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} p {
+            font-size: {{ block.settings.bottom_text_size }}px;
+          }
+          </style>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gdc-image-text-grid__section-wrapper.section--{{ section.id }} {
+    /* ================ CSS Section Variables ================ */
+    {% if side_gutters %}
+    --section-width: calc({{ section_width }}vw - {{grid_gap}}px * 2);
+    {% else %}
+    --section-width: {{ section_width }}vw;
+    {% endif %}
+    --gap-variance: calc({{ grid_gap }}px / {{ column_count }});
+    /* ======================================================= */
+
+    margin-top: {{ section.settings.t_margin }}px;
+    margin-bottom: {{ section.settings.b_margin }}px;
+  }
+
+  {% if side_gutters %}
+    .gdc-image-text-grid__side-padding.section--{{ section.id }} {
+      width: calc(var(--section-width) + {{ grid_gap }}px * 2);
+      background-color: {{ section.settings.background_color }};
+      margin: 0 auto;
+    }
+  {% endif %}
+
+  .gdc-image-text-grid__wrapper.section--{{ section.id }} {
+    gap: {{ grid_gap }}px;
+    grid-template-columns:  repeat({{ column_count }}, calc((100% / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance))));
+    width: var(--section-width);
+    grid-auto-rows: calc((var(--section-width) / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance)));
+  }
+
+  .gdc-image-text-grid__section.section--{{ section.id }} {
+    width: var(--section-width);
+    background-color: {{ section.settings.background_color }};  
+    color: {{ section.settings.font_color }};
+    padding-top: {{ section.settings.t_padding }}px;
+    padding-bottom: {{ section.settings.b_padding }}px;
+  }
+
+  .gdc-image-text-grid__section-wrapper.section--{{ section.id }} header {
+    text-align: {{ section.settings.text_align }};
+  }
+
+  @media only screen and (max-width: 800px) {  
+    .gdc-image-text-grid__section-wrapper.section--{{ section.id }} {
+      display: none;
+    }
+  }
+
+</style>

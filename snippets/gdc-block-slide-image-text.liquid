@@ -1,0 +1,39 @@
+<div class="gdc-slide__wrapper block--{{ id }}">
+  <div class="gdc-slide__image block--{{ id }}">
+    {% render 'gdc-image' image: image %}
+  </div>
+  {% if title != blank %}
+    <h5>{{ title }}</h5>  
+  {% endif %}
+  {% if text != blank %}
+    {{ text }}
+  {% endif %}
+</div>
+
+<style>
+  .gdc-slide__wrapper {
+    width: {{ slide_width }}px; 
+  }
+
+  .gdc-slide__image.block--{{ id }} {
+    width: {{ slide_width }}px; 
+  }
+  .gdc-slide__image.block--{{ id }} {
+    background-color: {{ bg_color }};
+  }
+
+  .gdc-slide__image.block--{{ id }} img {
+    object-fit: {{ fit }};
+    width: 100vw; 
+  }
+
+{% if fit == 'cover' %}
+  .gdc-slide__image.block--{{ id }} img {
+    height: {{ slide_height }}px; 
+  }
+
+  .gdc-slide__image.block--{{ id }} {
+    height: {{ slide_height }}px; 
+  }
+{% endif %}
+</style>
