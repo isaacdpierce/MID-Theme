@@ -88,9 +88,19 @@
           {% endif %}
 
           <style>
+          .gdc-image-text-grid__item.block--{{ block.id }},
+          .gdc-image-text-grid__wrapper.section--{{ section.id }} a,
+          .gdc-image-text-grid__item.block--{{ block.id }} h3, 
+          .gdc-image-text-grid__item.block--{{ block.id }} p {
+            color: {{ block.settings.font_color }};
+          }
+
+          .gdc-image-text-grid__wrapper.section--{{ section.id }} a {
+            text-decoration: none;
+          }
+          
           .gdc-image-text-grid__item.block--{{ block.id }} {
             background-color: {{ block.settings.background_color }};
-            color: {{ block.settings.font_color }};
             grid-column:  span {{ block.settings.column_span }};
             grid-row: span {{ block.settings.row_span }};
           }
@@ -165,7 +175,7 @@
   .gdc-image-text-grid__section-wrapper.section--{{ section.id }} {
     /* ================ CSS Section Variables ================ */
     {% if side_gutters %}
-    --section-width: calc({{ section_width }}vw - {{grid_gap}}px * 2);
+    --section-width: calc({{ section_width }}vw - {{grid_gap}}px * 2 );
     {% else %}
     --section-width: {{ section_width }}vw;
     {% endif %}
@@ -178,7 +188,7 @@
 
   {% if side_gutters %}
     .gdc-image-text-grid__side-padding.section--{{ section.id }} {
-      width: calc(var(--section-width) + {{ grid_gap }}px * 2);
+      width: calc(var(--section-width) + {{ grid_gap }}px * 2 );
       background-color: {{ section.settings.background_color }};
       margin: 0 auto;
     }
