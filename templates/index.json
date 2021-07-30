@@ -52,7 +52,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text" 
+            "heading": "Image with text"
           }
         },
         "text": {
@@ -75,16 +75,78 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/copper-light-in-bedroom.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "162765103466f1cec7": {
+      "type": "gdc-grid-image-text",
+      "blocks": {
+        "452a725b-f975-43b8-aa93-94d25ef7278c": {
+          "type": "grid-item",
+          "settings": {
+            "hide_tablets": false,
+            "hide_phones": false,
+            "url": "",
+            "column_span": 1,
+            "row_span": 1,
+            "padding": 20,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-07-21_at_4.16.00_PM.png",
+            "image_fill": "cover",
+            "img_h_position": 50,
+            "img_v_position": 50,
+            "background_color": "#ffffff",
+            "font_color": "#000",
+            "title": "",
+            "title_font_size": 18,
+            "mobile_title_font_size": 18,
+            "text": "",
+            "font_size": 16,
+            "mobile_font_size": 16,
+            "text_align": "left",
+            "text_h_place": "start",
+            "text_v_place": "start",
+            "overlay_color": "",
+            "overlay_opacity": 30,
+            "overlay_hover_opacity": 30,
+            "enable_text_overlay": false,
+            "bottom_overlay_font_color": "",
+            "bottom_overlay_title": "",
+            "bottom_title_size": 18,
+            "bottom_overlay_text": "",
+            "bottom_text_size": 16,
+            "bottom_overlay_color": "",
+            "bottom_overlay_opacity": 30,
+            "bottom_hover_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "452a725b-f975-43b8-aa93-94d25ef7278c"
+      ],
+      "settings": {
+        "enable_section": true,
+        "section_width": 100,
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "column_count": 4,
+        "grid_gap": 6,
+        "enable_side_gutters": false,
+        "title": "",
+        "text": "",
+        "text_align": "left",
+        "background_color": "#ffffff",
+        "font_color": "#000"
+      }
     }
   },
   "order": [
-    "image_banner", 
+    "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "162765103466f1cec7"
   ]
 }
