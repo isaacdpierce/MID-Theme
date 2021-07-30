@@ -164,7 +164,7 @@
           "settings": {
             "hide_tablets": false,
             "hide_phones": false,
-            "url": "",
+            "url": "shopify:\/\/blogs\/news",
             "column_span": 1,
             "row_span": 3,
             "padding": 20,
@@ -272,6 +272,44 @@
             "bottom_overlay_opacity": 30,
             "bottom_hover_opacity": 30
           }
+        },
+        "be036c7f-eec7-4ac6-a34e-3b344aee8604": {
+          "type": "grid-item",
+          "settings": {
+            "hide_tablets": false,
+            "hide_phones": false,
+            "url": "",
+            "column_span": 1,
+            "row_span": 1,
+            "padding": 20,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-07-21_at_4.16.00_PM.png",
+            "image_fill": "cover",
+            "img_h_position": 50,
+            "img_v_position": 50,
+            "background_color": "#ffffff",
+            "font_color": "#000",
+            "title": "",
+            "title_font_size": 18,
+            "mobile_title_font_size": 18,
+            "text": "",
+            "font_size": 16,
+            "mobile_font_size": 16,
+            "text_align": "left",
+            "text_h_place": "start",
+            "text_v_place": "start",
+            "overlay_color": "",
+            "overlay_opacity": 30,
+            "overlay_hover_opacity": 30,
+            "enable_text_overlay": false,
+            "bottom_overlay_font_color": "",
+            "bottom_overlay_title": "",
+            "bottom_title_size": 18,
+            "bottom_overlay_text": "",
+            "bottom_text_size": 16,
+            "bottom_overlay_color": "",
+            "bottom_overlay_opacity": 30,
+            "bottom_hover_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -279,7 +317,8 @@
         "8e133bf1-e60e-485e-807f-5efa37764dba",
         "ce683642-020b-4d2a-b1ee-b3bb8ff84001",
         "470ce017-e67b-4b12-b8c3-1b12224742f0",
-        "f0a25d07-93b5-4c89-aed6-f77dac126876"
+        "f0a25d07-93b5-4c89-aed6-f77dac126876",
+        "be036c7f-eec7-4ac6-a34e-3b344aee8604"
       ],
       "settings": {
         "enable_section": true,
