@@ -289,7 +289,7 @@
         "t_padding": 0,
         "b_padding": 0,
         "column_count": 4,
-        "grid_gap": 6,
+        "grid_gap": 33,
         "enable_side_gutters": false,
         "title": "",
         "text": "",
