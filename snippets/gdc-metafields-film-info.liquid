@@ -1,5 +1,6 @@
 {%- liquid 
   assign info = product.metafields.film_info
+
   assign subjects_array = info.subjects.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
 
@@ -36,18 +37,16 @@
     {% endif %}
   </ul>
 
-  <div>
-    {% if info.formats.value != blank %}
-
-    <select name="cars" id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </select>
-      <li>Formats <span>{{ info.formats.value }}</span></li>
-    {% endif %}
-  </div>
+  {% if info.formats.value != blank %}
+     <div>
+      <h4>Formats</h4>
+        <select name="formats" id="formats">
+          {% for format in formats_array %}
+            <option value="volvo">{{ format }}</option>
+          {% endfor %}
+        </select>
+      </div>
+  {% endif %}
 
   {% if info.author_biography.value != blank %}
   <div class="gdc-product-metafields__section">
