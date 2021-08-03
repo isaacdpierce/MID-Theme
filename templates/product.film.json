@@ -98,10 +98,48 @@
         "add_image_padding": false,
         "show_vendor": false
       }
+    },
+    "1628025115a4de7490": {
+      "type": "gdc-text",
+      "blocks": {
+        "04c07dc0-4b32-41d3-b482-9f7e7a57bfab": {
+          "type": "paragraph",
+          "settings": {
+            "hide_tablets": false,
+            "hide_phones": false,
+            "t_margin": 0,
+            "b_margin": 0,
+            "t_padding": 0,
+            "b_padding": 0,
+            "bg_color": "#ffffff",
+            "font_color": "#000",
+            "title": "Title",
+            "title_align": "left",
+            "text": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, delectus commodi unde architecto officia inventore nobis laudantium numquam autem! Fugiat dicta consequatur laborum unde reiciendis voluptates commodi earum ad corrupti.<\/p>",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "04c07dc0-4b32-41d3-b482-9f7e7a57bfab"
+      ],
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "title": "",
+        "title_line": false,
+        "text": "",
+        "text_align": "left",
+        "bg_color": "#ffffff",
+        "font_color": "#000"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1628025115a4de7490"
   ]
 }
