@@ -18,13 +18,27 @@
   </div>
 
   <ul>
-    <li>Release Date <span>{{ info.release_date.value }}</span></li>
-    <li>Running Time <span>{{ info.running_time.value }}</span></li>
-    <li>Closed Captions <span>{{ info.closed_captions.value }}</span></li>
-    <li>Availability <span>{{ info.availability.value }}</span></li>
-    <li>Formats <span>{{ info.formats.value }}</span></li>
-    <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
-    <li>Author Biography <span>{{ info.author_biography.value }}</span></li>
+    {% if info.release_date.value != blank %}
+      <li>Release Date <span>{{ info.release_date.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Running Time <span>{{ info.running_time.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Closed Captions <span>{{ info.closed_captions.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Availability <span>{{ info.availability.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Formats <span>{{ info.formats.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
+    {% endif %}
+    {% if info.release_date.value != blank %}
+      <li>Author Biography <span>{{ info.author_biography.value }}</span></li>
+    {% endif %}
   </ul>
 
 </div>
