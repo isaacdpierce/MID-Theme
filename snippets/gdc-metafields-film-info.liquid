@@ -5,6 +5,7 @@
 
 
 <div class="gdc-info-list">
+
   <h3 class="gdc-info-list__subtitle">
     {{ product.metafields.film_info.film_maker.value }}
   </h3>
@@ -24,6 +25,7 @@
     <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards.value }}</li>
     <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
   </ul>
+
 </div>
 
 <style>
@@ -33,7 +35,7 @@
 
   .gdc-info-list__subtitle,
   .gdc-info-list__horizontal {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 
   .gdc-info-list__subtitle {
