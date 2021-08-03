@@ -5,13 +5,13 @@
 -%}
 
 
-<div class="gdc-info-list">
+<div class="gdc-product-metafield__info">
 
-  <h3 class="gdc-info-list__subtitle">
+  <h3 class="gdc-product-metafield__info__subtitle">
     {{ product.metafields.film_info.film_maker.value }}
   </h3>
 
-  <div class="gdc-info-list__horizontal">
+  <div class="gdc-product-metafield__info__horizontal">
     {% for subject in subjects_array %}
       <span>{{ subject }}</span>
     {% endfor %}
@@ -48,37 +48,37 @@
 </div>
 
 <style>
-  .gdc-info-list {
+  .gdc-product-metafield__info {
     margin: 0;
   }
 
-  .gdc-info-list__subtitle,
-  .gdc-info-list__horizontal,
-  .gdc-info-list ul {
+  .gdc-product-metafield__info__subtitle,
+  .gdc-product-metafield__info__horizontal,
+  .gdc-product-metafield__info ul {
     margin-bottom: 40px !important;
   }
 
-  .gdc-info-list__subtitle {
+  .gdc-product-metafield__info__subtitle {
     margin: 0;
   }
 
-  .gdc-info-list__horizontal span {
+  .gdc-product-metafield__info__horizontal span {
     margin-right: 20px;
   }
   
-  .gdc-info-list ul {
+  .gdc-product-metafield__info ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .gdc-info-list ul li {
+  .gdc-product-metafield__info ul li {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
   }
 
-  .gdc-info-list ul li:nth-child(odd) {
+  .gdc-product-metafield__info ul li:nth-child(odd) {
     background-color: #EEEEEE;
   }
 
