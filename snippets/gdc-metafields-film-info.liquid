@@ -1,6 +1,7 @@
 {%- liquid 
   assign info = product.metafields.film_info
 
+  assign filmmakers_array = info.film_maker.value | split: ',' 
   assign subjects_array = info.subjects.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
 
@@ -10,7 +11,9 @@
 <div class="gdc-product-metafields">
 
   <h2 class="gdc-product-metafields__section gdc-product-metafields__subtitle">
-    {{ product.metafields.film_info.film_maker.value }}
+    {% for filmmaker in filmmakers_array %}
+    <span>{{ filmmaker }}</span>
+  {% endfor %}
   </h2>
 
   <div class="gdc-product-metafields__section gdc-product-metafields__horizontal-list">
