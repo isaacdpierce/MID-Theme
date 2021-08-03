@@ -75,7 +75,6 @@
         <li>Formats: {{ product.metafields.film_info.formats.value }}</li>
         <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards.value }}</li>
         <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
-        <li>Credits: {{ product.metafields.film_info.credits.value }}</li>
       </ul>
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
