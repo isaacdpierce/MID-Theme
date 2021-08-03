@@ -65,17 +65,7 @@
       {%- endif -%}
     </div>
     <div class="product__info-wrapper grid__item">
-      <ul>
-        <li>Film Maker: {{ product.metafields.film_info.film_maker.value }}</li>
-        <li>Release Date: {{ product.metafields.film_info.release_date.value }}</li>
-        <li>Running Time: {{ product.metafields.film_info.running_time.value }}</li>
-        <li>Subjects: {{ product.metafields.film_info.subjects.value }}</li>
-        <li>Closed Captions: {{ product.metafields.film_info.closed_captions.value }}</li>
-        <li>Availability: {{ product.metafields.film_info.availability.value }}</li>
-        <li>Formats: {{ product.metafields.film_info.formats.value }}</li>
-        <li>Hightlights / Awards:{{ product.metafields.film_info.highlights_and_awards.value }}</li>
-        <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
-      </ul>
+{% render "gdc-metafields-film-info" %}
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
