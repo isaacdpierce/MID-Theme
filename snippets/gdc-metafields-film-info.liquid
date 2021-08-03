@@ -30,13 +30,16 @@
     {% if info.availability.value != blank %}
       <li>Availability <span>{{ info.availability.value }}</span></li>
     {% endif %}
-    {% if info.formats.value != blank %}
-      <li>Formats <span>{{ info.formats.value }}</span></li>
-    {% endif %}
     {% if info.highlights_and_awards.value != blank %}
       <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
     {% endif %}
   </ul>
+
+  <div>
+    {% if info.formats.value != blank %}
+      <li>Formats <span>{{ info.formats.value }}</span></li>
+    {% endif %}
+  </div>
 
   {% if info.author_biography.value != blank %}
   <div class="gdc-product-metafields__section">
