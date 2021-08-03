@@ -1,4 +1,8 @@
-{% assign subjects_array = product.metafields.film_info.subjects.value  | split: ',' %}
+{%- liquid 
+  assign subjects_array = product.metafields.film_info.subjects.value | split: ',' 
+
+-%}
+
 
 <div class="gdc-info-list">
   <p class="gdc-info-list__subtitle">
