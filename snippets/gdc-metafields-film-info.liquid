@@ -1,4 +1,4 @@
-<div>
+<div class="gdc-info-list">
   <ul>
     <li>Film Maker: {{ product.metafields.film_info.film_maker.value }}</li>
     <li>Release Date: {{ product.metafields.film_info.release_date.value }}</li>
@@ -11,3 +11,9 @@
     <li>Author Biography: {{ product.metafields.film_info.author_biography.value }}</li>
   </ul>
 </div>
+
+<style>
+  .gdc-info-list ul {
+    list-style: none;
+  }
+</style>
