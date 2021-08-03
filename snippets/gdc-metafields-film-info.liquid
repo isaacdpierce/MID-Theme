@@ -36,11 +36,14 @@
     {% if info.highlights_and_awards.value != blank %}
       <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
     {% endif %}
-    {% if info.author_biography.value != blank %}
-      <li>Author Biography <span>{{ info.author_biography.value }}</span></li>
-    {% endif %}
   </ul>
 
+  {% if info.author_biography.value != blank %}
+  <div>
+    <h6>Author Biography </h6>
+    <p>{{ info.author_biography.value }}</p>
+    {% endif %}
+  </div>
 </div>
 
 <style>
