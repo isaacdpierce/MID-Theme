@@ -57,25 +57,25 @@
 
   <div class="gdc-product-metafields__section">
     {% if info.institutions.value != blank %}
-    <div>
-      <h4>Institutions</h4>
-      <select class="gdc-product-metafields__select" name="institutions" id="institutions">
-        {% for institution in institutions_array %}
-        <option value="{{ institution }}">{{ institution }}</option>
-        {% endfor %}
-      </select>
-    </div>
+      <div>
+        <h4>Institutions</h4>
+        <select class="gdc-product-metafields__select" name="institutions" id="institutions">
+          {% for institution in institutions_array %}
+          <option value="{{ institution }}">{{ institution }}</option>
+          {% endfor %}
+        </select>
+      </div>
     {% endif %}
     
     {% if info.formats.value != blank %}
-    <div>
-      <h4>Formats</h4>
-      <select class="gdc-product-metafields__select" name="formats" id="formats">
-        {% for format in formats_array %}
-        <option value="{{ format }}">{{ format }}</option>
-        {% endfor %}
-      </select>
-    </div>
+      <div>
+        <h4>Formats</h4>
+        <select class="gdc-product-metafields__select" name="formats" id="formats">
+          {% for format in formats_array %}
+          <option value="{{ format }}">{{ format }}</option>
+          {% endfor %}
+        </select>
+      </div>
     {% endif %}
   </div>
 
