@@ -3,7 +3,7 @@
 
   assign filmmakers_array = info.film_maker.value | split: ',' 
   assign subjects_array = info.subjects.value | split: ',' 
-  assign availability_array = info.availability.value | split: ',' 
+  assign availability_array  = info.availability.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
 
 -%}
@@ -35,7 +35,7 @@
     {% endif %}
     {% if info.availability.value != blank %}
       <li>Availability 
-        {% for country in availability %}
+        {% for country in availability_array %}
           <span>{{ country }}</span>
         {% endfor %}
       </li>
