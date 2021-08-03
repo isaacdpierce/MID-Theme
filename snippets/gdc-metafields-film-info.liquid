@@ -40,7 +40,7 @@
   {% if info.formats.value != blank %}
      <div class="gdc-product-metafields__section">
         <h4>Formats</h4>
-        <select name="formats" id="formats">
+        <select class="gdc-product-metafields__select" name="formats" id="formats">
           {% for format in formats_array %}
             <option value="{{ format }}">{{ format }}</option>
           {% endfor %}
@@ -80,14 +80,18 @@
     padding: 0;
   }
 
+  
   .gdc-product-metafields ul li {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
   }
-
+  
   .gdc-product-metafields ul li:nth-child(odd) {
     background-color: #EEEEEE;
   }
-
+  
+  .gdc-product-metafields__select {
+    display: block;
+  }
 </style>
