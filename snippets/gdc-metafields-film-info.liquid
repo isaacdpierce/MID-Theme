@@ -7,17 +7,17 @@
 
 <div class="gdc-product-metafields">
 
-  <h3 class="gdc-product-metafields__subtitle">
+  <h3 class="gdc-product-metafields__section gdc-product-metafields__subtitle">
     {{ product.metafields.film_info.film_maker.value }}
   </h3>
 
-  <div class="gdc-product-metafields__horizontal-list">
+  <div class="gdc-product-metafields__section gdc-product-metafields__horizontal-list">
     {% for subject in subjects_array %}
       <span>{{ subject }}</span>
     {% endfor %}
   </div>
 
-  <ul>
+  <ul class="gdc-product-metafields__section">
     {% if info.release_date.value != blank %}
       <li>Release Date <span>{{ info.release_date.value }}</span></li>
     {% endif %}
@@ -52,9 +52,7 @@
     margin: 0;
   }
 
-  .gdc-product-metafields__subtitle,
-  .gdc-product-metafields__horizontal-list,
-  .gdc-product-metafields ul {
+  .gdc-product-metafields__section {
     margin-bottom: 40px !important;
   }
 
