@@ -212,6 +212,10 @@
   width: 100vw;
 }
 
+.gdc-image-text-grid__wrapper a {
+  text-decoration: none;
+}
+
 .gdc-image-text-grid__section {
   display: flex;
   flex-direction: column;

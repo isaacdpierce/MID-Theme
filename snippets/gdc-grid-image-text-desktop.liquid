@@ -27,7 +27,6 @@
 
       <div class="gdc-image-text-grid__wrapper section--{{ section.id }}">
         {% for block in section.blocks %}
-
           {% if block.settings.url != blank %}
             <a href="{{ block.settings.url }}" 
                 class="gdc-image-text-grid__item block--{{ block.id }} 
@@ -48,7 +47,15 @@
                   {% if block.settings.hide_phones %}
                     hide-600
                   {% endif %}">
+
               <div class="gdc-image-text-grid__text block--{{ block.id }}">
+                {% if block.settings.column_span > column_count %}
+                  <div class="gdc-error">
+                    ERROR: Grid item spans more columns than the grid has available. <br>
+                    GRID ITEM: {{ block.settings.column_span }} columns. <br>
+                    GRID TOTAL: {{ column_count }} columns.
+                  </div>
+                {% endif %}
                 <div>
                   {% if block.settings.title != blank %}
                     <h3>{{ block.settings.title }}</h3>
@@ -93,10 +100,6 @@
           .gdc-image-text-grid__item.block--{{ block.id }} h3, 
           .gdc-image-text-grid__item.block--{{ block.id }} p {
             color: {{ block.settings.font_color }};
-          }
-
-          .gdc-image-text-grid__wrapper.section--{{ section.id }} a {
-            text-decoration: none;
           }
           
           .gdc-image-text-grid__item.block--{{ block.id }} {
@@ -145,8 +148,13 @@
             {% else %}
               background-color: {{ block.settings.bottom_overlay_color }};
             {% endif %};
-            color: {{ block.settings.bottom_overlay_font_color }};
             transition: background-color .5s;
+          }
+
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} h3,
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} p,
+          .gdc-image-text-grid__text-overlay.block--{{ block.id }} a {
+            color: {{ block.settings.bottom_overlay_font_color }};
           }
 
           .gdc-image-text-grid__text-overlay.block--{{ block.id }}:hover {
@@ -172,6 +180,17 @@
 </section>
 
 <style>
+  .gdc-error {
+    position: absolute; 
+    font-size: 14px;
+    top: 10px; 
+    left: 10px; 
+    text-align: left; 
+    padding: 10px;
+    background-color: rgba(46, 46, 46, 0.842); 
+    color: red; 
+  } 
+
   .gdc-image-text-grid__section-wrapper.section--{{ section.id }} {
     /* ================ CSS Section Variables ================ */
     {% if side_gutters %}

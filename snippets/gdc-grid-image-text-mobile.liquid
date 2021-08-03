@@ -24,7 +24,7 @@
         {% for block in section.blocks %}
           {% if block.settings.url != blank %}
           <a href="{{ block.settings.url }}" 
-              class="gdc-image-text-grid__item block--{{ block.id }} 
+              class="gdc-image-text-grid-mobile__item block--{{ block.id }} 
               {% if block.settings.hide_tablets %}
                 hide-1000
               {% endif %}
@@ -82,6 +82,13 @@
           </a>
           {% endif %}
           <style>
+          .gdc-image-text-grid-mobile__wrapper.section--{{ section.id }} a,
+          .gdc-image-text-grid-mobile__item.block--{{ block.id }},
+          .gdc-image-text-grid-mobile__item.block--{{ block.id }} h3, 
+          .gdc-image-text-grid-mobile__item.block--{{ block.id }} p {
+            color: {{ block.settings.font_color }};
+          }
+
           .gdc-image-text-grid-mobile__item.block--{{ block.id }} {
             background-color: {{ block.settings.background_color }};
             color: {{ block.settings.font_color }};
