@@ -36,8 +36,9 @@
     {% if info.availability.value != blank %}
       <li>Availability 
         {% for country in availability %}
-          <span>{{ country }}</span></li>
+          <span>{{ country }}</span>
         {% endfor %}
+      </li>
     {% endif %}
     {% if info.highlights_and_awards.value != blank %}
       <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
