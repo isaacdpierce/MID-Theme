@@ -1,10 +1,14 @@
+{% assign subjects_array = product.metafields.film_info.subjects.value  | split: ',' %}
+
 <div class="gdc-info-list">
   <p class="gdc-info-list__subtitle">
     {{ product.metafields.film_info.film_maker.value }}
   </p>
 
   <p>
-    {{ product.metafields.film_info.subjects.value  | split: ',' }}
+    {% for subject in subjects_array %}
+      <h1>{{ subject }}</h1>
+    {% endfor %}
   </p>
 
   <ul>
