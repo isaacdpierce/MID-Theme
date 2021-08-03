@@ -3,6 +3,7 @@
 
   assign filmmakers_array = info.film_maker.value | split: ',' 
   assign subjects_array = info.subjects.value | split: ',' 
+  assign availability_array = info.availability.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
 
 -%}
@@ -33,7 +34,10 @@
       <li>Closed Captions <span>{{ info.closed_captions.value }}</span></li>
     {% endif %}
     {% if info.availability.value != blank %}
-      <li>Availability <span>{{ info.availability.value }}</span></li>
+      <li>Availability 
+        {% for country in availability %}
+          <span>{{ country }}</span></li>
+        {% endfor %}
     {% endif %}
     {% if info.highlights_and_awards.value != blank %}
       <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
