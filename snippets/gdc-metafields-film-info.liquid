@@ -9,9 +9,9 @@
 
 <div class="gdc-product-metafields">
 
-  <h3 class="gdc-product-metafields__section gdc-product-metafields__subtitle">
+  <h2 class="gdc-product-metafields__section gdc-product-metafields__subtitle">
     {{ product.metafields.film_info.film_maker.value }}
-  </h3>
+  </h2>
 
   <div class="gdc-product-metafields__section gdc-product-metafields__horizontal-list">
     {% for subject in subjects_array %}
@@ -60,6 +60,10 @@
 <style>
   .gdc-product-metafields {
     margin: 0;
+  }
+
+  .gdc-product-metafields h2 {
+    font-size: 16px;
   }
 
   .gdc-product-metafields__section {
