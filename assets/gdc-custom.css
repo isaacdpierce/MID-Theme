@@ -583,5 +583,5 @@
 /* ============== GDC PRODUCT FILM ===================== */
 
 .gdc-product__title {
-  margin: 0;
+  margin: 0 !important;
 }
