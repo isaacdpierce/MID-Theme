@@ -579,3 +579,9 @@
     display: none !important;
   }
 }
+
+/* ============== GDC PRODUCT FILM ===================== */
+
+.gdc-product__title {
+  margin: 0;
+}
