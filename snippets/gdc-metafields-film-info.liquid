@@ -5,11 +5,11 @@
     {{ product.metafields.film_info.film_maker.value }}
   </p>
 
-  <p>
+  <div>
     {% for subject in subjects_array %}
-      <h1>{{ subject }}</h1>
+      <span>{{ subject }}</span>
     {% endfor %}
-  </p>
+  </div>
 
   <ul>
     <li>Release Date: {{ product.metafields.film_info.release_date.value }}</li>
