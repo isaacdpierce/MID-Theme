@@ -4,6 +4,7 @@
   assign filmmakers_array = info.film_maker.value | split: ',' 
   assign subjects_array = info.subjects.value | split: ',' 
   assign availability_array  = info.availability.value | split: ',' 
+  assign institutions_array  = info.institutions.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
 
 -%}
@@ -36,9 +37,9 @@
     {% if info.availability.value != blank %}
       <li>Availability 
         <span>
-          {% for country in availability_array %}
+        {% for country in availability_array %}
             {{ country }}
-          {% endfor %}
+        {% endfor %}
         </span>
       </li>
     {% endif %}
@@ -46,6 +47,17 @@
       <li>Hightlights / Awards<span>{{ info.highlights_and_awards.value }}</span></li>
     {% endif %}
   </ul>
+
+  {% if info.institutions.value != blank %}
+  <div class="gdc-product-metafields__section">
+     <h4>Institutions</h4>
+     <select class="gdc-product-metafields__select" name="institutions" id="institutions">
+       {% for institution in institutions_array %}
+         <option value="{{ institution }}">{{ institution }}</option>
+       {% endfor %}
+     </select>
+   </div>
+{% endif %}
 
   {% if info.formats.value != blank %}
      <div class="gdc-product-metafields__section">
