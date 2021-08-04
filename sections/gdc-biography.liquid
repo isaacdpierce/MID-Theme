@@ -8,7 +8,7 @@
 -%}
 
 <section class="gdc-biography__wrapper section--{{ section.id }}">
-  <div>
+  <div class="gdc-biography__image section--{{ section.id }}">
     {% render 'gdc-image', image: image %}
   </div>
   {% render 'gdc-section-paragraph', title: title, text: text, section: section %}
@@ -21,6 +21,10 @@
     padding-top: {{ settings.t_padding }}px;
     padding-bottom: {{ settings.b_padding }}px;
     background-color: {{ settings.bg_color }};
+  }
+
+  .gdc-biography__image.section--{{ section.id }} {
+    
   }
 </style>
 
