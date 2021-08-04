@@ -1,8 +1,8 @@
 {%- liquid
   
   assign title = collection.title
-  assign text = ss.text
-  assign image = ss.image
+  assign text = collection.description
+  assign image = collection.image
   
 -%}
 
@@ -17,7 +17,7 @@
       </div>
     {% endif %}
     <div>
-      {% render 'gdc-section-paragraph', title: title, text: text %}
+      {% render 'gdc-section-paragraph', title: title, text: text, section: collection.id %}
     </div>
   </div>
 
