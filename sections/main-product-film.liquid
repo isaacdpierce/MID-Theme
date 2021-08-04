@@ -418,12 +418,10 @@
 </section>
 
 {% assign filmmaker_collection = collections | where: "template_suffix", "filmmakers" %}
-
 {% for collection in filmmaker_collection %}
-  {{ collection.title }}
+  {% render 'gdc-biography-collection', collection: collection %} 
 {% endfor %}
 
-{% render 'gdc-biography-collection' %} 
 
 {% javascript %}
   class ProductModal extends ModalDialog {
