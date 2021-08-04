@@ -7,6 +7,9 @@
 -%}
 
 <section class="gdc-biography__wrapper section--{{ section.id }}">
+  <div>
+    {% render 'gdc-image' %}
+  </div>
   {% render 'gdc-section-paragraph', title: title, text: text, section: section %}
 </section>
 
