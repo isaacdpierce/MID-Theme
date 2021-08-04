@@ -1,11 +1,13 @@
 {%- liquid
   
   assign settings = section.settings
+  assign title = settings.title
+  assign text = settings.text
   
 -%}
 
 <section class="gdc-biography__wrapper section--{{ section.id }}">
-  {% render 'gdc-section-paragraph' %}
+  {% render 'gdc-section-paragraph', title: title, text: text, section: section %}
 </section>
 
 <style>
