@@ -4,6 +4,9 @@
   assign filmmaker_collection = collections | where: "template_suffix", "filmmakers"
   
 -%}
+{% for collection in filmmaker_collection %}
+  {{ collection.title }}
+{% endfor %}
 
 {% for collection in filmmaker_collection %}
   {% for filmmaker in filmmakers_array %}
