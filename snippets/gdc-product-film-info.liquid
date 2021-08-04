@@ -16,7 +16,6 @@
 -%}
 
 <div class="gdc-product-film-info">
-
   <h2 class="gdc-product-film-info__section gdc-product-film-info__subtitle">
     {% for collection in collections %}
       {% for filmmaker in filmmakers_array %}
@@ -54,14 +53,15 @@
         </span>
       </li>
     {% endif %}
-    {% if info.highlights_and_awards.value != blank %}
-      <li>Hightlights / Awards
-        <span>
-          {% for award in awards_array %}
-            {{ award }}
-          {% endfor %}
-        </span>
-      </li>
-    {% endif %}
   </ul>
+
+  {% if info.highlights_and_awards.value != blank %}
+  <li>Hightlights / Awards
+    <span>
+      {% for award in awards_array %}
+        {{ award }}
+      {% endfor %}
+    </span>
+  </li>
+{% endif %}
 </div>
