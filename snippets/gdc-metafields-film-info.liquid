@@ -33,7 +33,15 @@
       <li>Running Time <span>{{ info.running_time.value }}</span></li>
     {% endif %}
     {% if info.closed_captions.value != blank %}
-      <li>Closed Captions <span>{{ info.closed_captions.value }}</span></li>
+      <li>Closed Captions 
+        <span>
+          {% if info.closed_captions.value == true %}
+            YES
+          {% else %}
+            NO
+          {% endif %}
+        </span>
+      </li>
     {% endif %}
     {% if info.availability.value != blank %}
       <li>Availability 
