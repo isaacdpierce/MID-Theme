@@ -3,12 +3,13 @@
   assign settings = section.settings
   assign title = settings.title
   assign text = settings.text
+  assign image = settings.image
   
 -%}
 
 <section class="gdc-biography__wrapper section--{{ section.id }}">
   <div>
-    {% render 'gdc-image' %}
+    {% render 'gdc-image', image: image %}
   </div>
   {% render 'gdc-section-paragraph', title: title, text: text, section: section %}
 </section>
