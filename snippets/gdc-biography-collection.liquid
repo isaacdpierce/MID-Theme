@@ -5,11 +5,11 @@
   
 -%}
 {% for collection in filmmaker_collection %}
-  {{ collection.title }}
-{% endfor %}
-
-{% for filmmaker in filmmakers_array %}
- {{ filmmaker }}
+  
+  
+  {% for filmmaker in filmmakers_array %}
+  {{ filmmaker }} == {{ collection.title }}
+  {% endfor %}
 {% endfor %}
 
 {% for collection in filmmaker_collection %}
