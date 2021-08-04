@@ -7,8 +7,10 @@
 
 {% for collection in filmmaker_collection %}
   {% for filmmaker in filmmakers_array %}
+
+  {{ filmmaker }}
     {% if filmmaker == collection.title %}
-    
+
     {%- liquid
     
       assign title = collection.title
