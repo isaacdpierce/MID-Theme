@@ -6,8 +6,6 @@
   assign subjects_array = info.subjects.value | split: ',' 
   assign awards_array = info.highlights_and_awards.value | split: ',' 
   assign availability_array  = info.availability.value | split: ',' 
-  assign institutions_array  = info.institutions.value | split: ',' 
-  assign formats_array = info.formats.value | split: ',' 
 
   if info.closed_captions.value == true 
     assign closed_captions = "Yes"
