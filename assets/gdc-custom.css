@@ -555,6 +555,58 @@
 }
 
 
+/* ============= PRODUCT FILM INFO ================= */
+
+.gdc-product-info {
+  margin: 0;
+}
+
+.gdc-product-info h2 {
+  font-size: 16px;
+}
+
+.gdc-product-info__section {
+  margin-bottom: 40px !important;
+}
+
+.gdc-product-info__subtitle {
+  margin: 0;
+}
+
+.gdc-product-info__horizontal-list span {
+  margin-right: 20px;
+}
+
+.gdc-product-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.gdc-product-info ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.gdc-product-info ul li:nth-child(odd) {
+  background-color: #EEEEEE;
+}
+
+.gdc-product-info__select {
+  padding: 10px;
+  width: 100%;
+}
+
+.gdc-product-info__select:focus {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+
 /* ============= GLOBAL SETTINGS ================= */
 .gdc-section-header,
 .gdc-section-header--center {
