@@ -15,8 +15,9 @@
   -%}
   {% for filmmaker in filmmakers_array %}
     {% assign fm = filmmaker | strip %}
+    {% assign ct = collection.title | strip %}
 
-    {% if fm == collection.title %}
+    {% if fm == ct %}
 
       <section class="gdc-biography-collection__wrapper section--{{ section.id }}">
         <div class="gdc-biography-collection__content">
