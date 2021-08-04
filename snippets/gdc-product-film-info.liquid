@@ -19,12 +19,16 @@
 
   <h2 class="gdc-product-film-info__section gdc-product-film-info__subtitle">
     {% for collection in collections %}
-    {{ collection.url }}
-    {% endfor %}
+    
 
     {% for filmmaker in filmmakers_array %}
-      <span>{{ filmmaker }}</span>
+    {% if filmmaker == collection %}
+    <a href="{{ collection.url }}">{{ filmmaker }}</a>
+    {% endif %}
+  {% endfor %}
     {% endfor %}
+
+ 
   </h2>
 
   <div class="gdc-product-film-info__section gdc-product-film-info__horizontal-list">
