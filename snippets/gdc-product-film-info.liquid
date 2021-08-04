@@ -22,10 +22,12 @@
     
 
     {% for filmmaker in filmmakers_array %}
-    {% if filmmaker == collection %}
+
+    {% if filmmaker == collection.title %}
     <a href="{{ collection.url }}">{{ filmmaker }}</a>
     {% endif %}
-  {% endfor %}
+
+    {% endfor %}
     {% endfor %}
 
  
