@@ -89,16 +89,6 @@
         "enable_video_looping": false
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "16280926128de97fe6": {
       "type": "gdc-biography",
       "settings": {
@@ -169,12 +159,22 @@
         "btn_text": "",
         "btn_url": ""
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
     "16280926128de97fe6",
-    "1628099138a7fc5a43"
+    "1628099138a7fc5a43",
+    "product-recommendations"
   ]
 }
