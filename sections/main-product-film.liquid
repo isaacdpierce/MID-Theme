@@ -417,6 +417,7 @@
   {%- endfor -%}
 </section>
 
+{% assign filmmaker_collection = collection | where: "template_suffix", "filmmakers" %}
 {% render 'gdc-biography-collection' %} 
 
 {% javascript %}
