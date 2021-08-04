@@ -1,6 +1,6 @@
 {%- liquid
   
-  assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' | strip
+  assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' 
   assign filmmaker_collection = collections | where: "template_suffix", "filmmakers"
   
 -%}
@@ -8,7 +8,7 @@
   
   
   {% for filmmaker in filmmakers_array %}
-  {% if filmmaker == collection.title %}
+  {% if filmmaker | strip == collection.title %}
   {{ filmmaker }} == {{ collection.title }}
   {% endif %}
   {% endfor %}
