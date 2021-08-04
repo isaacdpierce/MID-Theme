@@ -22,8 +22,6 @@
       {% for filmmaker in filmmakers_array %}
         {% if filmmaker == collection.title %}
           <a href="{{ collection.url }}">{{ filmmaker }}</a>
-        {% else %}
-          <span>{{ filmmaker }}</span>
         {% endif %}
       {% endfor %}
     {% endfor %}
@@ -36,8 +34,6 @@
     {%  for subject in subjects_array  %}
       {% if subject == collection.title %}
         <a href="{{ collection.url }}">{{ subject }}</a>
-      {% else %}
-        <span>{{ subject }}</span>
       {% endif %}
     {% endfor %}
   {% endfor %}
