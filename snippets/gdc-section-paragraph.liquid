@@ -3,6 +3,9 @@
     {% if title %}
       <h2>{{ title }}</h2>
     {% endif %}
+    {% if subtitle %}
+      <h5>{{ subtitle }}</h5>
+    {% endif %}
     {% if text %}
       {{ text }}
     {% endif %}
@@ -10,6 +13,7 @@
 </div>
 
 <style>
+  .gdc-section__paragraph.section--{{ section.id }} h5,
   .gdc-section__paragraph.section--{{ section.id }} h2 {
     color: {{ section.settings.font_color }};
     text-align: {{ section.settings.title_align }};
