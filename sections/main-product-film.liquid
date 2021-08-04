@@ -417,7 +417,7 @@
   {%- endfor -%}
 </section>
 
-{% assign filmmaker_collection = collection | where: "template_suffix", "filmmakers" %}
+{% assign filmmaker_collection = collections | where: "template_suffix", "filmmakers" %}
 
 {% for collection in filmmaker_collection %}
   {{ collection.title }}
