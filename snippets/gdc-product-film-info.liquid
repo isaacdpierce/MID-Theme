@@ -32,9 +32,15 @@
   </h2>
 
   <div class="gdc-product-film-info__section gdc-product-film-info__horizontal-list">
-    {% for subject in subjects_array %}
-      <span>{{ subject }}</span>
+    {% for collection in collections %}
+    {%  for subject in subjects_array  %}
+      {% if subject == collection.title %}
+        <a href="{{ collection.url }}">{{ subject }}</a>
+      {% else %}
+        <span>{{ subject }}</span>
+      {% endif %}
     {% endfor %}
+  {% endfor %}
   </div>
 
   <ul class="gdc-product-film-info__section">
