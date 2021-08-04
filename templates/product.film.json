@@ -109,6 +109,7 @@
         "bg_color": "#ededed",
         "image": "shopify:\/\/shop_images\/silhouette-of-a-person-with-a-baseball-cap-against-a-setting-sun.jpg",
         "image_width": 200,
+        "image_radius": 35,
         "image_fit": "cover",
         "image_h_pos": 50,
         "image_v_pos": 50,
