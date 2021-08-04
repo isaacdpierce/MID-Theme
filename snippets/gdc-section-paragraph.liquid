@@ -21,6 +21,10 @@
     margin-bottom: 10px;
   }
 
+  .gdc-section__paragraph.section--{{ section.id }} h2 {
+    font-size: {{ section.settings.title_size }};
+  }
+
   .gdc-section__paragraph.section--{{ section.id }} h5 {
     font-size: {{ section.settings.subtitle_size }};
   }
@@ -28,5 +32,9 @@
   .gdc-section__paragraph.section--{{ section.id }} p {
     color: {{ section.settings.font_color }};
     text-align: {{ section.settings.text_align }};
+  }
+
+  .gdc-section__paragraph.section--{{ section.id }} p {
+    font-size: {{ section.settings.text_size }};
   }
 </style>
