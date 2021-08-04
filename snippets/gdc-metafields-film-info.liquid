@@ -1,5 +1,6 @@
 {%- liquid 
   assign info = product.metafields.film_info
+  assign closed_captions = "No"
 
   assign filmmakers_array = info.film_maker.value | split: ',' 
   assign subjects_array = info.subjects.value | split: ',' 
@@ -7,6 +8,10 @@
   assign availability_array  = info.availability.value | split: ',' 
   assign institutions_array  = info.institutions.value | split: ',' 
   assign formats_array = info.formats.value | split: ',' 
+
+  if info.closed_captions.value == true 
+    assign closed_captions = "Yes"
+  endif
 
 -%}
 
@@ -34,7 +39,7 @@
     {% endif %}
     {% if info.closed_captions.value != blank %}
       <li>Closed Captions 
-        <span>{% if info.closed_captions.value == true %}Yes{% else %}No{% endif %}</span>
+        <span>{{ closed_captions }}</span>
       </li>
     {% endif %}
     {% if info.availability.value != blank %}
