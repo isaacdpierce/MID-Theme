@@ -417,7 +417,7 @@
   {%- endfor -%}
 </section>
 
-{%- if product.description != blank and show_description_below -%}
+{%- if product.description != blank and section.settings.show_description_below -%}
 <div class="gdc-text__full-width">
   {{ product.description }}
 </div>
