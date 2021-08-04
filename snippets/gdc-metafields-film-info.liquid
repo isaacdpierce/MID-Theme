@@ -34,13 +34,7 @@
     {% endif %}
     {% if info.closed_captions.value != blank %}
       <li>Closed Captions 
-        <span>
-          {% if info.closed_captions.value == true %}
-            Yes
-          {% else %}
-            No
-          {% endif %}
-        </span>
+        <span>{% if info.closed_captions.value == true %}Yes{% else %}No{% endif %}</span>
       </li>
     {% endif %}
     {% if info.availability.value != blank %}
