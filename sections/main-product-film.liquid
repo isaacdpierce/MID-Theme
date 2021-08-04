@@ -418,8 +418,7 @@
 </section>
 
 {%- liquid 
-  assign info = product.metafields.film_info
-  assign filmmakers_array = info.film_maker.value | split: ',' 
+  assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' 
 -%}
 
 {% assign filmmaker_collection = collections | where: "template_suffix", "filmmakers" %}
