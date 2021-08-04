@@ -1,14 +1,20 @@
+{%- liquid
+  
+  assign settings = section.settings
+  
+-%}
+
 <section class="gdc-biography__wrapper section--{{ section.id }}">
   {% render 'gdc-section-paragraph' %}
 </section>
 
 <style>
   .gdc-biography__wrapper.section--{{ section.id }} {
-    margin-top: {{ section.settings.t_margin }}px;
-    margin-bottom: {{ section.settings.b_margin }}px;
-    padding-top: {{ section.settings.t_padding }}px;
-    padding-bottom: {{ section.settings.b_padding }}px;
-    background-color: {{ section.settings.bg_color }};
+    margin-top: {{ settings.t_margin }}px;
+    margin-bottom: {{ settings.b_margin }}px;
+    padding-top: {{ settings.t_padding }}px;
+    padding-bottom: {{ settings.b_padding }}px;
+    background-color: {{ settings.bg_color }};
   }
 </style>
 
