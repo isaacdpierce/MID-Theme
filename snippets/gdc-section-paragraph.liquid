@@ -20,6 +20,14 @@
     margin: 0;
   }
 
+  .gdc-section__paragraph.section--{{ section.id }} h2::before {
+    content: '';
+    background-color: aqua;
+    height: 100%;
+    width: 10px;
+  }
+
+
   .gdc-section__paragraph.section--{{ section.id }} h2 {
     font-size: {{ section.settings.title_size }}px;
   }
