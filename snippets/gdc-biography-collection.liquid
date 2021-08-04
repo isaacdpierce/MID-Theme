@@ -8,7 +8,7 @@
 {% for collection in filmmaker_collection %}
   {%- liquid
           
-    assign title = collection.title | downcase
+    assign title = collection.title
     assign text = collection.description
     assign image = collection.image
     
