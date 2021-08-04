@@ -19,9 +19,9 @@
 
   <h2 class="gdc-product-film-info__section gdc-product-film-info__subtitle">
     {% for collection in collections %}
-    {{ collection }}
+    {{ collection.title }}
     {% endfor %}
-    
+
     {% for filmmaker in filmmakers_array %}
       <span>{{ filmmaker }}</span>
     {% endfor %}
