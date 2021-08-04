@@ -65,7 +65,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible tab",
-            "content": "<p>Some extra more info<\/p>",
+            "content": "<p>Some extra more info for flat rocks<\/p>",
             "page": "",
             "icon": "check_mark"
           }
