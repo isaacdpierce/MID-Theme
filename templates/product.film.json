@@ -120,7 +120,7 @@
         "title_size": 36,
         "subtitle": "Subtitle",
         "subtitle_size": 16,
-        "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore quidem a sit. Ipsum laborum sapiente illo unde nihil tempora earum nobis, eum itaque maxime, necessitatibus obcaecati molestias laudantium!<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore quidem a sit. Ipsum laborum sapiente illo unde nihil tempora earum nobis, eum itaque maxime, necessitatibus obcaecati molestias laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore quidem a sit. Ipsum laborum sapiente illo unde nihil tempora earum nobis, eum itaque maxime, necessitatibus obcaecati molestias laudantium!<\/p>",
         "text_size": 16
       }
     }
