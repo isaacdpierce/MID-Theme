@@ -96,7 +96,7 @@
               {%- endform -%}
             </div>
           {%- when 'description' -%}
-            {%- if product.description != blank -%}
+            {%- if product.description != blank and block.settings.show_description_below == false -%}
               <div class="product__description rte">
                 {{ product.description }}
               </div>

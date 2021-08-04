@@ -68,6 +68,7 @@
         "f5013a6c-4b1f-460d-95a4-f619bb6623d9": {
           "type": "description",
           "settings": {
+            "show_description_below": true
           }
         }
       },
