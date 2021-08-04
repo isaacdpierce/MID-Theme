@@ -123,11 +123,58 @@
         "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore quidem a sit. Ipsum laborum sapiente illo unde nihil tempora earum nobis, eum itaque maxime, necessitatibus obcaecati molestias laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae labore quidem a sit. Ipsum laborum sapiente illo unde nihil tempora earum nobis, eum itaque maxime, necessitatibus obcaecati molestias laudantium!<\/p>",
         "text_size": 16
       }
+    },
+    "1628099138a7fc5a43": {
+      "type": "gdc-logo-list-text",
+      "blocks": {
+        "1628099138a7fc5a43-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "1628099138a7fc5a43-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "1628099138a7fc5a43-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "1628099138a7fc5a43-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1628099138a7fc5a43-0",
+        "1628099138a7fc5a43-1",
+        "1628099138a7fc5a43-2",
+        "1628099138a7fc5a43-3"
+      ],
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ededed",
+        "title": "",
+        "text": "",
+        "btn_text": "",
+        "btn_url": ""
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "16280926128de97fe6"
+    "16280926128de97fe6",
+    "1628099138a7fc5a43"
   ]
 }
