@@ -1,7 +1,7 @@
 {%- liquid
   
   assign ss = section.settings
-  
+
   assign title = ss.title
   assign subtitle = ss.subtitle
   assign text = ss.text
@@ -14,6 +14,7 @@
     {% render 'gdc-image', image: image %}
   </div>
   {% render 'gdc-section-paragraph', title: title, subtitle: subtitle, text: text, section: section %}
+
 </section>
 
 <style>
@@ -218,16 +219,6 @@
       "max": 48,
       "step": 1,
       "unit": "px"
-    },
-    {
-      "type": "text",
-      "id": "btn_text",
-      "label": "Button Text"
-    },
-    {
-      "type": "url",
-      "id": "btn_url",
-      "label": "Button URL"
     }
   ],
   "presets": [
