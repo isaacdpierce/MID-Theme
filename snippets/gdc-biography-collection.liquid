@@ -1,10 +1,4 @@
-{%- liquid
-  
-  assign title = collection.title
-  assign text = collection.description
-  assign image = collection.image
-  
--%}
+
 
 
 {%- assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' -%}
@@ -12,6 +6,13 @@
 
 
 {% for collection in filmmaker_collection %}
+{%- liquid
+  
+  assign title = collection.title
+  assign text = collection.description
+  assign image = collection.image
+  
+-%}
   {% for filmmaker in filmmakers_array %}
     {% if filmmaker == collection.title %}
 <section class="gdc-biography-collection__wrapper section--{{ section.id }}">
