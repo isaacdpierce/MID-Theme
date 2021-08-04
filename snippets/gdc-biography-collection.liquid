@@ -8,13 +8,13 @@
 {% for collection in filmmaker_collection %}
   {%- liquid
           
-    assign title = collection.title | strip | downcase
+    assign title = collection.title 
     assign text = collection.description
     assign image = collection.image
     
   -%}
   {% for filmmaker in filmmakers_array %}
-    {% assign fm = filmmaker | strip | downcase %}
+    {% assign fm = filmmaker | strip %}
 
     {% if fm == collection.title %}
 
