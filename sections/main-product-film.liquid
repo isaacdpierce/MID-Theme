@@ -417,13 +417,14 @@
   {%- endfor -%}
 </section>
 
-{%- liquid 
-  assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' 
--%}
-
+{%- assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' -%}
 {% assign filmmaker_collection = collections | where: "template_suffix", "filmmakers" %}
 {% for collection in filmmaker_collection %}
-  {% render 'gdc-biography-collection', collection: collection %} 
+  {% for filmmaker in filmmakers_array %}
+    {% if filmmaker == collection.title %}
+      {% render 'gdc-biography-collection', collection: collection %} 
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 
