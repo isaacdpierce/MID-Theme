@@ -9,6 +9,7 @@
   
   {% for filmmaker in filmmakers_array %}
   {% if filmmaker == collection.title %}
+
   {{ filmmaker }} == {{ collection.title }}
   {% endif %}
   {% endfor %}
@@ -16,7 +17,8 @@
 
 {% for collection in filmmaker_collection %}
   {% for filmmaker in filmmakers_array %}
-    {% if filmmaker == collection.title %}
+    {% assign fm = filmmaker | strip %}
+    {% if fm == collection.title %}
       {%- liquid
         
         assign title = collection.title
