@@ -104,8 +104,8 @@
       "settings": {
         "t_margin": 0,
         "b_margin": 0,
-        "t_padding": 0,
-        "b_padding": 0,
+        "t_padding": 50,
+        "b_padding": 50,
         "bg_color": "#ededed",
         "image": "shopify:\/\/shop_images\/silhouette-of-a-person-with-a-baseball-cap-against-a-setting-sun.jpg",
         "image_width": 200,
