@@ -653,3 +653,9 @@
 .gdc-product__title {
   margin: 0 !important;
 }
+
+.gdc-text__full-width {
+  width: 900px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
