@@ -8,7 +8,7 @@
   
   
   {% for filmmaker in filmmakers_array %}
-  {% if filmmaker | strip == collection.title %}
+  {% if filmmaker == collection.title %}
   {{ filmmaker }} == {{ collection.title }}
   {% endif %}
   {% endfor %}
