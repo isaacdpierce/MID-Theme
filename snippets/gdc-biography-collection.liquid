@@ -14,8 +14,8 @@
     
   -%}
   {% for filmmaker in filmmakers_array %}
-    {% assign fm = filmmaker | strip %}
-    {% assign ct = collection.title | strip %}
+    {% assign fm = filmmaker | strip | downcase %}
+    {% assign ct = collection.title | strip | downcase %}
 
     {% if fm == ct %}
 
