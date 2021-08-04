@@ -1,5 +1,5 @@
-<div class="gdc-block__paragraph-section block--{{ block.id }} {{ hide_mobile }} {{ hide_tablets }}">
-  <div class="gdc-block__paragraph block--{{ block.id }}">
+<div class="gdc-section__paragraph-section section--{{ section.id }} {{ hide_mobile }} {{ hide_tablets }}">
+  <div class="gdc-section__paragraph section--{{ section.id }}">
     {% if title %}
       <h2>{{ title }}</h2>
     {% endif %}
@@ -10,21 +10,21 @@
 </div>
 
 <style>
-  .gdc-block__paragraph-section.block--{{ block.id }} {
-    margin-top: {{ block.settings.t_margin }}px;
-    margin-bottom: {{ block.settings.b_margin }}px;
-    padding-top: {{ block.settings.t_padding }}px;
-    padding-bottom: {{ block.settings.b_padding }}px;
-    background-color: {{ block.settings.bg_color }};
+  .gdc-section__paragraph-section.section--{{ section.id }} {
+    margin-top: {{ section.settings.t_margin }}px;
+    margin-bottom: {{ section.settings.b_margin }}px;
+    padding-top: {{ section.settings.t_padding }}px;
+    padding-bottom: {{ section.settings.b_padding }}px;
+    background-color: {{ section.settings.bg_color }};
   }
 
-  .gdc-block__paragraph.block--{{ block.id }} h2 {
-    color: {{ block.settings.font_color }};
-    text-align: {{ block.settings.title_align }};
+  .gdc-section__paragraph.section--{{ section.id }} h2 {
+    color: {{ section.settings.font_color }};
+    text-align: {{ section.settings.title_align }};
   }
 
-  .gdc-block__paragraph.block--{{ block.id }} p {
-    color: {{ block.settings.font_color }};
-    text-align: {{ block.settings.text_align }};
+  .gdc-section__paragraph.section--{{ section.id }} p {
+    color: {{ section.settings.font_color }};
+    text-align: {{ section.settings.text_align }};
   }
 </style>
