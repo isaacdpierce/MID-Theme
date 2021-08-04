@@ -8,6 +8,7 @@
 {% for collection in filmmaker_collection %}
   {% for filmmaker in filmmakers_array %}
     {% if filmmaker == collection.title %}
+    
     {%- liquid
     
       assign title = collection.title
@@ -15,7 +16,7 @@
       assign image = collection.image
       
     -%}
-    
+
       <section class="gdc-biography-collection__wrapper section--{{ section.id }}">
         <div class="gdc-biography-collection__content">
           {% if image %}
