@@ -420,7 +420,7 @@
 {% assign filmmaker_collection = collection | where: "template_suffix", "filmmakers" %}
 
 {% for collection in collections %}
-  {{ collection }}
+  {{ collection.title }}
 {% endfor %}
 
 {% render 'gdc-biography-collection' %} 
