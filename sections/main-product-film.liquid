@@ -94,7 +94,13 @@
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                 {{ form | payment_terms }}
               {%- endform -%}
-            </div>     
+            </div>
+          {%- when 'description' -%}
+            {%- if product.description != blank -%}
+              <div class="product__description rte">
+                {{ product.description }}
+              </div>
+            {%- endif -%}
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
               <details>
@@ -416,6 +422,7 @@
   {{ product.description }}
 </div>
 {%- endif -%}
+
 
 {% render 'gdc-biography-collection' %} 
 
