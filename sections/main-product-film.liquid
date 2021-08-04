@@ -418,6 +418,11 @@
 </section>
 
 {% assign filmmaker_collection = collection | where: "template_suffix", "filmmakers" %}
+
+{% for collection in collections %}
+  {{ collection.template_suffix }}
+{% endfor %}
+
 {% render 'gdc-biography-collection' %} 
 
 {% javascript %}
