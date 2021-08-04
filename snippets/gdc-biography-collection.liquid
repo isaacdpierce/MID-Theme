@@ -1,9 +1,6 @@
 {%- liquid
   
-  assign ss = section.settings
-
-  assign title = ss.title
-  assign subtitle = ss.subtitle
+  assign title = collection.title
   assign text = ss.text
   assign image = ss.image
   
@@ -20,7 +17,7 @@
       </div>
     {% endif %}
     <div>
-      {% render 'gdc-section-paragraph', title: title, subtitle: subtitle, text: text, section: section %}
+      {% render 'gdc-section-paragraph', title: title, text: text %}
     </div>
   </div>
 
