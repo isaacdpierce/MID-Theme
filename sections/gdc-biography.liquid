@@ -4,7 +4,11 @@
 
 <style>
   .gdc-biography__wrapper.section--{{ section.id }} {
-    marg
+    margin-top: {{ section.settings.t_margin }}px;
+    margin-bottom: {{ section.settings.b_margin }}px;
+    padding-top: {{ section.settings.t_padding }}px;
+    padding-bottom: {{ section.settings.b_padding }}px;
+    background-color: {{ section.settings.bg_color }};
   }
 </style>
 
