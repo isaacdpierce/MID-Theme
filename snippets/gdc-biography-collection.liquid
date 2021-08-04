@@ -1,37 +1,37 @@
-
-
-
-{%- assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ',' -%}
-{% assign filmmaker_collection = collections | where: "template_suffix", "filmmakers" %}
-
-
-{% for collection in filmmaker_collection %}
 {%- liquid
   
-  assign title = collection.title
-  assign text = collection.description
-  assign image = collection.image
+  assign filmmakers_array = product.metafields.film_info.film_maker.value | split: ','
+  assign filmmaker_collection = collections | where: "template_suffix", "filmmakers"
   
 -%}
+
+{% for collection in filmmaker_collection %}
+  {%- liquid
+    
+    assign title = collection.title
+    assign text = collection.description
+    assign image = collection.image
+    
+  -%}
+
   {% for filmmaker in filmmakers_array %}
     {% if filmmaker == collection.title %}
-<section class="gdc-biography-collection__wrapper section--{{ section.id }}">
-  <div class="gdc-biography-collection__content">
-    {% if image %}
-      <div>
-        <div class="gdc-biography-collection__image section--{{ section.id }}">
-          {% render 'gdc-image', image: image %}
+      <section class="gdc-biography-collection__wrapper section--{{ section.id }}">
+        <div class="gdc-biography-collection__content">
+          {% if image %}
+            <div>
+              <div class="gdc-biography-collection__image section--{{ section.id }}">
+                {% render 'gdc-image', image: image %}
+              </div>
+            </div>
+          {% endif %}
+          <div>
+            {% render 'gdc-section-paragraph', title: title, text: text, section: collection.id %}
+          </div>
         </div>
-      </div>
+      </section>
     {% endif %}
-    <div>
-      {% render 'gdc-section-paragraph', title: title, text: text, section: collection.id %}
-    </div>
-  </div>
-
-</section>
-{% endif %}
-{% endfor %}
+  {% endfor %}
 {% endfor %}
 
 <style>
