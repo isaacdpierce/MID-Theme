@@ -2080,7 +2080,7 @@ details-disclosure > details {
 /* ============= GDC Custom Base Styles ====================== */
 
 .button {
-  border-radius: var(--button-radius) !important;
+  border-radius: 50px !important;
   -ms-transform: var(--button-skew) !important;
   -webkit-transform: var(--button-skew) !important;
   transform: var(--button-skew) !important;
