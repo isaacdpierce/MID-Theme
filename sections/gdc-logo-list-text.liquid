@@ -6,10 +6,11 @@
 
 
 <section class="gdc-logo-list-text__wrapper section--{{ section.id }} ">
+  {% render 'gdc-image' image: ss.image %}
   <div class="gdc-logo-list-text">
       {% render 'gdc-section-paragraph', section: section %}
       <div class="gdc-centered-row">
-        <a class="button" href="{{ ss.btn_url }}" style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none; border-radius: 50px !important;">{{ ss.btn_text }}</a>
+        <a class="button" href="{{ ss.btn_url }}" style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">{{ ss.btn_text }}</a>
       </div>
   </div>
 </section>
