@@ -103,18 +103,21 @@
         "1628099138a7fc5a43-1": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
             "link": ""
           }
         },
         "1628099138a7fc5a43-2": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
             "link": ""
           }
         },
         "1628099138a7fc5a43-3": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
             "link": ""
           }
         }
