@@ -2020,7 +2020,6 @@ details[open] > .header__icon--menu .icon-hamburger {
   /* color: var(--color-foreground); */
   opacity: .7;
   text-decoration: underline;
-  font-weight: bold;
   text-underline-offset: 0.3rem;
 }
 
