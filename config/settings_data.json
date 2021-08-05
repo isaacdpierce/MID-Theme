@@ -3,9 +3,7 @@
     "colors_accent_1": "#748e8d",
     "colors_accent_2": "#8f705d",
     "colors_background_2": "#5b6969",
-    "accent_icons": "accent-2",
-    "social_facebook_link": "https:\/\/m.facebook.com\/MovingImagesDistribution\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/movingimagesds\/?hl=en",
+    "accent_icons": "accent-1",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
