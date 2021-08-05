@@ -66,6 +66,10 @@
         --color-base-accent-2: {{ settings.colors_accent_2 }};
         --color-base-accent-2-rgb: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
 
+      <!-- ================== GDC CUSTOM CSS VARIABLES ===============  -->
+        
+
+
       }
       
       *,
@@ -101,6 +105,33 @@
       }
     {% endstyle %}
 
+
+    <style>
+        {% if settings.button_style == 'round-slight' %}
+          --button-radius: 3px;
+        {% elsif settings.button_style == 'round' %}
+          --button-radius: 50px;
+        {% else %}
+          --button-radius: 0px;
+        {% endif %}
+
+        {% if settings.button_style == 'angled' %}
+          --button-skew: skewX(-20deg);
+        {% endif %}
+
+        {% if settings.input_style == 'round-slight' %}
+          --input-radius: 3px;
+        {% elsif settings.input_style == 'round' %}
+          --input-radius: 50px;
+        {% else %}
+          --input-radius: 0px;
+        {% endif %}
+
+        {% if settings.input_style == 'angled' %}
+          --input-skew: skewX(-20deg);
+        {% endif %}
+    </style>
+    
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'gdc-custom.css' | asset_url | stylesheet_tag }}
 
