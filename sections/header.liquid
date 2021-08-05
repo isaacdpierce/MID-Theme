@@ -285,8 +285,8 @@
               src="{{ section.settings.logo | img_url: image_size }}"
               loading="lazy"
               class="header__heading-logo"
-              width="450"
-              height="450"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
@@ -556,7 +556,7 @@
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 450,
+      "max": 250,
       "step": 10,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
