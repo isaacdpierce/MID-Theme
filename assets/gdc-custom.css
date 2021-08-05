@@ -670,3 +670,7 @@
 .gdc-header__inline-menu {
   margin-top: 0 !important;
 }
+
+.gdc-page-width {
+  max-width: 90vw;
+}
