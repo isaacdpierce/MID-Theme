@@ -33,7 +33,7 @@
   font-weight: bold;
 }
 
-.gdc-logo-list-text__image {
+.gdc-logo-list__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 
 }
 
-.gdc-logo-list-text__image img {
+.gdc-logo-list__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -726,20 +726,20 @@
   margin: 0 auto;
 }
 
-/* ============= GDC LOGO LIST TEXT ================= */
+/* ============= GLOBAL SETTINGS ================= */
 
-.gdc-logo-list-text__image {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-}
+  .gdc-logo-list-text__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+  }
 
-.gdc-logo-list-text__image img {
-  object-fit: cover;
-}
+  .gdc-logo-list-text__image img {
+    object-fit: cover;
+  }
 
 /* ============= GLOBAL SETTINGS ================= */
 
