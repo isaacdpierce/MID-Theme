@@ -673,9 +673,10 @@
 
 .gdc-header__inline-menu::before {
   content: '';
-  position: absolute;
+  position: relative;
   top: 0; 
   left: 0;
+  z-index: 3;
   background: linear-gradient(to right, red, orange);
 }
 
