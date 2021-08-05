@@ -668,5 +668,5 @@
 /* ================= GDC CUSTOM OVERRIDES =============== */
 
 .gdc-header__inline-menu {
-  margin: 0;
+  margin-top: 0;
 }
