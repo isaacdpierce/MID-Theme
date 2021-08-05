@@ -4,9 +4,6 @@
     "colors_accent_2": "#8f705d",
     "colors_background_2": "#5b6969",
     "accent_icons": "accent-1",
-    "social_facebook_link": "https:\/\/m.facebook.com\/MovingImagesDistribution\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/movingimagesds\/?hl=en",
-    "social_vimeo_link": "https:\/\/vimeo.com\/movingimagesdistribution",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

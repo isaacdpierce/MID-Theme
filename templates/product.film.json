@@ -133,7 +133,7 @@
         "title": "Title",
         "subtitle": "Subtitle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt adipisci expedita odio earum beatae veritatis reiciendis commodi accusantium. Recusandae consequatur asperiores error, iusto sed iste temporibus impedit exercitationem distinctio.<\/p>",
-        "text_align": "left",
+        "text_align": "center",
         "btn_text": "",
         "btn_url": ""
       }
