@@ -33,7 +33,7 @@
   font-weight: bold;
 }
 
-.gdc-logo-list__image {
+.gdc-logo-list-text__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 
 }
 
-.gdc-logo-list__image img {
+.gdc-logo-list-text__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
