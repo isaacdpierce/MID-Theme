@@ -743,3 +743,8 @@
   max-width: 90vw;
   margin: 0 auto;
 }
+
+.gdc-centered-row {
+  display: flex;
+  justify-content: center; 
+}
