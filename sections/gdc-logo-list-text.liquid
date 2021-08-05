@@ -12,7 +12,11 @@
   <div class="gdc-logo-list-text">
       {% render 'gdc-section-paragraph', section: section %}
       <div class="gdc-centered-row">
-        <a class="button gdc-logo-list__btn" href="{{ ss.btn_url }}" style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">{{ ss.btn_text }}</a>
+        <a class="button gdc-logo-list__btn" 
+           href="{{ ss.btn_url }}"
+           style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">
+         {{ ss.btn_text }}
+        </a>
       </div>
   </div>
 </section>
@@ -24,6 +28,10 @@
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
+  }
+
+  .gdc-logo-list__btn {
+
   }
 
   .gdc-logo-list__image {
