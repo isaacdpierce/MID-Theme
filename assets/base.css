@@ -1,29 +1,4 @@
 /* Derived from base colors (theme settings) */
-<!-- ================== GDC CUSTOM CSS VARIABLES ===============  -->
-        
-{% if settings.button_style == 'round-slight' %}
-  --button-radius: 3px;
-{% elsif settings.button_style == 'round' %}
-  --button-radius: 50px;
-{% else %}
-  --button-radius: 0px;
-{% endif %}
-
-{% if settings.button_style == 'angled' %}
-  --button-skew: skewX(-20deg);
-{% endif %}
-
-{% if settings.input_style == 'round-slight' %}
-  --input-radius: 3px;
-{% elsif settings.input_style == 'round' %}
-  --input-radius: 50px;
-{% else %}
-  --input-radius: 0px;
-{% endif %}
-
-{% if settings.input_style == 'angled' %}
-  --input-skew: skewX(-20deg);
-{% endif %}
 
 :root,
 .color-background-1 {
@@ -2109,7 +2084,6 @@ details-disclosure > details {
   -ms-transform: var(--button-skew) !important;
   -webkit-transform: var(--button-skew) !important;
   transform: var(--button-skew) !important;
-  border-collapse: separate;
 }
 
 .field__input {
@@ -2117,5 +2091,4 @@ details-disclosure > details {
   -ms-transform: var(--input-skew) !important;
   -webkit-transform: var(--input-skew) !important;
   transform: var(--input-skew) !important;
-  border-collapse: separate;
 }
