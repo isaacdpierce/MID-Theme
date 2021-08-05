@@ -671,9 +671,13 @@
   margin-top: 0 !important;
 }
 
-/* .gdc-header-wrapper {
+.gdc-header-wrapper {
   background: linear-gradient(red, blue);
-} */
+}
+
+.gdc-header {
+  background-color: transparent !important;
+}
 
 .gdc-page-width {
   max-width: 90vw;
