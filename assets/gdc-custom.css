@@ -664,3 +664,9 @@
   margin: 0 auto;
   padding: 40px 0;
 }
+
+/* ================= GDC CUSTOM OVERRIDES =============== */
+
+.gdc-header__inline-menu {
+  margin: 0;
+}
