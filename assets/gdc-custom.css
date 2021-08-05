@@ -681,8 +681,10 @@
   box-shadow: none !important;
 }
 
+.gdc-search-input:focus,
 .gdc-search-input:focus-visible {
   box-shadow: none !important;
+  outline: none !important;
 
 }
 
