@@ -726,20 +726,6 @@
   margin: 0 auto;
 }
 
-/* ============= GLOBAL SETTINGS ================= */
-
-  .gdc-logo-list-text__image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-  }
-
-  .gdc-logo-list-text__image img {
-    object-fit: cover;
-  }
 
 /* ============= GLOBAL SETTINGS ================= */
 
