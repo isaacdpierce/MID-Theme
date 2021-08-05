@@ -2002,7 +2002,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__menu-item:hover {
-  opacity: 90%;
+  opacity: .9;
 }
 
 .header__menu-item span {
