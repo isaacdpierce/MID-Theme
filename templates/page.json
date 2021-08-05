@@ -49,7 +49,7 @@
             "img_h_position": 50,
             "img_v_position": 50,
             "background_color": "#ffffff",
-            "font_color": "#000",
+            "font_color": "#000000",
             "title": "",
             "title_font_size": 18,
             "mobile_title_font_size": 18,
@@ -86,7 +86,7 @@
             "img_h_position": 50,
             "img_v_position": 50,
             "background_color": "#ffffff",
-            "font_color": "#000",
+            "font_color": "#000000",
             "title": "Karen Wong",
             "title_font_size": 24,
             "mobile_title_font_size": 18,
@@ -124,7 +124,7 @@
             "img_h_position": 50,
             "img_v_position": 50,
             "background_color": "#ffffff",
-            "font_color": "#000",
+            "font_color": "#000000",
             "title": "",
             "title_font_size": 18,
             "mobile_title_font_size": 18,
@@ -161,7 +161,7 @@
             "img_h_position": 50,
             "img_v_position": 50,
             "background_color": "#ffffff",
-            "font_color": "#000",
+            "font_color": "#000000",
             "title": "Sylvia Jonescu Lisitza",
             "title_font_size": 24,
             "mobile_title_font_size": 18,
@@ -206,13 +206,71 @@
         "text": "",
         "text_align": "left",
         "background_color": "#ffffff",
-        "font_color": "#000"
+        "font_color": "#000000"
+      }
+    },
+    "1628204529411be377": {
+      "type": "collection-list",
+      "blocks": {
+        "1628204529411be377-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "animation"
+          }
+        },
+        "1628204529411be377-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "indigenous"
+          }
+        },
+        "1628204529411be377-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "french"
+          }
+        },
+        "9fe33f65-0c3a-47f1-b1e5-62df9a5bda47": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "politics"
+          }
+        },
+        "7c225845-36b5-4b48-a14a-51887c6c1502": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "roxann-whitebean"
+          }
+        },
+        "bb5ebf98-44eb-43b3-8907-b56468dae1df": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "courtney-montour"
+          }
+        }
+      },
+      "block_order": [
+        "1628204529411be377-0",
+        "1628204529411be377-1",
+        "1628204529411be377-2",
+        "9fe33f65-0c3a-47f1-b1e5-62df9a5bda47",
+        "7c225845-36b5-4b48-a14a-51887c6c1502",
+        "bb5ebf98-44eb-43b3-8907-b56468dae1df"
+      ],
+      "settings": {
+        "title": "Subjects",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
       }
     }
   },
   "order": [
     "main",
     "16282030243517f36f",
-    "162820302872488d71"
+    "162820302872488d71",
+    "1628204529411be377"
   ]
 }
