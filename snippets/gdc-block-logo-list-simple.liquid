@@ -1,10 +1,10 @@
 <div class="gdc-logo-list-simple">
   {% for block in section.blocks %}
       {%  if block.type == 'logo_image' %}
-        <a href="{{ block.url }}">
-          <div class="gdc-logo-list-simple__image-wrapper">
+        <a class="gdc-logo-list-simple__image-wrapper" href="{{ block.url }}">
+
             {% render 'gdc-image' image: block.image %}
-          </div>
+
         </a>
       {% endif %}
   {% endfor %}
@@ -16,11 +16,8 @@
     max-width: 100%;
   }
 
-  .gdc-logo-list-simple a {
+  .gdc-logo-list-simple__image-wrapper a {
     width: calc(100% / 4);
   }
 
-  /* .gdc-logo-list-simple__image-wrapper {
-    width: calc(100% / 4);
-  } */
 </style>
