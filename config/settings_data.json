@@ -60,7 +60,8 @@
       "header-custom": {
         "type": "header-custom",
         "settings": {
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/MID-logo-blue.png",
+          "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
