@@ -2084,6 +2084,7 @@ details-disclosure > details {
   -ms-transform: var(--button-skew) !important;
   -webkit-transform: var(--button-skew) !important;
   transform: var(--button-skew) !important;
+  border-collapse: separate;
 }
 
 .field__input {
@@ -2091,4 +2092,5 @@ details-disclosure > details {
   -ms-transform: var(--input-skew) !important;
   -webkit-transform: var(--input-skew) !important;
   transform: var(--input-skew) !important;
+  border-collapse: separate;
 }
