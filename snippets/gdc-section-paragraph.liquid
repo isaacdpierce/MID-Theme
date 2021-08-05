@@ -27,27 +27,27 @@
 <style>
   .gdc-section__paragraph.section--{{ section.id }} h5,
   .gdc-section__paragraph.section--{{ section.id }} h2 {
-    color: {{ ss.settings.font_color }};
-    text-align: {{ ss.settings.text_align }};
+    color: {{ section.settings.font_color }};
+    text-align: {{ section.settings.text_align }};
     margin: 0;
     margin-bottom: 5px;
   }
   
   .gdc-section__paragraph.section--{{ section.id }} h2 {
     position: relative;
-    font-size: {{ ss.settings.title_size }}px;
+    font-size: {{ section.settings.title_size }}px;
   }
 
   .gdc-section__paragraph.section--{{ section.id }} h5 {
-    font-size: {{ ss.settings.subtitle_size }}px;
+    font-size: {{ section.settings.subtitle_size }}px;
   }
 
   .gdc-section__paragraph.section--{{ section.id }} p {
-    color: {{ ss.settings.font_color }};
-    text-align: {{ ss.settings.text_align }};
+    color: {{ section.settings.font_color }};
+    text-align: {{ section.settings.text_align }};
   }
 
   .gdc-section__paragraph.section--{{ section.id }} p {
-    font-size: {{ ss.settings.text_size }}px;
+    font-size: {{ section.settings.text_size }}px;
   }
 </style>
