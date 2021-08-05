@@ -427,8 +427,9 @@
 {%- endif -%}
 {% endfor %}
 
-
-{% render 'gdc-biography-html' %} 
+{% if product.metafields.film_info.filmmaker.value != blank %}
+  {% render 'gdc-biography-html' %} 
+{% endif %}
 
 
 {% javascript %}
