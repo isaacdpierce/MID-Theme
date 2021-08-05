@@ -558,7 +558,7 @@
 /* ============= PRODUCT FILM INFO ================= */
 
 .gdc-product-film-info {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .gdc-product-film-info h2 {
