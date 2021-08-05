@@ -672,7 +672,7 @@
 }
 
 .gdc-header-wrapper {
-  background: linear-gradient(to right, #1d5c6d 60%, #87e2fc);
+  background: linear-gradient(45deg, #1d5c6d 60%, #87e2fc);
 }
 
 .gdc-header {
