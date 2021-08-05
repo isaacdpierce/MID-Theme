@@ -128,11 +128,12 @@
         "t_margin": 0,
         "b_margin": 0,
         "t_padding": 40,
-        "b_padding": 130,
+        "b_padding": 40,
         "bg_color": "#75ccdd",
         "title": "Title",
         "subtitle": "Subtitle",
         "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt adipisci expedita odio earum beatae veritatis reiciendis commodi accusantium. Recusandae consequatur asperiores error, iusto sed iste temporibus impedit exercitationem distinctio.<\/p>",
+        "text_align": "left",
         "btn_text": "",
         "btn_url": ""
       }
