@@ -1,13 +1,21 @@
-<div class="gdc-logo-list--simple">
+<div class="gdc-logo-list-simple">
   {% for block in section.blocks %}
       {%  if block.type == 'logo_image' %}
-        <a href="{{ block.url }}">{% render 'gdc-image' image: block.image %}</a>
+        <a href="{{ block.url }}">
+          <div class="gdc-logo-list__image-wrapper">
+            {% render 'gdc-image' image: block.image %}
+          </div>
+        </a>
       {% endif %}
   {% endfor %}
 </div>
 
 <style>
-  .gdc-logo-list--simple {
+  .gdc-logo-list-simple {
     display: flex;
+  }
+
+  .gdc-logo-list-simple__image-wrapper {
+
   }
 </style>
