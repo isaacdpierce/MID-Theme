@@ -681,6 +681,11 @@
   box-shadow: none !important;
 }
 
+.gdc-search-input:focus {
+  box-shadow: none !important;
+
+}
+
 /* ================= GDC CUSTOM OVERRIDES =============== */
 
 .gdc-header__inline-menu {
