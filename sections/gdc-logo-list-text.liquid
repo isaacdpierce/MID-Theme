@@ -24,7 +24,9 @@
       </div>
   </div>
 
-  {% render 'gdc-block-logo-list' section: section %}
+  <div class="gdc-logo-list__wrapper">
+    {% render 'gdc-block-logo-list' section: section %}
+  </div>
 
 </section>
 
@@ -51,6 +53,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .gdc-logo-list__wrapper {
+    width: 90vw;
+    justify-content: center;
   }
 
 </style>
