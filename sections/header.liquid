@@ -79,7 +79,7 @@
     <div class="gdc-search-form__wrapper">
       <form action="{{ routes.search_url }}" method="get" role="search" class="search gdc-search-form">
         <div class="field">
-          <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+          <input class="search__input field__input" id="Search-Bar" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
           <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
           <input type="hidden" name="options[prefix]" value="last">
           <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
