@@ -74,7 +74,7 @@
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %} gdc-header-wrapper">
   <header class="header header--{{ section.settings.logo_position }} gdc-page-width gdc-header{% if section.settings.menu != blank %} header--has-menu{% endif %}">
-    
+
     {% if section.settings.show_search_bar %}
     <div class="gdc-search-form__wrapper">SEARCH FORM</div>
     {% endif %}
@@ -241,6 +241,7 @@
       </header-drawer>
     {%- endif -%}
 
+    {% unless section.settings.show_search_bar %}
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
@@ -278,6 +279,7 @@
         </details>
       </details-modal>
     {%- endif -%}
+    {% endunless %}
 
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
