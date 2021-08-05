@@ -2079,7 +2079,8 @@ details-disclosure > details {
 
 /* ============= GDC Custom Base Styles ====================== */
 
-.button {
+.button,
+.shopify-payment-button__button {
   border-radius: var(--button-radius) !important;
   -ms-transform: var(--button-skew) !important;
   -webkit-transform: var(--button-skew) !important;
