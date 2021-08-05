@@ -4,7 +4,7 @@
     "colors_accent_2": "#8f705d",
     "colors_background_2": "#5b6969",
     "button_style": "round-slight",
-    "input_style": "round",
+    "input_style": "round-slight",
     "accent_icons": "accent-1",
     "sections": {
       "announcement-bar": {
