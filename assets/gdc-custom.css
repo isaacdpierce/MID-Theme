@@ -671,7 +671,7 @@
   margin-top: 0 !important;
 }
 
-.gdc-header {
+.gdc-header-wrapper {
   background: linear-gradient(red, blue);
 }
 
