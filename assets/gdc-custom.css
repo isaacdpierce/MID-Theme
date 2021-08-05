@@ -665,6 +665,14 @@
   padding: 40px 0;
 }
 
+/* ============== GDC HEADER ===================== */
+
+.gdc-search-form__wrapper {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+
 /* ================= GDC CUSTOM OVERRIDES =============== */
 
 .gdc-header__inline-menu {
