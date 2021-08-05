@@ -130,7 +130,7 @@
         "t_padding": 40,
         "b_padding": 40,
         "bg_color": "#75ccdd",
-        "image": "shopify:\/\/shop_images\/mid-donate.jpg",
+        "image": "shopify:\/\/shop_images\/mid-donate_4c06acc5-7a22-467a-abd3-473eb38c750b.jpg",
         "title": "Brought to you by",
         "subtitle": "",
         "text": "<p>We are a non-profit organization dedicated to promoting and advocating for Filmmakers.<br\/>We rely on the generous support of these organizations, compnies, and individuals like you.<\/p>",
@@ -138,7 +138,7 @@
         "btn_text": "DONATE",
         "btn_url": "",
         "btn_color": "#41697a",
-        "btn_text_color": "#FFFFFF"
+        "btn_text_color": "#ffffff"
       }
     },
     "product-recommendations": {
