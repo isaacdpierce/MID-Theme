@@ -674,6 +674,10 @@
   transform: translateX(-50%);
 }
 
+.gdc-search-input {
+  background-color: white;
+}
+
 /* ================= GDC CUSTOM OVERRIDES =============== */
 
 .gdc-header__inline-menu {
