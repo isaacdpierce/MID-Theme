@@ -671,6 +671,14 @@
   margin-top: 0 !important;
 }
 
+.gdc-header__inline-menu::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background: linear-gradient(to right, red, orange);
+}
+
 .gdc-header-wrapper {
   background: linear-gradient(45deg, #297F96 60%, #87e2fc);
 }
