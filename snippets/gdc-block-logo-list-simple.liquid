@@ -3,7 +3,7 @@
       {%  if block.type == 'logo_image' %}
         <a class="gdc-logo-list-simple__image-wrapper" href="{{ block.url }}">
 
-            {% render 'gdc-image' image: block.image %}
+            {% render 'gdc-image' image: block.settings.image %}
 
         </a>
       {% endif %}
