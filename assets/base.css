@@ -2087,7 +2087,6 @@ details-disclosure > details {
   transform: var(--button-skew) !important;
 }
 
-input,
 select,
 .field__input {
   border-radius: var(--input-radius) !important;
