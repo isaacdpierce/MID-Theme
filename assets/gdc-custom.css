@@ -678,7 +678,7 @@
 .gdc-search-input {
   background-color: white;
   border-radius: 50px !important;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 /* ================= GDC CUSTOM OVERRIDES =============== */
