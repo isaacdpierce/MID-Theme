@@ -673,9 +673,9 @@
 
 .gdc-header__inline-menu::before {
   content: '';
-  position: relative;
-  width: 100vw;
-  height: 1px;
+  position: absolute;
+  width: 100px;
+  height: 10px;
   top: 0; 
   left: 0;
   z-index: 3;
