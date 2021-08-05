@@ -680,11 +680,11 @@
   top: 0; 
   left: -10px;
   z-index: 3;
-  background: linear-gradient(to right, #87e2fc 60%, #297F96);
+  background: linear-gradient(to right, #75CCDD 60%, #297F96);
 }
 
 .gdc-header-wrapper {
-  background: linear-gradient(45deg, #297F96 60%, #87e2fc);
+  background: linear-gradient(45deg, #297F96 60%, #75CCDD);
 }
 
 .gdc-header {
