@@ -688,6 +688,29 @@
 
 }
 
+/* ================= BIOGRAPHY =============== */
+
+.gdc-biography {
+  background-color: #F2F2F2;
+  padding: 30px 0;
+}
+
+.gdc-biography__content h2 {
+  position: relative;
+  margin-top: 0;
+}
+
+.gdc-biography__content h2::before {
+  content: '';
+  background-color: #62CBDF;
+  display: inline-block;
+  height: 35px;
+  width: 5px;
+  position: absolute;
+  top: 0px;
+  left: -20px; 
+}
+
 /* ================= GDC CUSTOM OVERRIDES =============== */
 
 .gdc-header__inline-menu {
