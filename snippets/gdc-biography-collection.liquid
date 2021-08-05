@@ -13,6 +13,7 @@
     assign image = collection.image
     
   -%}
+  
   {% for filmmaker in filmmakers_array %}
     {% assign fm = filmmaker | strip | downcase %}
     {% assign ct = collection.title | strip | downcase %}
