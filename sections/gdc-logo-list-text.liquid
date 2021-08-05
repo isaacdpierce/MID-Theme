@@ -9,7 +9,7 @@
   <div class="gdc-logo-list-text">
       {% render 'gdc-section-paragraph', section: section %}
       <div class="gdc-centered-row">
-        <a class="button" href={{ ss.btn_url }}>{{ ss.btn_text }} style="{{ ss.btn_color }}"</a>
+        <a class="button" href="{{ ss.btn_url }}" style="background: {{ ss.btn_color }};">{{ ss.btn_text }}</a>
       </div>
   </div>
 </section>
@@ -25,7 +25,7 @@
 
   .gdc-centered-row {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
   }
 </style>
 
@@ -122,6 +122,12 @@
         "type": "url",
         "id": "btn_url",
         "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "btn_color",
+        "label": "Button Color",
+        "default": "#ededed"
       }
     ],
     "blocks": [
