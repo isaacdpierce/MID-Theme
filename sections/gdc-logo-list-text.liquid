@@ -6,7 +6,9 @@
 
 
 <section class="gdc-logo-list-text__wrapper section--{{ section.id }} ">
-  {% render 'gdc-image' image: ss.image %}
+  <div class="gdc-logo-list__image">
+    {% render 'gdc-image' image: ss.image %}
+  </div>
   <div class="gdc-logo-list-text">
       {% render 'gdc-section-paragraph', section: section %}
       <div class="gdc-centered-row">
@@ -17,6 +19,7 @@
 
 <style>
   .gdc-logo-list-text__wrapper.section--{{ section.id }} {
+    position: relative;
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
@@ -24,10 +27,17 @@
     background-color: {{ ss.bg_color }};
   }
 
-  .gdc-centered-row {
-    display: flex;
-    justify-content: center; 
+  .gdc-logo-list__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
   }
+
+  .gdc-logo-list__image img {
+    object-fit: cover;
+  }
+
 </style>
 
 {% schema %}
