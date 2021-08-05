@@ -77,7 +77,7 @@
 
     {% if section.settings.show_search_bar %}
     <div class="gdc-search-form__wrapper">
-      <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+      <form action="{{ routes.search_url }}" method="get" role="search" class="search gdc-search-form">
         <div class="field">
           <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
           <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
