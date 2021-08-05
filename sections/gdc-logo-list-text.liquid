@@ -6,7 +6,7 @@
 
 
 <section class="gdc-logo-list-text__wrapper section--{{ section.id }} ">
-  <div class="gdc-logo-list-text__image">
+  <div class="gdc-logo-list__image">
     {% render 'gdc-image' image: ss.image %}
   </div>
   <div class="gdc-logo-list-text">
@@ -30,7 +30,8 @@
     padding-bottom: {{ ss.b_padding }}px;
   }
 
-  .gdc-logo-list-text__image {
+
+  .gdc-logo-list__image {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -39,7 +40,7 @@
     height: 100%;
   }
 
-  .gdc-logo-list-text__image img {
+  .gdc-logo-list__image img {
     object-fit: cover;
   }
 
