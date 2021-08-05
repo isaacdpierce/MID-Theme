@@ -127,8 +127,8 @@
       "settings": {
         "t_margin": 0,
         "b_margin": 0,
-        "t_padding": 0,
-        "b_padding": 0,
+        "t_padding": 40,
+        "b_padding": 40,
         "bg_color": "#ededed",
         "title": "Title",
         "subtitle": "Subtitle",
