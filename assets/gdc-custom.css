@@ -627,16 +627,6 @@
   object-fit: cover;
 }
 
-/* ============= GLOBAL SETTINGS ================= */
-.gdc-section-header,
-.gdc-section-header--center {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.gdc-section-header--center {
-  text-align: center;
-}
 
 /* ============= Hide for phones ================= */
 @media only screen and (max-width: 600px){
@@ -658,12 +648,6 @@
   margin: 0 !important;
 }
 
-.gdc-text__full-width {
-  width: 900px;
-  max-width: 90vw;
-  margin: 0 auto;
-  padding: 40px 0;
-}
 
 /* ============== GDC HEADER ===================== */
 
@@ -740,4 +724,23 @@
 .gdc-page-width {
   max-width: 90vw;
   margin: 0 auto;
+}
+
+/* ============= GLOBAL SETTINGS ================= */
+
+.gdc-section-header,
+.gdc-section-header--center {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gdc-section-header--center {
+  text-align: center;
+}
+
+.gdc-text__full-width {
+  width: 900px;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 40px 0;
 }
