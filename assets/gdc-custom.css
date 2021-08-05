@@ -671,6 +671,10 @@
   margin-top: 0 !important;
 }
 
+.gdc-header {
+  background: linear-gradient(red, blue);
+}
+
 .gdc-page-width {
   max-width: 90vw;
   margin: 0 auto;
