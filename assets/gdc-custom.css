@@ -691,11 +691,11 @@
 }
 
 .gdc-header-wrapper {
-  position: relative;
   background: linear-gradient(45deg, #297F96 60%, #75CCDD);
 }
 
 .gdc-header {
+  position: relative;
   background-color: transparent !important;
 }
 
