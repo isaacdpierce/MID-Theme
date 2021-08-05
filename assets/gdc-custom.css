@@ -571,6 +571,7 @@
 
 .gdc-product-film-info__section a {
   text-decoration: none;
+  color: currentColor;
 }
 
 .gdc-product-film-info__subtitle {
