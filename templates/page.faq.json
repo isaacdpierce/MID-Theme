@@ -9,10 +9,36 @@
       "type": "contact-form",
       "settings": {
       }
+    },
+    "1628286473b27c97de": {
+      "type": "gdc-accordion",
+      "blocks": {
+        "56bef71e-e994-4aad-bd91-b5eda8fad684": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "What a good question",
+            "content": "<p>Thanks for the response<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "56bef71e-e994-4aad-bd91-b5eda8fad684"
+      ],
+      "settings": {
+        "bg_color": "#fefefe",
+        "t_margin": 0,
+        "b_margin": 0,
+        "v_padding": 0,
+        "ind_color": "",
+        "tab_color": "",
+        "tab_text_color": "",
+        "content_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "1628286473b27c97de"
   ]
 }
