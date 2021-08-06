@@ -781,7 +781,7 @@
 
 .gdc-header__menu-item, 
 .gdc-header__menu-item a {
-  color: white !important;
+  color: black !important;
   text-decoration: none;
 }
 
