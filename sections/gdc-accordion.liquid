@@ -15,3 +15,55 @@
   {% endfor %}
 
 </div>
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 12,
+  "blocks": [
+  {
+    "type": "accordion",
+    "name": "Full Width Accordion",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Title", 
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "color",
+        "id": "ind_color",
+        "label": "Indicator Color"
+      },
+      {
+        "type": "color",
+        "id": "tab_color",
+        "label": "Tab Color"
+      },
+      {
+        "type": "color",
+        "id": "tab_font_color",
+        "label": "Tab Font Color"
+      },
+      {
+        "type": "color",
+        "id": "content_color",
+        "label": "Content Color"
+      }
+    ]
+  }
+  ]
+}
+   
+
+
+
+
+
+{% endschema %}
