@@ -1,7 +1,7 @@
 <div class="gdc-text__full-width">
 
   {%- for block in section.blocks -%}
-    {% if block.type == 'accordion' %}
+    {% if block.type == 'accordion_section' %}
       <div x-data="{ open: false }">
         <div @click="open = ! open" class="gdc-accordion__button">
           <span  class="gdc-accordion__indicator" x-show="open">-</span>
