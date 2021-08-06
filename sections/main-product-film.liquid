@@ -428,33 +428,6 @@
   {% render 'gdc-metafields-biography' %} 
 {% endif %}
 
-
-<style>
-  .gdc-accordion__button {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0 0 0;
-  }
-
-  .gdc-accordion__indicator {
-    font-size: 45px;
-    width: 40px;
-    color: rgb(55, 86, 177);
-    transform: translateY(-5px);
-  }
-
-  .gdc-accordion__title {
-    flex-grow: 1;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #999;
-  }
-
-  .gdc-accordion__contents {
-    padding-left: 40px;
-  }
-</style>
-
 {% javascript %}
   class ProductModal extends ModalDialog {
     constructor() {

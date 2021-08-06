@@ -1,4 +1,4 @@
-<div class="gdc-text__full-width">
+<div class="gdc-accordion__wrapper">
 
   {%- for block in section.blocks -%}
     {% if block.type == 'accordion_section' %}
@@ -15,6 +15,37 @@
   {% endfor %}
 
 </div>
+
+<style>
+  .gdc-accordion__wrapper {
+    width: 900px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .gdc-accordion__button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .gdc-accordion__indicator {
+    font-size: 45px;
+    width: 40px;
+    color: rgb(55, 86, 177);
+    transform: translateY(-5px);
+  }
+
+  .gdc-accordion__title {
+    flex-grow: 1;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+  }
+
+  .gdc-accordion__contents {
+    padding-left: 40px;
+  }
+</style>
 
 {% schema %}
 {
