@@ -163,7 +163,7 @@
           "type": "accordion_section",
           "settings": {
             "title": "Title",
-            "content": "<p>Test<\/p>"
+            "content": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptate placeat illo numquam dolorem, ipsam deserunt laudantium doloremque molestiae vitae excepturi alias sint eaque ut ipsa minima omnis. Necessitatibus, a.<\/p>"
           }
         }
       },
