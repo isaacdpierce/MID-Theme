@@ -162,7 +162,7 @@
       ],
       "settings": {
         "ind_color": "#62cbdf",
-        "tab_color": "",
+        "tab_color": "#62cbdf",
         "tab_text_color": "",
         "content_text_color": ""
       }
