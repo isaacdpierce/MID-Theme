@@ -277,7 +277,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 3;
 }
 
 .gdc-image-text-grid__text p {
