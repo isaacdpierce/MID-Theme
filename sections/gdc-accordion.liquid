@@ -8,13 +8,13 @@
     {% if block.type == 'accordion_section' %}
     
     <div x-data="{ open: false }">
-      <div class="gdc-accordion__button section--{{ section.id }}" @click="open = ! open">
-        <span  class="gdc-accordion__indicator section--{{ section.id }}" x-show="open">-</span>
-        <span  class="gdc-accordion__indicator section--{{ section.id }}" x-show="!open">+</span>
-        <h2 class="gdc-accordion__title section--{{ section.id }}">{{ block.settings.title }}</h2>
+      <div class="gdc-accordion__button section--{{ block.id }}" @click="open = ! open">
+        <span  class="gdc-accordion__indicator section--{{ block.id }}" x-show="open">-</span>
+        <span  class="gdc-accordion__indicator section--{{ block.id }}" x-show="!open">+</span>
+        <h2 class="gdc-accordion__title section--{{ block.id }}">{{ block.settings.title }}</h2>
       </div>
       
-      <div class="gdc-accordion__contents section--{{ section.id }}" x-show="open">
+      <div class="gdc-accordion__contents section--{{ block.id }}" x-show="open">
         {{ block.settings.content }}
       </div>
     </div>
