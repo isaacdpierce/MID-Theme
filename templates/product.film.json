@@ -146,16 +146,6 @@
         "btn_text_color": "#ffffff"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "1628269346e4dd2cf4": {
       "type": "gdc-accordion",
       "blocks": {
@@ -176,12 +166,22 @@
         "tab_font_color": "",
         "content_color": ""
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "main",
     "1628099138a7fc5a43",
-    "product-recommendations",
-    "1628269346e4dd2cf4"
+    "1628269346e4dd2cf4",
+    "product-recommendations"
   ]
 }
