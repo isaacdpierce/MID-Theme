@@ -65,6 +65,7 @@
 .gdc-logo-list-simple__image-wrapper {
   width: calc(100% / 4);
   max-width: 250px;
+  min-width: 150px;
 }
 
 .gdc-logo-list-simple__image-wrapper img {
