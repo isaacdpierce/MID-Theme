@@ -44,7 +44,7 @@
     flex-grow: 1;
     padding-bottom: 5px;
     border-bottom: 1px solid #999;
-    color: {{ block.settings.tab_font_color }};
+    color: {{ block.settings.tab_text_color }};
   }
 
   .gdc-accordion__contents {
@@ -54,7 +54,7 @@
   .gdc-accordion__contents p {
     margin: 0 !important;
     padding-bottom: 40px;
-    color: {{ block.settings.content_color }};
+    color: {{ block.settings.content_text_color }};
   }
 </style>
 
@@ -78,12 +78,12 @@
     },
     {
       "type": "color",
-      "id": "tab_font_color",
+      "id": "tab_text_color",
       "label": "Tab Font Color"
     },
     {
       "type": "color",
-      "id": "content_color",
+      "id": "content_text_color",
       "label": "Content Color"
     }
   ],
