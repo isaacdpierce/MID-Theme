@@ -163,8 +163,8 @@
       "settings": {
         "ind_color": "#62cbdf",
         "tab_color": "rgba(0,0,0,0)",
-        "tab_text_color": "",
-        "content_text_color": ""
+        "tab_text_color": "#62cbdf",
+        "content_text_color": "#62cbdf"
       }
     },
     "product-recommendations": {
