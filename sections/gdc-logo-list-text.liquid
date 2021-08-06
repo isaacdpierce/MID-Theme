@@ -32,7 +32,7 @@
 
 <style>
   .gdc-logo-list-text__wrapper.section--{{ section.id }} {
-    background: url({{ ss.image | img_url: "large"}})  no-repeat center center;
+    background: url({{ ss.image | img_url: "large"}})  no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,6 +112,12 @@
         "type": "image_picker",
         "id": "image",
         "label": "Background Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_parallax",
+        "default": true,
+        "label": "Enable Parallax"
       },
       {
         "type": "text",
