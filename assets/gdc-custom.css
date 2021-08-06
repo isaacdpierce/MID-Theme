@@ -76,10 +76,11 @@
 
 
 @media screen and (max-width: 1000px) {
-  .title,
-  .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+  .gdc-logo-list-simple__image-wrapper {
+    width: calc(100% / 2);
+    max-width: 250px;
   }
+}
 
 
 /* ============= GDC HERO IMAGE TEXT ================= */
