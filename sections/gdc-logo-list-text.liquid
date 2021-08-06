@@ -32,7 +32,7 @@
 
 <style>
   .gdc-logo-list-text__wrapper.section--{{ section.id }} {
-    background: url({{ ss.image | img_url: "large"}})  no-repeat center center ;
+    background: url({{ ss.image | img_url: "large"}})  no-repeat center center {% if ss.enable_parallax %}fixed{% endif %};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
