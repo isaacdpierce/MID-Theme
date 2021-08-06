@@ -325,6 +325,11 @@
                 <details-disclosure>
                   <details>
                     <summary class="header__menu-item list-menu__item link focus-inset gdc-header__menu-item">
+                      {% comment %}
+                        The <a> tag below was altered from a <span></span> to make the top level items linkable.
+                        Added Javascript for onmouseenter drop down handling. [See bottom of global.js].
+                        SEE header-ORIGINAL.liquid for original code for this theme version.
+                      {% endcomment %}
                       <a href="{{ link.url }}" {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</a>
                       {% render 'icon-caret' %}
                     </summary>
