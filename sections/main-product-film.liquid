@@ -430,8 +430,8 @@
 
 <div x-data="{ open: false }">
   <div class="gdc-accordion__button">
-    <div class="gdc-accordion__indicator" x-show="open">-</div>
-    <div class="gdc-accordion__indicator" x-show="!open">+</div>
+    <button @click="open = ! open" class="gdc-accordion__indicator" x-show="open">-</button>
+    <button @click="open = ! open" class="gdc-accordion__indicator" x-show="!open">+</button>
     <button @click="open = ! open">Toggle</button>
   </div>
 
