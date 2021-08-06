@@ -441,7 +441,6 @@ customElements.define('deferred-media', DeferredMedia);
   // https://community.shopify.com/c/Technical-Q-A/Dawn-Theme-Where-is-the-click-event-listener-for-the-header-menu/m-p/1254164
   // Needed to also change the default <span> to an <a> tag
 
-
 function handleHeaderDropdownHover(){
   var $dropdowns = document.querySelectorAll(`.header .list-menu li > * > details`);
   
