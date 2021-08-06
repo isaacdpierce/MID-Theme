@@ -163,7 +163,7 @@
           "type": "accordion_section",
           "settings": {
             "title": "Title",
-            "content": ""
+            "content": "<p>Test<\/p>"
           }
         }
       },
