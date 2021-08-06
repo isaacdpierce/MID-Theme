@@ -33,6 +33,10 @@
 <style>
   .gdc-logo-list-text__wrapper.section--{{ section.id }} {
     background: url({{ ss.image | img_url: "medium"}})  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
