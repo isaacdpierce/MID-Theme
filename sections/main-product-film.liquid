@@ -434,7 +434,7 @@
     <div @click="open = ! open" class="gdc-accordion__button">
       <span  class="gdc-accordion__indicator" x-show="open">-</span>
       <span  class="gdc-accordion__indicator" x-show="!open">+</span>
-      <span>Toggle</span>
+      <span class="gdc-accordion__title">Toggle</span>
     </div>
     
     <div class="gdc-accordion__contents" x-show="open">Contents...</div>
@@ -454,6 +454,11 @@
     width: 40px;
     color: rgb(55, 86, 177);
     transform: translateY(-5px);
+  }
+
+  .gdc-accordion__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
   }
 </style>
 
