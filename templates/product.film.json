@@ -155,11 +155,21 @@
         "add_image_padding": false,
         "show_vendor": false
       }
+    },
+    "1628269346e4dd2cf4": {
+      "type": "gdc-accordion",
+      "settings": {
+        "ind_color": "",
+        "tab_color": "",
+        "tab_font_color": "",
+        "content_color": ""
+      }
     }
   },
   "order": [
     "main",
     "1628099138a7fc5a43",
-    "product-recommendations"
+    "product-recommendations",
+    "1628269346e4dd2cf4"
   ]
 }
