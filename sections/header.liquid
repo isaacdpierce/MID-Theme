@@ -61,6 +61,11 @@
     background: linear-gradient(45deg, {{ section.settings.gradient_left}} 60%, {{ section.settings.gradient_right}});
   }
 
+  .gdc-header__menu-item, 
+  .gdc-header__menu-item a {
+    color: {{ section.settings.nav_color }} !important;
+  }
+
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
