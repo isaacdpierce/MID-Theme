@@ -431,7 +431,7 @@
 <div x-data="{ open: false }">
 
   <div x-show="open">—</div>
-  <div>+</div>
+  <div x-show="open">+</div>
   <button @click="open = ! open">Toggle</button>
 
   <div x-show="open">Contents...</div>
