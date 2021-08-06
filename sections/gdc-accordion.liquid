@@ -54,6 +54,28 @@
 {% schema %}
 {
   "name": "GDC: Accordion",
+  "settings": [
+    {
+      "type": "color",
+      "id": "ind_color",
+      "label": "Indicator Color"
+    },
+    {
+      "type": "color",
+      "id": "tab_color",
+      "label": "Tab Color"
+    },
+    {
+      "type": "color",
+      "id": "tab_font_color",
+      "label": "Tab Font Color"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Content Color"
+    }
+  ],
   "blocks": [
     {
       "type": "accordion_section",
@@ -69,26 +91,6 @@
           "type": "richtext",
           "id": "content",
           "label": "Content"
-        },
-        {
-          "type": "color",
-          "id": "ind_color",
-          "label": "Indicator Color"
-        },
-        {
-          "type": "color",
-          "id": "tab_color",
-          "label": "Tab Color"
-        },
-        {
-          "type": "color",
-          "id": "tab_font_color",
-          "label": "Tab Font Color"
-        },
-        {
-          "type": "color",
-          "id": "content_color",
-          "label": "Content Color"
         }
       ]
     }
