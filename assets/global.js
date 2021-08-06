@@ -435,6 +435,12 @@ class DeferredMedia extends HTMLElement {
 
 customElements.define('deferred-media', DeferredMedia);
 
+{% comment %}
+  This function overrides top level theme header nav links. Default required on click and made top level no longer linkable.
+  FUNCTION taken from Shopfy forum:
+  https://community.shopify.com/c/Technical-Q-A/Dawn-Theme-Where-is-the-click-event-listener-for-the-header-menu/m-p/1254164
+  Needed to also change the default <span> to an <a> tag
+{% endcomment %}
 
 function handleHeaderDropdownHover(){
   var $dropdowns = document.querySelectorAll(`.header .list-menu li > * > details`);
@@ -442,7 +448,7 @@ function handleHeaderDropdownHover(){
     if (!$dropdowns){
      return;
     }
-    
+
     for (var $dropdown of $dropdowns){
       $dropdown.addEventListener('mouseenter', function(e){
         const $this = e.target;
