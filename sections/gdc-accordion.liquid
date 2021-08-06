@@ -3,18 +3,18 @@
 {% endcomment %}
 
 <section class="gdc-accordion__section section--{{ section.id }}">
-  <div class="gdc-accordion__wrapper">
+  <div class="gdc-accordion__wrapper section--{{ section.id }}">
     {%- for block in section.blocks -%}
     {% if block.type == 'accordion_section' %}
     
     <div x-data="{ open: false }">
-      <div class="gdc-accordion__button" @click="open = ! open">
-        <span  class="gdc-accordion__indicator" x-show="open">-</span>
-        <span  class="gdc-accordion__indicator" x-show="!open">+</span>
+      <div class="gdc-accordion__button section--{{ section.id }}" @click="open = ! open">
+        <span  class="gdc-accordion__indicator section--{{ section.id }}" x-show="open">-</span>
+        <span  class="gdc-accordion__indicator section--{{ section.id }}" x-show="!open">+</span>
         <h2 class="gdc-accordion__title">{{ block.settings.title }}</h2>
       </div>
       
-      <div class="gdc-accordion__contents" x-show="open">{{ block.settings.content }}</div>
+      <div class="gdc-accordion__contents section--{{ section.id }}" x-show="open">{{ block.settings.content }}</div>
     </div>
     {%- endif -%}
     {% endfor %}
@@ -43,14 +43,14 @@
     
   }
 
-  .gdc-accordion__indicator {
+  .gdc-accordion__indicator.section--{{ section.id }} {
     font-size: 45px;
     width: 40px;
     color: {{ section.settings.ind_color }};
     transform: translateY(-5px);
   }
 
-  .gdc-accordion__title {
+  .gdc-accordion__title.section--{{ section.id }} {
     flex-grow: 1;
     border-bottom: 1px solid #999;
     color: {{ section.settings.tab_text_color }};
@@ -62,7 +62,7 @@
     padding-left: 40px;
   }
 
-  .gdc-accordion__contents p {
+  .gdc-accordion__contents.section--{{ section.id }} p {
     margin: 0 !important;
     padding-bottom: 40px;
     color: {{ section.settings.content_text_color }};
