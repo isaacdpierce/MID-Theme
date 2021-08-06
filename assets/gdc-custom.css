@@ -741,12 +741,9 @@
   height: 1px;
   top: 0; 
   left: -10px;
-  background: linear-gradient(to right, #75CCDD 20%, #297F96);
 }
 
-.gdc-header-wrapper {
-  background: linear-gradient(45deg, #297F96 60%, #75CCDD);
-}
+
 
 .gdc-header {
   position: relative;
