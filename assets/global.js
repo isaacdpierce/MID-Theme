@@ -441,27 +441,27 @@ customElements.define('deferred-media', DeferredMedia);
   // https://community.shopify.com/c/Technical-Q-A/Dawn-Theme-Where-is-the-click-event-listener-for-the-header-menu/m-p/1254164
   // Needed to also change the default <span> to an <a> tag
 
-function handleHeaderDropdownHover(){
-  var $dropdowns = document.querySelectorAll(`.header .list-menu li > * > details`);
+// function handleHeaderDropdownHover(){
+//   var $dropdowns = document.querySelectorAll(`.header .list-menu li > * > details`);
   
-    if (!$dropdowns){
-     return;
-    }
+//     if (!$dropdowns){
+//      return;
+//     }
 
-    for (var $dropdown of $dropdowns){
-      $dropdown.addEventListener('mouseenter', function(e){
-        const $this = e.target;
-        const  $button = $this.querySelector(`.header__menu-item`);
+//     for (var $dropdown of $dropdowns){
+//       $dropdown.addEventListener('mouseenter', function(e){
+//         const $this = e.target;
+//         const  $button = $this.querySelector(`.header__menu-item`);
         
-        $button.click();
-      });
+//         $button.click();
+//       });
     
-     $dropdown.addEventListener('mouseleave', function(e){
-        const $this = e.target;
-        $this.removeAttribute('open');
-      });
-    }
+//      $dropdown.addEventListener('mouseleave', function(e){
+//         const $this = e.target;
+//         $this.removeAttribute('open');
+//       });
+//     }
   
-  }
+//   }
   
-  handleHeaderDropdownHover();
+//   handleHeaderDropdownHover();
