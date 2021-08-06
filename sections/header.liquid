@@ -460,6 +460,7 @@
         {%- endif -%}
       </a>
     </div>
+    <button>TEST</button>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
@@ -592,7 +593,7 @@
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
     },
-    {
+    { 
       "type": "range",
       "id": "logo_width",
       "min": 50,
@@ -641,7 +642,8 @@
     {
       "type": "color",
       "id": "nav_item_color",
-      "label": "Header Menu Links Color"
+      "label": "Header Menu Links Color",
+      "default": "#111"
     },
     {
       "type": "checkbox",
