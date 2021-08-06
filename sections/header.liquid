@@ -54,11 +54,11 @@
 
 
   .gdc-header__inline-menu::before {
-    background: linear-gradient(to right, #75CCDD 20%, #297F96);
+    background: linear-gradient(to right, {{ section.settings.gradient_left}} 20%, {{ section.settings.gradient_left}} );
   }
 
   .gdc-header-wrapper {
-    background: linear-gradient(45deg, {{ section.settings.gradient_left}} 60%, #{{ section.settings.gradient_left}});
+    background: linear-gradient(45deg, {{ section.settings.gradient_left}} 60%, {{ section.settings.gradient_left}});
   }
 
   @media screen and (min-width: 750px) {
