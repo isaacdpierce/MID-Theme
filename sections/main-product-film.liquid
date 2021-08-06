@@ -428,23 +428,6 @@
   {% render 'gdc-metafields-biography' %} 
 {% endif %}
 
-<div class="gdc-text__full-width">
-
-  {%- for block in section.blocks -%}
-    {% if block.type == 'accordion' %}
-      <div x-data="{ open: false }">
-        <div @click="open = ! open" class="gdc-accordion__button">
-          <span  class="gdc-accordion__indicator" x-show="open">-</span>
-          <span  class="gdc-accordion__indicator" x-show="!open">+</span>
-          <h2 class="gdc-accordion__title">{{ block.settings.title }}</h2>
-        </div>
-        
-        <div class="gdc-accordion__contents" x-show="open">{{ block.settings.contents }}</div>
-      </div>
-    {%- endif -%}
-  {% endfor %}
-
-</div>
 
 <style>
   .gdc-accordion__button {
