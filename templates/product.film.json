@@ -177,6 +177,11 @@
         "0a272eb4-3808-4a12-9888-73f154afb186"
       ],
       "settings": {
+        "bg_color": "#454343",
+        "t_margin": 0,
+        "b_margin": 0,
+        "v_padding": 0,
+        "h_padding": 0,
         "ind_color": "#62cbdf",
         "tab_color": "rgba(0,0,0,0)",
         "tab_text_color": "#438b99",
