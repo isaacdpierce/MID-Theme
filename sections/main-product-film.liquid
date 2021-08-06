@@ -429,6 +429,7 @@
 {% endif %}
 
 <div x-data="{ open: false }">
+
   <button @click="open = ! open" class="gdc-accordion__button">
     <span  class="gdc-accordion__indicator" x-show="open">-</span>
     <span  class="gdc-accordion__indicator" x-show="!open">+</span>
@@ -436,6 +437,7 @@
   </button>
 
   <div class="gdc-accordion__contents" x-show="open">Contents...</div>
+  
 </div>
 
 <style>
@@ -443,11 +445,6 @@
     position: relative;
     display: flex;
     width: 100%
-  }
-
-  .gdc-accordion__button button {
-    width: 100%;
-    padding: 20px 0;
   }
 
   .gdc-accordion__indicator {
