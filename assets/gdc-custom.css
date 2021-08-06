@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 1000px) {
   .gdc-logo-list-simple__image-wrapper {
-    max-width: calc(100% / 2);
+    width: calc(100% / 2);
   }
 }
 
