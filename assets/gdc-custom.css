@@ -77,6 +77,13 @@
 
 /* ============= GDC HERO IMAGE TEXT ================= */
 
+.gdc-logo-list-text__wrapper.section--{{ section.id }} {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .gdc-logo-list__btn {
   margin-bottom: 20px;
 }
