@@ -33,6 +33,15 @@
             "picker_type": "dropdown"
           }
         },
+        "280aa446-cd15-4d37-b8f1-951b23e11d4d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Usage definitions",
+            "content": "<p>Institutional: University, College, School Board, School District, Government Association<\/p><p><\/p><p>Community: Single K-12 School, Public Library, Community Association<\/p>",
+            "page": "",
+            "icon": "question_mark"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -56,15 +65,6 @@
             "text_style": "body"
           }
         },
-        "280aa446-cd15-4d37-b8f1-951b23e11d4d": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible tab",
-            "content": "<p>Some extra more info for flat rocks<\/p>",
-            "page": "",
-            "icon": "check_mark"
-          }
-        },
         "f5013a6c-4b1f-460d-95a4-f619bb6623d9": {
           "type": "description",
           "settings": {
@@ -78,11 +78,11 @@
         "subtitle",
         "price",
         "variant_picker",
+        "280aa446-cd15-4d37-b8f1-951b23e11d4d",
         "quantity_selector",
         "buy_buttons",
         "share",
         "9ea4d73b-ed14-4436-aa94-a5f69d531936",
-        "280aa446-cd15-4d37-b8f1-951b23e11d4d",
         "f5013a6c-4b1f-460d-95a4-f619bb6623d9"
       ],
       "settings": {
