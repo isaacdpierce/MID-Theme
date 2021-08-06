@@ -23,6 +23,8 @@
           "gradient_left": "#297f96",
           "gradient_right": "#75ccdd",
           "nav_item_color": "#fafafa",
+          "btn_color": "#ffffff",
+          "btn_text_color": "#111111",
           "show_search_bar": true,
           "show_line_separator": false,
           "enable_sticky_header": true
