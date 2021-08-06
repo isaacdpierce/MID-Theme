@@ -63,7 +63,7 @@
 
   .gdc-header__menu-item, 
   .gdc-header__menu-item a {
-    color: {{ section.settings.nav_color }} !important;
+    color: {{ section.settings.nav_item_color }} !important;
   }
 
   @media screen and (min-width: 750px) {
@@ -637,6 +637,11 @@
       "type": "color",
       "id": "gradient_right",
       "label": "Header Gradient Right"
+    },
+    {
+      "type": "color",
+      "id": "nav_item_color",
+      "label": "Header Menu Links Color"
     },
     {
       "type": "checkbox",
