@@ -2096,6 +2096,3 @@ select,
   transform: var(--input-skew) !important;
 }
 
-.gdc-header__menu-item {
-  color: white;
-}
