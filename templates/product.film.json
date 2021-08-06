@@ -158,6 +158,18 @@
     },
     "1628269346e4dd2cf4": {
       "type": "gdc-accordion",
+      "blocks": {
+        "a64c3d56-074b-46ac-8d99-44ecb60e4221": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "Title",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "a64c3d56-074b-46ac-8d99-44ecb60e4221"
+      ],
       "settings": {
         "ind_color": "",
         "tab_color": "",
