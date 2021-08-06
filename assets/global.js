@@ -434,3 +434,28 @@ class DeferredMedia extends HTMLElement {
 }
 
 customElements.define('deferred-media', DeferredMedia);
+
+
+function handleHeaderDropdownHover(){
+  var $dropdowns = document.querySelectorAll(`.header .list-menu li > * > details`);
+  
+  if (!$dropdowns){
+  return;
+  }
+  for (var $dropdown of $dropdowns){
+  $dropdown.addEventListener('mouseenter', function(e){
+  const $this = e.target;
+  const  $button = $this.querySelector(`.header__menu-item`);
+  
+  $button.click();
+  });
+  
+  $dropdown.addEventListener('mouseleave', function(e){
+  const $this = e.target;
+  $this.removeAttribute('open');
+  });
+  }
+  
+  }
+  
+  handleHeaderDropdownHover();
