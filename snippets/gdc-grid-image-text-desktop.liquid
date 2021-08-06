@@ -119,6 +119,8 @@
               background-color: {{ block.settings.overlay_color }};
             {% endif %};
             transition: background-color .5s;
+            position: relative;
+            z-index: -1;
           }
 
           .gdc-image-text-grid__text.block--{{ block.id }}:hover {
