@@ -64,8 +64,8 @@
 }
 
 .gdc-logo-list-simple__image-wrapper {
-  width: calc(100% / 4);
-  max-width: 250px;
+  max-width: calc(100% / 4);
+  width: 250px;
   min-width: 150px;
 }
 
@@ -78,8 +78,7 @@
 
 @media screen and (max-width: 1000px) {
   .gdc-logo-list-simple__image-wrapper {
-    width: calc(100% / 2);
-    max-width: 250px;
+    max-width: calc(100% / 2);
   }
 }
 
