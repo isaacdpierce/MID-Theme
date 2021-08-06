@@ -1999,7 +1999,6 @@ details[open] > .header__icon--menu .icon-hamburger {
   padding: 5px 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
 }
 
 .header__menu-item:hover {
@@ -2095,4 +2094,8 @@ select,
   -ms-transform: var(--input-skew) !important;
   -webkit-transform: var(--input-skew) !important;
   transform: var(--input-skew) !important;
+}
+
+.gdc-header__menu-item {
+  color: white;
 }
