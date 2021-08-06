@@ -33,31 +33,12 @@
 <style>
   .gdc-logo-list-text__wrapper.section--{{ section.id }} {
     background: url({{ ss.image | img_url: "medium"}})  no-repeat center center fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
   }
 
-
-  .gdc-logo-list-text__image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-  }
-
-  .gdc-logo-list-text__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   .gdc-logo-list__btn {
     margin-bottom: 20px;
