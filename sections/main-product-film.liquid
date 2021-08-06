@@ -429,7 +429,6 @@
 {% endif %}
 
 <div x-data="{ open: false }">
-
   <div class="gdc-accordion__button">
     <div x-show="open">—</div>
     <div x-show="!open">+</div>
@@ -439,6 +438,11 @@
   <div class="gdc-accordion__contents" x-show="open">Contents...</div>
 </div>
 
+<style>
+  .gdc-accordion__button button {
+    width: 100%
+  }
+</style>
 
 {% javascript %}
   class ProductModal extends ModalDialog {
