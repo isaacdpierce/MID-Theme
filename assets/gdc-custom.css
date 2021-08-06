@@ -64,7 +64,8 @@
 }
 
 .gdc-logo-list-simple__image-wrapper {
-  width: 250px;
+  width: calc(100% / 4);
+  max-width: 250px;
 }
 
 .gdc-logo-list-simple__image-wrapper img {
@@ -72,6 +73,14 @@
   padding: 0 20px;
   object-fit: contain;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .title,
+  .title-wrapper-with-link {
+    margin: 5rem 0 3rem;
+  }
+
 
 /* ============= GDC HERO IMAGE TEXT ================= */
 
