@@ -1,25 +1,15 @@
-{%- liquid
-  
-  assign ss = section.settings
-
-  assign title = ss.title
-  assign subtitle = ss.subtitle
-  assign text = ss.text
-  assign image = ss.image
-  
--%}
-
+{%- assign ss = section.settings -%}
 
 <div class="gdc-section__paragraph-section section--{{ section.id }}">
   <div class="gdc-section__paragraph gdc-text__full-width section--{{ section.id }}">
-    {% if title %}
-      <h2>{{ title }}</h2>
+    {% if ss.title %}
+      <h2>{{ss.title }}</h2>
     {% endif %}
-    {% if subtitle %}
-      <h5>{{ subtitle }}</h5>
+    {% if ss.subtitle %}
+      <h5>{{ ss.subtitle }}</h5>
     {% endif %}
-    {% if text %}
-      {{ text }}
+    {% if ss.text %}
+      {{ ss.text }}
     {% endif %}
   </div>
 </div>
