@@ -22,6 +22,7 @@
           "menu": "main-menu",
           "gradient_left": "#297f96",
           "gradient_right": "#75ccdd",
+          "nav_item_color": "#fafafa",
           "show_search_bar": true,
           "show_line_separator": false,
           "enable_sticky_header": true
