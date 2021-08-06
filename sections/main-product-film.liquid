@@ -431,7 +431,7 @@
 <div x-data="{ open: false }">
 
   <div @click="open = ! open" class="gdc-accordion__button">
-    <span  class="gdc-accordion__indicator" x-show="open">—</span>
+    <span  class="gdc-accordion__indicator" x-show="open">-</span>
     <span  class="gdc-accordion__indicator" x-show="!open">+</span>
     <span>Toggle</span>
   </div>
@@ -445,12 +445,13 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
   }
 
   .gdc-accordion__indicator {
     font-size: 45px;
     color: royalblue;
+    
   }
 </style>
 
