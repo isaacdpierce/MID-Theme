@@ -81,7 +81,7 @@
         "b_padding": 30,
         "column_count": 5,
         "text_align": "center",
-        "image_shape": "round",
+        "image_shape": "rectangle",
         "bg_color": "#545454",
         "title_color": "#ffffff",
         "text_color": "#c2c2c2",
