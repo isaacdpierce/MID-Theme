@@ -217,7 +217,7 @@
         "column_count": 2,
         "grid_gap": 20,
         "enable_side_gutters": true,
-        "img_radius": 100,
+        "img_radius": 20,
         "title": "",
         "text": "",
         "text_align": "left",
