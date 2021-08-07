@@ -38,13 +38,15 @@
         "6a41dfd7-0246-4c92-8dc7-a57e100250a1": {
           "type": "featured_product",
           "settings": {
-            "product_item": ""
+            "product_item": "flat-rocks",
+            "card_bg_color": "#ededed"
           }
         },
         "cce5799a-d61b-45a7-b215-5a37395fe115": {
           "type": "featured_product",
           "settings": {
-            "product_item": ""
+            "product_item": "",
+            "card_bg_color": "#ededed"
           }
         }
       },
