@@ -216,6 +216,8 @@
         "t_padding": 0,
         "b_padding": 0,
         "column_count": 2,
+        "custom_row_height": true,
+        "row_height": 200,
         "grid_gap": 20,
         "enable_side_gutters": true,
         "img_radius": 20,
