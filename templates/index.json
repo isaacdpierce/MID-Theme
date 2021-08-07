@@ -34,6 +34,24 @@
     },
     "16283574928d6119e3": {
       "type": "gdc-productor-selector",
+      "blocks": {
+        "6a41dfd7-0246-4c92-8dc7-a57e100250a1": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": ""
+          }
+        },
+        "cce5799a-d61b-45a7-b215-5a37395fe115": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": ""
+          }
+        }
+      },
+      "block_order": [
+        "6a41dfd7-0246-4c92-8dc7-a57e100250a1",
+        "cce5799a-d61b-45a7-b215-5a37395fe115"
+      ],
       "settings": {
         "t_margin": 0,
         "b_margin": 0,

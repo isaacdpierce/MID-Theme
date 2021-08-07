@@ -7,6 +7,7 @@
 
   <div class="gdc-product-selector__row">
     {% for block in section.blocks %}
+
     <div class="gdc-product-selector__card">
       <a 
         href="{{ ss.item_url }}">
@@ -16,6 +17,7 @@
         </h4>
       </a>
     </div>
+
     {% endfor %}
   </div>
 
@@ -30,8 +32,14 @@
     padding-bottom: {{ ss.b_padding }}px;
   }
 
-  .gdc-product-selector__row {
+  .gdc-product-selector__row,
+  .gdc-product-selector__card {
     display: flex;
+  }
+
+  .gdc-product-selector__card {
+    flex-direction: column;
+    width: 250px
   }
 </style>
 
