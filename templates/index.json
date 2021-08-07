@@ -210,7 +210,7 @@
       ],
       "settings": {
         "enable_section": true,
-        "section_width": 80,
+        "section_width": 98,
         "t_margin": 80,
         "b_margin": 80,
         "t_padding": 0,
@@ -233,7 +233,7 @@
       "type": "gdc-hero-image-text",
       "settings": {
         "hero_height": 400,
-        "hero_width": 90,
+        "hero_width": 94,
         "bg_color": "#fefefe",
         "t_margin": 0,
         "b_margin": 70,
@@ -245,7 +245,7 @@
         "img_v_position": 50,
         "opacity": 100,
         "blur": 0,
-        "brightness": 100,
+        "brightness": 70,
         "contrast": 100,
         "grey_scale": 0,
         "hue_rotate": 0,
