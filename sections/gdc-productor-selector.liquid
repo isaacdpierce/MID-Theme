@@ -12,7 +12,7 @@
         {% if block.type == 'featured_product' %}
           <div class="gdc-product-selector__card">
             <a 
-            href="{{ ss.item_url }}">
+            href="{{ block.settings.product_item.url }}">
             TEST CARD
             <h4>
               Product Title = {{ block.settings.product_item.title }}
