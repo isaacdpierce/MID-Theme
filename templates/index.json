@@ -79,10 +79,10 @@
         "b_margin": 0,
         "t_padding": 30,
         "b_padding": 30,
+        "column_count": 10,
         "bg_color": "#545454",
         "title_color": "#ffffff",
         "text_color": "#c2c2c2",
-        "enable_parallax": false,
         "title": "New Releases",
         "btn_text": "View All",
         "item_url": ""
