@@ -215,7 +215,7 @@
         "b_margin": 80,
         "t_padding": 0,
         "b_padding": 0,
-        "column_count": 4,
+        "column_count": 2,
         "grid_gap": 20,
         "enable_side_gutters": true,
         "img_radius": 20,
