@@ -80,7 +80,7 @@
         "t_padding": 30,
         "b_padding": 30,
         "column_count": 5,
-        "text_alignment": "center",
+        "text_align": "center",
         "image_shape": "round",
         "bg_color": "#545454",
         "title_color": "#ffffff",
