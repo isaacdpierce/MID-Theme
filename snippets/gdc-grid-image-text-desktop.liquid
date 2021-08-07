@@ -112,7 +112,7 @@
             {% else %}
             border-radius: {{ section.settings.img_radius }}px;
             {% endif %}
-            height: 200px;
+            height: calc((var(--section-width) / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance)));
           }
 
           .gdc-image-text-grid__text.block--{{ block.id }} {
