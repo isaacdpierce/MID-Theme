@@ -84,7 +84,7 @@
         "text_color": "#c2c2c2",
         "title": "New Releases",
         "btn_text": "View All",
-        "item_url": "",
+        "item_url": "shopify:\/\/collections",
         "column_count": 5,
         "border_radius": 20,
         "text_align": "left",
