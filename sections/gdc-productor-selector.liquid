@@ -1,7 +1,7 @@
 {%- assign ss = section.settings -%}
 
 <section class="gdc-product-selector__wrapper section--{{ section.id }} ">
-  <div class="gdc-product-selector__info">
+  <div class="gdc-product-selector__title-row">
     Test Title
     <a href="#">View All</a>
   </div>
@@ -32,9 +32,13 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
   }
+  .gdc-product-selector__title-row {
+    justify-content: space-between;
+  }
 
   .gdc-product-selector__row,
-  .gdc-product-selector__card {
+  .gdc-product-selector__card,
+   {
     display: flex;
   }
 
