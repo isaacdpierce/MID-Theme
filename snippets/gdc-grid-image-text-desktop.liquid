@@ -112,8 +112,8 @@
             {% else %}
             border-radius: {{ section.settings.img_radius }}px;
             {% endif %}
-            {% if section.settings.custom_row_height %}
-            height: {{ section.settings.row_height }}px;
+            {% if block.settings.custom_row_height %}
+            height: {{ block.settings.row_height }}px;
             {% else %}
             height: calc((var(--section-width) / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance)));
             {% endif %}
