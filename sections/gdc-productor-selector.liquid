@@ -27,11 +27,11 @@
           .gdc-product-selector__card {
             flex-direction: column;
             margin: 0 10px;
-            color: {{ ss.color }};
+            color: {{ ss.text_color }};
           }
 
           .gdc-product-selector__card h4 {
-            color: {{ ss.color }};
+            color: {{ ss.text_color }};
           }
         </style>
       {% endif %}
@@ -44,7 +44,7 @@
 <style>
   .gdc-product-selector__wrapper a {
     text-decoration: none;
-    color: {{ ss.color }} !important;
+    color: {{ ss.text_color }} !important;
   }
 
   .gdc-product-selector__wrapper.section--{{ section.id }} {
@@ -53,7 +53,6 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
-    color: {{ ss.color }};
     width: 100%;
   }
   
@@ -152,7 +151,13 @@
       },
       {
         "type": "color",
-        "id": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#111"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
         "label": "Text Color",
         "default": "#111"
       },
