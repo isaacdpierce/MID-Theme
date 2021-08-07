@@ -106,6 +106,8 @@
             background-color: {{ block.settings.background_color }};
             grid-column:  span {{ block.settings.column_span }};
             grid-row: span {{ block.settings.row_span }};
+            overflow: hidden;
+            border-radius: {{ block.settings.img_radius }}%;
           }
 
           .gdc-image-text-grid__text.block--{{ block.id }} {
@@ -137,11 +139,6 @@
 
           .gdc-image-text-grid__text.block--{{ block.id }} p {
             font-size: {{ block.settings.font_size }}px;
-          }
-
-          .gdc-image-text-grid__image.block--{{ block.id }} {
-            overflow: hidden;
-            border-radius: {{ block.settings.img_radius }}%;
           }
 
           .gdc-image-text-grid__image.block--{{ block.id }} img {
