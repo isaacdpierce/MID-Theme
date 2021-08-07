@@ -17,16 +17,27 @@
   {% if show_text %}
     <div class="gdc-hero-image-text__text-wrapper section--{{ section.id }}">
       <div class="gdc-hero-image-text__text section--{{ section.id }}">
+
         {% if section.settings.title != blank %}
           <h2>{{ section.settings.title }}</h2>
         {% endif %}
+
         {% if section.settings.subtitle != blank %}
           <h3>{{ section.settings.subtitle }}</h3>
         {% endif %}
+
         {% if section.settings.text != blank %}
           <p>{{ section.settings.text}}</p>
+        {% endif %}
+
+        {% if section.settings.btn_text != blank %}
           <a class="button gdc-hero-image__button">Button</a>
         {% endif %}
+
+        {% if section.settings.btn_text != blank %}
+          <a class="button gdc-hero-image__button" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+        {% endif %}
+        
       </div>
     </div>
   {% endif %}
@@ -84,6 +95,11 @@
 
   .gdc-hero-image-text__text.section--{{ section.id }} p {
     font-size: {{ section.settings.text_size }}px;
+  }
+
+  .gdc-hero-image__button {
+    background-color: {{ section.settings.btn_color }} !important;
+    color: {{ section.settings.btn_text_color }} !important;
   }
 </style>
 
