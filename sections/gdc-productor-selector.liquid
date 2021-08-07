@@ -1,16 +1,17 @@
 {%- assign ss = section.settings -%}
 
-<section class="gdc-product-selector__wrapper section--{{ section.id }} ">
-  <div class="gdc-product-selector__title-row">
-    Test Title
-    <a href="#">View All</a>
-  </div>
-
-  <div class="gdc-product-selector__row">
-    {% for block in section.blocks %}
-
-    <div class="gdc-product-selector__card">
-      <a 
+<section class="gdc-product-selector__wrapper section--{{ section.id }}">
+  <div class="gdc-product-selector section--{{ section.id }}">
+    <div class="gdc-product-selector__title-row">
+      Test Title
+      <a href="#">View All</a>
+    </div>
+    
+    <div class="gdc-product-selector__row">
+      {% for block in section.blocks %}
+      
+      <div class="gdc-product-selector__card">
+        <a 
         href="{{ ss.item_url }}">
         TEST CARD
         <h4>
@@ -18,9 +19,10 @@
         </h4>
       </a>
     </div>
-
+    
     {% endfor %}
   </div>
+</div>
 
 </section>
 
@@ -31,7 +33,12 @@
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
-    width: {{ ss.section_width }}vw;
+    width: 100%;
+  }
+
+  .gdc-product-selector.section--{{ section.id }} {
+    width: {{ ss.section_width }}%;
+    margin: 0 auto;
   }
 
   .gdc-product-selector__row,
