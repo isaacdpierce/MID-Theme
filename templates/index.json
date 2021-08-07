@@ -216,7 +216,6 @@
         "b_padding": 0,
         "column_count": 2,
         "grid_gap": 20,
-        "img_radius": 0,
         "enable_side_gutters": true,
         "title": "",
         "text": "",
