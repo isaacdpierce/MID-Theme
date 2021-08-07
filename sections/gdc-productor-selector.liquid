@@ -11,17 +11,15 @@
       {% for block in section.blocks %}
         {% if block.type == 'featured_product' %}
           <div class="gdc-product-selector__card">
-            <a 
-            href="{{ block.settings.product_item.url }}">
-            <div class="gdc-product-selector__image">
-              {% render 'gdc-image' image: block.settings.product_item.featured_image %}
-            </div>
-            
-            <h4>
-              {{ block.settings.product_item.title }}
-            </h4>
-          </a>
-        </div>
+            <a href="{{ block.settings.product_item.url }}">
+              <div class="gdc-product-selector__image">
+                {% render 'gdc-image' image: block.settings.product_item.featured_image %}
+              </div>
+              <h4>
+                {{ block.settings.product_item.title }}
+              </h4>
+            </a>
+          </div>
 
         <style>
           .gdc-product-selector__card {
