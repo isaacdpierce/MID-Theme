@@ -2,7 +2,7 @@
 
 <style>
 .image-with-text__media {
-  border-radius: {{ section.settings.image_radius }}px;
+  border-radius: {{ section.settings.border_radius }}px;
 }
 
 </style>
@@ -86,13 +86,13 @@
     },
     { 
       "type": "range",
-      "id": "image_radius",
+      "id": "border_radius",
       "min": 0,
       "max": 100,
       "step": 1,
       "default": 0,
       "unit": "px",
-      "label": "Image Radius"
+      "label": "Rounded Corners"
     },
     {
       "type": "select",
