@@ -130,10 +130,6 @@
   margin-bottom: 20px;
 }
 
-.gdc-hero-image__button {
-  margin-top: 20px;
-}
-
 @media only screen and (max-width: 600px) {
   .gdc-hero-image-text__text h2 {
     font-size: 36px;
