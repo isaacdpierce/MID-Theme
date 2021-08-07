@@ -87,7 +87,7 @@
         "item_url": "",
         "column_count": 5,
         "border_radius": 20,
-        "text_align": "center",
+        "text_align": "left",
         "image_shape": "rectangle"
       }
     },
