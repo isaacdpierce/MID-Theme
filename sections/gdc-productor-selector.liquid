@@ -90,9 +90,14 @@
     {% endif %}
     
     {% if ss.image_shape == 'rectangle' %}
-    min-height: 200px;
-    height: 20vw;
+      min-height: 200px;
+      height: 20vw;
     {% endif %}
+
+    {% if ss.image_shape == 'round' %}
+      border-radius: 50%;
+    {% endif %}
+
   }
 
   .gdc-product-selector__image img {
