@@ -5,6 +5,7 @@
     Test Title
   </div>
   <div class="gdc-product-selector__row">
+    {% for block in section.blocks %}
     <div class="gdc-product-selector__card">
       <a 
         href="{{ ss.item_url }}">
@@ -13,7 +14,7 @@
           Test Title
         </h4>
       </a>
-
+    {% endfor %}
   </div>
   
 
