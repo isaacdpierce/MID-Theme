@@ -79,15 +79,16 @@
         "b_margin": 0,
         "t_padding": 30,
         "b_padding": 30,
-        "column_count": 5,
-        "text_align": "center",
-        "image_shape": "rectangle",
         "bg_color": "#545454",
         "title_color": "#ffffff",
         "text_color": "#c2c2c2",
         "title": "New Releases",
         "btn_text": "View All",
-        "item_url": ""
+        "item_url": "",
+        "column_count": 5,
+        "border_radius": 20,
+        "text_align": "center",
+        "image_shape": "rectangle"
       }
     },
     "featured_products": {
