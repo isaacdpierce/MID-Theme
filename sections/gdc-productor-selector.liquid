@@ -27,6 +27,11 @@
           .gdc-product-selector__card {
             flex-direction: column;
             margin: 0 10px;
+            color: {{ ss.color }};
+          }
+
+          .gdc-product-selector__card h4 {
+            color: {{ ss.color }};
           }
         </style>
       {% endif %}
@@ -39,6 +44,7 @@
 <style>
   .gdc-product-selector__wrapper a {
     text-decoration: none;
+    color: {{ ss.color }};
   }
 
   .gdc-product-selector__wrapper.section--{{ section.id }} {
