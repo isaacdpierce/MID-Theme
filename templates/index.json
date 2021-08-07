@@ -124,10 +124,51 @@
             "bottom_overlay_opacity": 30,
             "bottom_hover_opacity": 30
           }
+        },
+        "7297540a-f97f-4f05-bdce-750848b444e4": {
+          "type": "grid-item",
+          "settings": {
+            "hide_tablets": false,
+            "hide_phones": false,
+            "url": "",
+            "column_span": 1,
+            "row_span": 1,
+            "padding": 20,
+            "image": "shopify:\/\/shop_images\/Octopus-Arms.jpg",
+            "image_fill": "cover",
+            "img_h_position": 50,
+            "img_v_position": 50,
+            "img_opacity": 0.5,
+            "img_radius": 10,
+            "background_color": "#eee",
+            "font_color": "#000",
+            "title": "",
+            "title_font_size": 18,
+            "mobile_title_font_size": 18,
+            "text": "",
+            "font_size": 16,
+            "mobile_font_size": 16,
+            "text_align": "left",
+            "text_h_place": "start",
+            "text_v_place": "start",
+            "overlay_color": "",
+            "overlay_opacity": 30,
+            "overlay_hover_opacity": 30,
+            "enable_text_overlay": false,
+            "bottom_overlay_font_color": "",
+            "bottom_overlay_title": "",
+            "bottom_title_size": 18,
+            "bottom_overlay_text": "",
+            "bottom_text_size": 16,
+            "bottom_overlay_color": "",
+            "bottom_overlay_opacity": 30,
+            "bottom_hover_opacity": 30
+          }
         }
       },
       "block_order": [
-        "52419a1d-90d1-42a4-af0c-4d6b96118ac1"
+        "52419a1d-90d1-42a4-af0c-4d6b96118ac1",
+        "7297540a-f97f-4f05-bdce-750848b444e4"
       ],
       "settings": {
         "enable_section": true,
