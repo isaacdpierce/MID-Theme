@@ -92,16 +92,24 @@
           .gdc-image-text-grid-mobile__item.block--{{ block.id }} {
             background-color: {{ block.settings.background_color }};
             color: {{ block.settings.font_color }};
+
             {% if block.settings.column_span > 1 %}
               grid-column:  span 2;
             {% endif %}
             {% if block.settings.row_span > 1 %}
               grid-row:  span 2;
             {% endif %}
+
             {% if section.settings.item_circle %}
               border-radius: 50%;
             {% else %}
              border-radius: calc({{ section.settings.img_radius }}px / 2);
+            {% endif %}
+
+            {% if section.settings.custom_row_height %}
+              height: {{ section.settings.row_height }}px;
+            {% else %}
+              height: calc((var(--section-width) / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance)));
             {% endif %}
           }
 
