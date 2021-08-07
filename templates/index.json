@@ -236,7 +236,7 @@
         "hero_width": 90,
         "bg_color": "#fefefe",
         "t_margin": 0,
-        "b_margin": 0,
+        "b_margin": 70,
         "v_padding": 0,
         "h_padding": 0,
         "border_radius": 19,
