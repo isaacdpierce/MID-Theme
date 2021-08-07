@@ -210,7 +210,7 @@
       ],
       "settings": {
         "enable_section": true,
-        "section_width": 90,
+        "section_width": 80,
         "t_margin": 80,
         "b_margin": 80,
         "t_padding": 0,
