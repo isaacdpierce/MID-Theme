@@ -137,7 +137,7 @@
         "t_padding": 0,
         "b_padding": 0,
         "column_count": 2,
-        "grid_gap": 6,
+        "grid_gap": 10,
         "enable_side_gutters": false,
         "title": "",
         "text": "",
