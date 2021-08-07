@@ -59,7 +59,7 @@
         "t_padding": 30,
         "b_padding": 30,
         "bg_color": "#545454",
-        "card_text_color": "#d60101",
+        "color": "#ffffff",
         "enable_parallax": false,
         "title": "",
         "btn_text": "",
