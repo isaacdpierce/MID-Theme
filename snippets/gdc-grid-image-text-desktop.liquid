@@ -226,7 +226,7 @@
     gap: {{ grid_gap }}px;
     grid-template-columns:  repeat({{ column_count }}, calc((100% / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance))));
     width: var(--section-width);
-    grid-auto-rows: calc((var(--section-width) / {{ column_count }} - 100) - ({{ grid_gap }}px - var(--gap-variance)));
+    grid-auto-rows: calc((var(--section-width) / {{ column_count }}) - ({{ grid_gap }}px - var(--gap-variance)));
   }
 
   .gdc-image-text-grid__section.section--{{ section.id }} {
