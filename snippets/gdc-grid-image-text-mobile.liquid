@@ -98,6 +98,11 @@
             {% if block.settings.row_span > 1 %}
               grid-row:  span 2;
             {% endif %}
+            {% if section.settings.item_circle %}
+              border-radius: 50%;
+            {% else %}
+             border-radius: {{ section.settings.img_radius }}px;
+            {% endif %}
           }
 
           .gdc-image-text-grid-mobile__text.block--{{ block.id }} {
