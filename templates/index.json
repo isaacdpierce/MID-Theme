@@ -269,6 +269,20 @@
         "btn_color": "#75ccdd",
         "btn_text_color": "#1a1b18"
       }
+    },
+    "16283574928d6119e3": {
+      "type": "gdc-productor-selector",
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ededed",
+        "enable_parallax": false,
+        "title": "",
+        "btn_text": "",
+        "item_url": ""
+      }
     }
   },
   "order": [
@@ -276,6 +290,7 @@
     "featured_products",
     "image_text",
     "1628341280d439b522",
-    "1628343896315b3f3f"
+    "1628343896315b3f3f",
+    "16283574928d6119e3"
   ]
 }
