@@ -85,7 +85,7 @@
   }
 
   .gdc-product-selector__image {
-    border-radius: 20px;
+    border-radius: {{ ss.border_radius }}px;
     width: 100%;
     {% if ss.image_shape == 'round' or ss.image_shape == 'square' %}
       height: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
