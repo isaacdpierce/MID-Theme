@@ -9,26 +9,26 @@
     
     <div class="gdc-product-selector__row">
       {% for block in section.blocks %}
-      
-      <div class="gdc-product-selector__card">
-        <a 
-        href="{{ ss.item_url }}">
-        TEST CARD
-        <h4>
-          Test Title
-        </h4>
-      </a>
-    </div>
+        {% if block.type == 'featured_product' %}
+          <div class="gdc-product-selector__card">
+            <a 
+            href="{{ ss.item_url }}">
+            TEST CARD
+            <h4>
+              Test Card Title
+            </h4>
+          </a>
+        </div>
 
-    <style>
-      .gdc-product-selector__card {
-        flex-direction: column;
-        width: 250px;
-        background-color: {{ block.settings.card_bg_color }};
-        border: 1px solid red;
-      }
-    </style>
-    
+        <style>
+          .gdc-product-selector__card {
+            flex-direction: column;
+            width: 250px;
+            background-color: {{ block.settings.card_bg_color }};
+            border: 1px solid red;
+          }
+        </style>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
@@ -39,7 +39,7 @@
   .gdc-product-selector__wrapper a {
     text-decoration: none;
   }
-  
+
   .gdc-product-selector__wrapper.section--{{ section.id }} {
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
