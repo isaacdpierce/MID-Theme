@@ -127,6 +127,10 @@
 .gdc-hero-image-text__text h3 {
   margin: 0;
   line-height: 1;
+}
+
+.gdc-hero-image-text__text h2, 
+.gdc-hero-image-text__text h3 {
   margin-bottom: 20px;
 }
 
