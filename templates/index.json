@@ -233,7 +233,7 @@
       "type": "gdc-hero-image-text",
       "settings": {
         "hero_height": 400,
-        "hero_width": 76,
+        "hero_width": 90,
         "bg_color": "#fefefe",
         "t_margin": 0,
         "b_margin": 0,
