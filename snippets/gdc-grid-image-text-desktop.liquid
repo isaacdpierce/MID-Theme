@@ -107,7 +107,11 @@
             grid-column:  span {{ block.settings.column_span }};
             grid-row: span {{ block.settings.row_span }};
             overflow: hidden;
+            {% if section.settings.item_circle %}
+            border-radius: 50%;
+            {% else %}
             border-radius: {{ section.settings.img_radius }}px;
+            {% endif %}
           }
 
           .gdc-image-text-grid__text.block--{{ block.id }} {
