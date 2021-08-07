@@ -59,11 +59,11 @@
         "t_padding": 30,
         "b_padding": 30,
         "bg_color": "#545454",
-        "title_color": "#FFFFFF",
-        "text_color": "#111",
+        "title_color": "#ffffff",
+        "text_color": "#111111",
         "enable_parallax": false,
         "title": "New Releases",
-        "btn_text": "",
+        "btn_text": "View All",
         "item_url": ""
       }
     },
