@@ -4,6 +4,7 @@
   <div class="gdc-product-selector__info">
     Test Title
   </div>
+
   <div class="gdc-product-selector__row">
     {% for block in section.blocks %}
     <div class="gdc-product-selector__card">
@@ -14,11 +15,9 @@
           Test Title
         </h4>
       </a>
+    </div>
     {% endfor %}
   </div>
-  
-
-</div>
 
 </section>
 
@@ -29,6 +28,10 @@
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
+  }
+
+  .gdc-product-selector__row {
+    display: flex;
   }
 </style>
 
