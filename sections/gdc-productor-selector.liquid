@@ -85,8 +85,14 @@
 
   .gdc-product-selector__image {
     width: 100%;
-    height: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
-    /* min-height: 200px; */
+    {% if ss.image_shape == 'round' or ss.image_shape == 'square' %}
+      height: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
+    {% endif %}
+    
+    {% if ss.image_shape == 'rectangle' %}
+    min-height: 200px;
+    height: 20vw;
+    {% endif %}
   }
 
   .gdc-product-selector__image img {
