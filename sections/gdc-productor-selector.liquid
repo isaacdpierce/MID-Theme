@@ -13,6 +13,7 @@
           <div class="gdc-product-selector__card">
             <a 
             href="{{ block.settings.product_item.url }}">
+            {% render 'gdc-image' image: block.settings.product_item.featured_image %}
             TEST CARD
             <h4>
               Product Title = {{ block.settings.product_item.title }}
