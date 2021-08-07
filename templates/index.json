@@ -266,8 +266,8 @@
         "text_size": 19,
         "btn_text": "SUBMIT A FILM",
         "btn_url": "",
-        "btn_color": "",
-        "btn_text_color": ""
+        "btn_color": "#75ccdd",
+        "btn_text_color": "#1A1B18"
       }
     }
   },
