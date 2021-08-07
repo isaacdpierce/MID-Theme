@@ -1,29 +1,24 @@
 {%- assign ss = section.settings -%}
 
-<section class="gdc-logo-list-text__wrapper section--{{ section.id }} ">
-  <div class="gdc-logo-list-text">
-      {% render 'gdc-section-paragraph', section: section %}
-      <div class="gdc-centered-row">
-        <a class="button gdc-logo-list__btn" 
-           href="{{ ss.btn_url }}"
-           style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">
-         {{ ss.btn_text }}
-        </a>
-      </div>
+<section class="gdc-product-selector__wrapper section--{{ section.id }} ">
+  SECTION TEST
+  <div class="gdc-product-selector__row">
+    <div class="gdc-product-selector__card">
+      <a 
+        href="{{ ss.item_url }}">
+        TEST CARD
+      </a>
   </div>
-
-  <div class="gdc-logo-list-simple__wrapper">
-    {% render 'gdc-block-logo-list-simple' section: section %}
+  
+  <div class="gdc-product-selector__info">
+    Test Title
   </div>
+</div>
 
 </section>
 
 <style>
-  .gdc-logo-list-text__wrapper.section--{{ section.id }} {
-    background: url({{ ss.image | img_url: "large"}})  no-repeat center center {% if ss.enable_parallax %}fixed{% endif %};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  .gdc-product-selector__wrapper.section--{{ section.id }} {
     background-size: cover;
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
@@ -34,7 +29,7 @@
 
 {% schema %}
   {
-    "name": "GDC: Logo list Text",    
+    "name": "GDC: Product Selector", 
     "settings": [
       {
         "type": "header",
@@ -129,7 +124,7 @@
       },
       {
         "type": "url",
-        "id": "btn_url",
+        "id": "item_url",
         "label": "Button Link"
       },
       {
@@ -166,22 +161,8 @@
     ],
     "presets": [
       {
-        "name": "GDC: Logo list Text",
-        "category": "GDC Custom Components",
-        "blocks": [
-          {
-            "type": "logo_image"
-          },
-          {
-            "type": "logo_image"
-          },
-          {
-            "type": "logo_image"
-          },
-          {
-            "type": "logo_image"
-          }
-        ]
+        "name": "GDC: Product Selector",
+        "category": "GDC Custom Components"
       }
     ]
   }
