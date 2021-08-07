@@ -254,14 +254,14 @@
         "text_v_pos": "center",
         "text_color": "#ffffff",
         "text_bg_color": "#000000",
-        "bg_opacity": 30,
-        "text_align": "left",
+        "bg_opacity": 0,
+        "text_align": "center",
         "title": "Submit Your Film for Acquisition",
         "title_size": 48,
         "subtitle": "",
         "subtitle_size": 24,
-        "text": "",
-        "text_size": 16
+        "text": "<p>We select a limited number of completed works for distribution each year, and focus on representing work by Canadian artists and producers.<br\/><\/p>",
+        "text_size": 19
       }
     }
   },
