@@ -35,7 +35,7 @@
     background-color: {{ ss.bg_color }};
     width: 100%;
   }
-
+  
   .gdc-product-selector.section--{{ section.id }} {
     width: {{ ss.section_width }}%;
     margin: 0 auto;
@@ -46,14 +46,15 @@
   .gdc-product-selector__title-row {
     display: flex;
   }
-
+  
   .gdc-product-selector__title-row {
     justify-content: space-between;
   }
-
+  
   .gdc-product-selector__card {
     flex-direction: column;
     width: 250px;
+    background-color: {{ ss.card_bg_color }};
     border: 1px solid red;
   }
 </style>
@@ -158,6 +159,12 @@
             "type": "product",
             "id": "product_item",
             "label": "Product Item"
+          },
+          {
+            "type": "color",
+            "id": "card_bg_color",
+            "label": "Card Background Color",
+            "default": "#ededed"
           }
         ]
       }
