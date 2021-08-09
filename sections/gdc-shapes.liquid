@@ -1,4 +1,7 @@
-{%- assign ss = section.settings -%}
+{%-liquid 
+  assign ss = section.settings 
+  assign bs = block.settings
+  -%}
 
 <section class="gdc-shapes__wrapper">
   SHAPES 
@@ -18,6 +21,10 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
+  }
+
+  .gdc-shape {
+    background-color: {{ bs.bg_color }};
   }
 
 </style>
