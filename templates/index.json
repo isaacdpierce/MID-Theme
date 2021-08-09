@@ -437,7 +437,7 @@
         "t_margin": 0,
         "b_margin": 0,
         "t_padding": 0,
-        "b_padding": 0,
+        "b_padding": 10,
         "bg_color": "#ffffff",
         "h_position": 0,
         "spacer": 5
@@ -495,7 +495,7 @@
         "section_width": 90,
         "t_margin": 0,
         "b_margin": 0,
-        "t_padding": 30,
+        "t_padding": 0,
         "b_padding": 0,
         "bg_color": "#ffffff",
         "title": "Genres",
