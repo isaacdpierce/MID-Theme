@@ -343,11 +343,25 @@
           "settings": {
             "collection_item": "environmental"
           }
+        },
+        "fedf042e-c9b4-4a45-86ad-609bbd0c5664": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "courtney-montour-1"
+          }
+        },
+        "be20aa8c-a76b-4978-b142-51dd931d824c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "politics"
+          }
         }
       },
       "block_order": [
         "8a7195e9-af20-4d54-a191-eb0371230dbe",
-        "fa529e42-c2fb-4aa4-b0e3-2ba277403aa6"
+        "fa529e42-c2fb-4aa4-b0e3-2ba277403aa6",
+        "fedf042e-c9b4-4a45-86ad-609bbd0c5664",
+        "be20aa8c-a76b-4978-b142-51dd931d824c"
       ],
       "settings": {
         "section_width": 90,
