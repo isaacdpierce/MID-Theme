@@ -132,7 +132,7 @@
         "link_color": "#999999",
         "btn_url": "shopify:\/\/collections",
         "column_count": 5,
-        "border_radius": 20,
+        "border_radius": 10,
         "text_align": "left",
         "image_shape": "rectangle"
       }
