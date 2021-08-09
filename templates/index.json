@@ -75,9 +75,9 @@
         "t_margin": 0,
         "b_margin": 0,
         "t_padding": 20,
-        "b_padding": 0,
+        "b_padding": 20,
         "bg_color": "#ffffff",
-        "h_position": 5
+        "h_position": 3
       }
     },
     "1628513118852fd5f0": {
