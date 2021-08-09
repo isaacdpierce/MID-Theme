@@ -5,14 +5,45 @@
       "settings": {
       }
     },
-    "form": {
-      "type": "contact-form",
+    "1628545540a0b4de44": {
+      "type": "collection-list",
+      "blocks": {
+        "1628545540a0b4de44-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alejandro-yoshizawa"
+          }
+        },
+        "1628545540a0b4de44-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "courtney-montour-1"
+          }
+        },
+        "1628545540a0b4de44-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "roxann-whitebean-1"
+          }
+        }
+      },
+      "block_order": [
+        "1628545540a0b4de44-0",
+        "1628545540a0b4de44-1",
+        "1628545540a0b4de44-2"
+      ],
       "settings": {
+        "title": "",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "1628545540a0b4de44"
   ]
 }
