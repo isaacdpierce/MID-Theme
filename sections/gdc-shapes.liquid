@@ -12,6 +12,7 @@
         margin-right: {{ block.settings.spacer }}px;
         border-radius: {{ block.settings.border_radius }}px;
         display: inline-block
+       
       }
      </style>
     {% endif %}
@@ -28,6 +29,11 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
+  }
+
+  .gdc-shape.block--{{ block.id }} {
+    position: absolute;
+    left: {{ ss.h_position }}%;
   }
 
 </style>
@@ -85,6 +91,16 @@
         "id": "bg_color",
         "label": "Background Color",
         "default": "#ededed"
+      },
+      {
+        "type": "range",
+        "id": "h_position",
+        "label": "Horizontal Position",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%" 
       }
     ],
     "blocks": [
