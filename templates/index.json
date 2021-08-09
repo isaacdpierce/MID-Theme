@@ -521,6 +521,20 @@
     },
     "1628532440351cadbd": {
       "type": "gdc-shapes",
+      "blocks": {
+        "e0451ec8-cb90-458b-a85d-7f2a8a962832": {
+          "type": "shape",
+          "settings": {
+            "bg_color": "#297F96",
+            "width": 40,
+            "height": 40,
+            "border_radius": 10
+          }
+        }
+      },
+      "block_order": [
+        "e0451ec8-cb90-458b-a85d-7f2a8a962832"
+      ],
       "settings": {
         "t_margin": 0,
         "b_margin": 0,
