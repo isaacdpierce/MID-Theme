@@ -3,22 +3,21 @@
 <section class="gdc-shapes__wrapper section--{{ section.id }}">
 
   <div class="gdc-shapes__row section--{{ section.id }}">
-    
     {% for block in section.blocks %}
-    {% if block.type == "shape" %}
-    <div class="gdc-shape block--{{ block.id }}"></div>
-    <style>
-      .gdc-shape.block--{{ block.id }} {
-        width: {{ block.settings.width }}px;
-        height: {{ block.settings.height }}px;
-        background-color: {{ block.settings.bg_color }};
-        margin-right: {{ block.settings.spacer }}px;
-        border-radius: {{ block.settings.border_radius }}px;
-        display: inline-block
-        
-      }
-      </style>
-      {% endif %}
+      {% if block.type == "shape" %}
+      <div class="gdc-shape block--{{ block.id }}"></div>
+      <style>
+        .gdc-shape.block--{{ block.id }} {
+          width: {{ block.settings.width }}px;
+          height: {{ block.settings.height }}px;
+          background-color: {{ block.settings.bg_color }};
+          margin-right: {{ block.settings.spacer }}px;
+          border-radius: {{ block.settings.border_radius }}px;
+          display: inline-block
+          
+        }
+        </style>
+        {% endif %}
       {% endfor %}
       
     </div>
