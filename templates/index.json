@@ -32,6 +32,65 @@
         "adapt_height_first_image": false
       }
     },
+    "1628513118852fd5f0": {
+      "type": "gdc-selector-products",
+      "blocks": {
+        "5255066d-4004-4d97-a53d-d4e1d76e2858": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "flat-rocks"
+          }
+        },
+        "53f67fd5-bca4-402b-bc1e-66afbcea2dd7": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "dugout-canoe"
+          }
+        },
+        "ebf7e9d7-6444-4757-af09-2832f42e0b19": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "haiti-betrayed"
+          }
+        },
+        "1824aa50-1dc3-4874-a56d-069d75bb604a": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "lost-years"
+          }
+        },
+        "6cbacb64-b6d4-4a58-82c6-f636942b560c": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "unceded-chiefs"
+          }
+        }
+      },
+      "block_order": [
+        "5255066d-4004-4d97-a53d-d4e1d76e2858",
+        "53f67fd5-bca4-402b-bc1e-66afbcea2dd7",
+        "ebf7e9d7-6444-4757-af09-2832f42e0b19",
+        "1824aa50-1dc3-4874-a56d-069d75bb604a",
+        "6cbacb64-b6d4-4a58-82c6-f636942b560c"
+      ],
+      "settings": {
+        "section_width": 90,
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ffffff",
+        "title": "New Releases",
+        "btn_text": "View All",
+        "title_color": "#111111",
+        "link_color": "#999999",
+        "btn_url": "shopify:\/\/collections",
+        "column_count": 5,
+        "border_radius": 20,
+        "text_align": "left",
+        "image_shape": "rectangle"
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -270,65 +329,6 @@
         "btn_text_color": "#1a1b18"
       }
     },
-    "1628513118852fd5f0": {
-      "type": "gdc-selector-products",
-      "blocks": {
-        "5255066d-4004-4d97-a53d-d4e1d76e2858": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "flat-rocks"
-          }
-        },
-        "53f67fd5-bca4-402b-bc1e-66afbcea2dd7": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "dugout-canoe"
-          }
-        },
-        "ebf7e9d7-6444-4757-af09-2832f42e0b19": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "haiti-betrayed"
-          }
-        },
-        "1824aa50-1dc3-4874-a56d-069d75bb604a": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "lost-years"
-          }
-        },
-        "6cbacb64-b6d4-4a58-82c6-f636942b560c": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "unceded-chiefs"
-          }
-        }
-      },
-      "block_order": [
-        "5255066d-4004-4d97-a53d-d4e1d76e2858",
-        "53f67fd5-bca4-402b-bc1e-66afbcea2dd7",
-        "ebf7e9d7-6444-4757-af09-2832f42e0b19",
-        "1824aa50-1dc3-4874-a56d-069d75bb604a",
-        "6cbacb64-b6d4-4a58-82c6-f636942b560c"
-      ],
-      "settings": {
-        "section_width": 90,
-        "t_margin": 0,
-        "b_margin": 0,
-        "t_padding": 0,
-        "b_padding": 0,
-        "bg_color": "#ffffff",
-        "title": "New Releases",
-        "btn_text": "View All",
-        "title_color": "#111111",
-        "link_color": "#999999",
-        "btn_url": "shopify:\/\/collections",
-        "column_count": 5,
-        "border_radius": 20,
-        "text_align": "left",
-        "image_shape": "rectangle"
-      }
-    },
     "16285145184278a456": {
       "type": "gdc-selector-collections",
       "blocks": {
@@ -346,7 +346,7 @@
         "section_width": 90,
         "t_margin": 0,
         "b_margin": 0,
-        "t_padding": 0,
+        "t_padding": 30,
         "b_padding": 0,
         "bg_color": "#ededed",
         "title": "Genres",
@@ -363,11 +363,11 @@
   },
   "order": [
     "image_banner",
+    "1628513118852fd5f0",
     "featured_products",
     "image_text",
     "1628341280d439b522",
     "1628343896315b3f3f",
-    "1628513118852fd5f0",
     "16285145184278a456"
   ]
 }
