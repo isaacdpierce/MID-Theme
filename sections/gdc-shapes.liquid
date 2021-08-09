@@ -8,6 +8,15 @@
   {% for block in section.blocks %}
     {% if block.type == "shape" %}
       <div class="gdc-shape block--{{ block.id }}"></div>
+      <style>
+        .gdc-shape.block--{{ block.id }} {
+          width: {{ bs.width }}px;
+          height: {{ bs.height }}px;
+          background-color: {{ bs.bg_color }};
+          margin-right: {{ bs.spacer }}px;
+          border-radius: {{ bs.border_radius }}px;
+        }
+       </style>
     {% endif %}
   {% endfor %}
 
@@ -21,14 +30,6 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
-  }
-
-  .gdc-shape.block--{{ block.id }} {
-    width: {{ bs.width }}px;
-    height: {{ bs.height }}px;
-    background-color: {{ bs.bg_color }};
-    margin-right: {{ bs.spacer }}px;
-    border-radius: {{ bs.border_radius }}px;
   }
 
 </style>
