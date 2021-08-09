@@ -326,7 +326,7 @@
         "column_count": 5,
         "border_radius": 20,
         "text_align": "left",
-        "image_shape": "rectangle"
+        "image_shape": "round"
       }
     },
     "16285145184278a456": {
