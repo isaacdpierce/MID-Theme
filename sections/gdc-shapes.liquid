@@ -37,6 +37,7 @@
     width: 100%;
     display: flex;
     transform: translateX({{ ss.h_position }}%);
+    transform: translateY({{ ss.h_position }}%);
   }
 
 </style>
@@ -99,6 +100,16 @@
         "type": "range",
         "id": "h_position",
         "label": "Horizontal Position",
+        "default": 0,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%" 
+      },
+      {
+        "type": "range",
+        "id": "v_position",
+        "label": "Vertical Position",
         "default": 0,
         "min": 0,
         "max": 100,
