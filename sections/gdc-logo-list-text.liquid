@@ -2,14 +2,19 @@
 
 <section class="gdc-logo-list-text__wrapper section--{{ section.id }}">
   <div class="gdc-logo-list-text">
+    
       {% render 'gdc-section-paragraph', section: section %}
-      <div class="gdc-centered-row">
-        <a class="button gdc-logo-list__btn" 
-           href="{{ ss.btn_url }}"
-           style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">
-         {{ ss.btn_text }}
-        </a>
-      </div>
+
+      {% if ss.ss.btn_text != blank %}
+        <div class="gdc-centered-row">
+          <a class="button gdc-logo-list__btn" 
+            href="{{ ss.btn_url }}"
+            style="background: {{ ss.btn_color }}; color: {{ ss.btn_text_color }}; box-shadow: none;">
+          {{ ss.btn_text }}
+          </a>
+        </div>
+      {% endif %}
+
   </div>
 
   <div class="gdc-logo-list-simple__wrapper">
