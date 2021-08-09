@@ -292,11 +292,11 @@
         "bg_color": "#ffffff",
         "title": "New Releases",
         "btn_text": "View All",
-        "title_color": "#111",
-        "text_color": "#c21a1a",
+        "title_color": "#111111",
+        "link_color": "#999",
         "btn_url": "shopify:\/\/collections",
         "column_count": 5,
-        "border_radius": 0,
+        "border_radius": 20,
         "text_align": "left",
         "image_shape": "rectangle"
       }
