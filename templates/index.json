@@ -539,11 +539,21 @@
             "height": 40,
             "border_radius": 10
           }
+        },
+        "2ae05e4b-1f4e-4528-9445-9e7c6c259425": {
+          "type": "shape",
+          "settings": {
+            "bg_color": "#297F96",
+            "width": 40,
+            "height": 40,
+            "border_radius": 10
+          }
         }
       },
       "block_order": [
         "e0451ec8-cb90-458b-a85d-7f2a8a962832",
-        "e913de1c-29fb-4cad-a44f-059b0f68fdb3"
+        "e913de1c-29fb-4cad-a44f-059b0f68fdb3",
+        "2ae05e4b-1f4e-4528-9445-9e7c6c259425"
       ],
       "settings": {
         "t_margin": 0,
@@ -552,7 +562,7 @@
         "b_padding": 20,
         "bg_color": "#ffffff",
         "h_position": 0,
-        "spacer": 10
+        "spacer": 5
       }
     }
   },
