@@ -39,7 +39,7 @@
           "type": "shape",
           "settings": {
             "bg_color": "#297f96",
-            "width": 22,
+            "width": 24,
             "height": 24,
             "border_radius": 5
           }
@@ -404,27 +404,27 @@
           "type": "shape",
           "settings": {
             "bg_color": "#297f96",
-            "width": 40,
-            "height": 40,
-            "border_radius": 10
+            "width": 24,
+            "height": 24,
+            "border_radius": 5
           }
         },
         "e913de1c-29fb-4cad-a44f-059b0f68fdb3": {
           "type": "shape",
           "settings": {
             "bg_color": "#72c5da",
-            "width": 40,
-            "height": 40,
-            "border_radius": 10
+            "width": 24,
+            "height": 24,
+            "border_radius": 5
           }
         },
         "2ae05e4b-1f4e-4528-9445-9e7c6c259425": {
           "type": "shape",
           "settings": {
             "bg_color": "#daf1f4",
-            "width": 40,
-            "height": 40,
-            "border_radius": 10
+            "width": 24,
+            "height": 24,
+            "border_radius": 5
           }
         }
       },
