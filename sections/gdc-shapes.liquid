@@ -1,7 +1,10 @@
 {%- assign ss = section.settings -%}
 
 <section class="gdc-shapes__wrapper section--{{ section.id }}">
-  {% for block in section.blocks %}
+
+  <div class="gdc-shapes__row section--{{ section.id }}">
+    
+    {% for block in section.blocks %}
     {% if block.type == "shape" %}
     <div class="gdc-shape block--{{ block.id }}"></div>
     <style>
@@ -12,12 +15,13 @@
         margin-right: {{ block.settings.spacer }}px;
         border-radius: {{ block.settings.border_radius }}px;
         display: inline-block
-       
+        
       }
-     </style>
-    {% endif %}
-  {% endfor %}
-
+      </style>
+      {% endif %}
+      {% endfor %}
+      
+    </div>
 </section>
 
 <style>
