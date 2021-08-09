@@ -1,4 +1,4 @@
-<div class="gdc-block__paragraph-section block--{{ block.id }} {{ hide_mobile }} {{ hide_tablets }}">
+<div class="gdc-block__paragraph-wrapper block--{{ block.id }} {{ hide_mobile }} {{ hide_tablets }}">
   <div class="gdc-block__paragraph block--{{ block.id }}">
     {% if title != blank %}
       <h2>{{ title }}</h2>
@@ -14,7 +14,7 @@
 
 <style>
   .gdc-block__paragraph.section--{{ section.id }} h5,
-  .gdc-block__paragraph-section.block--{{ block.id }} {
+  .gdc-block__paragraph-wrapper.block--{{ block.id }} {
     margin-top: {{ block.settings.t_margin }}px;
     margin-bottom: {{ block.settings.b_margin }}px;
     padding-top: {{ block.settings.t_padding }}px;
