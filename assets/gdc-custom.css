@@ -78,7 +78,7 @@
 /* ============= GDC HERO IMAGE TEXT ================= */
 
 .gdc-logo-list__btn {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .gdc-logo-list__wrapper {
@@ -134,8 +134,7 @@
   margin-bottom: 30px;
 }
 
-.gdc-hero-image__button,
-.gdc-logo-list__btn {
+.gdc-hero-image__button {
   margin-top: 30px;
 }
 
