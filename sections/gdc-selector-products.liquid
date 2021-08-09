@@ -45,7 +45,7 @@
 <style>
   .gdc-product-selector__wrapper.section--{{ section.id }} a {
     text-decoration: none;
-    color: {{ ss.text_color }} !important;
+    color: {{ ss.link_color }} !important;
   }
 
   .gdc-product-selector__wrapper.section--{{ section.id }} h2 {
@@ -187,7 +187,7 @@
       {
         "type": "text",
         "id": "btn_text",
-        "label": "Button Text",
+        "label": "Link Text",
         "default": "View All"
       },
       {
@@ -200,13 +200,7 @@
         "type": "color",
         "id": "link_color",
         "label": "Link Color",
-        "default": "#111"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text Color",
-        "default": "#111"
+        "default": "#999"
       },
       {
         "type": "url",
