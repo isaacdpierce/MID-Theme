@@ -5,10 +5,29 @@
       "settings": {
       }
     },
+    "1628542393a80c6151": {
+      "type": "rich-text",
+      "blocks": {
+        "1628542393a80c6151-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Staff",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "1628542393a80c6151-0"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true
+      }
+    },
     "16285407207afe2579": {
       "type": "gdc-hero-split",
       "settings": {
-        "t_margin": 0,
+        "t_margin": 60,
         "b_margin": 0,
         "hero_height": 400,
         "bg_color_left": "rgba(0,0,0,0)",
@@ -120,6 +139,7 @@
   },
   "order": [
     "main",
+    "1628542393a80c6151",
     "16285407207afe2579",
     "1628540741f1dd4c7f"
   ]
