@@ -506,7 +506,7 @@
         "b_margin": 0,
         "t_padding": 40,
         "b_padding": 40,
-        "bg_color": "#ededed",
+        "bg_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/mid-donate-blue.jpg",
         "enable_parallax": true,
         "title": "Title",
