@@ -331,6 +331,17 @@
     },
     "16285145184278a456": {
       "type": "gdc-selector-collections",
+      "blocks": {
+        "8a7195e9-af20-4d54-a191-eb0371230dbe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "animation"
+          }
+        }
+      },
+      "block_order": [
+        "8a7195e9-af20-4d54-a191-eb0371230dbe"
+      ],
       "settings": {
         "section_width": 90,
         "t_margin": 0,
@@ -344,7 +355,7 @@
         "link_color": "#999",
         "btn_url": "",
         "column_count": 5,
-        "border_radius": 0,
+        "border_radius": 100,
         "text_align": "left",
         "image_shape": "rectangle"
       }
