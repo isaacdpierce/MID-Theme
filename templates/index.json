@@ -518,7 +518,8 @@
         "t_padding": 20,
         "b_padding": 20,
         "bg_color": "#ffffff",
-        "h_position": 0
+        "h_position": 0,
+        "v_position": -50
       }
     }
   },
