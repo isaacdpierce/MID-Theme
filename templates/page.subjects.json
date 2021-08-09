@@ -4,15 +4,9 @@
       "type": "main-page",
       "settings": {
       }
-    },
-    "form": {
-      "type": "contact-form",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "form"
+    "main"
   ]
 }
