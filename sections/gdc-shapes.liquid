@@ -1,11 +1,9 @@
-{%-liquid 
-  assign ss = section.settings 
-  
--%}
+{%- assign ss = section.settings -%}
 
 <section class="gdc-shapes__wrapper section--{{ section.id }}">
   SHAPES 
   {% for block in section.blocks %}
+  {%- assign bs = block.settings -%}
     {% if block.type == "shape" %}
       <div class="gdc-shape block--{{ block.id }}"></div>
       <style>
