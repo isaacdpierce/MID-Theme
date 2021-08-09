@@ -1,37 +1,36 @@
 {%- assign ss = section.settings -%}
 
-<section class="gdc-collection-selector__wrapper section--{{ section.id }}">
-  <div class="gdc-collection-selector section--{{ section.id }}">
-    <div class="gdc-collection-selector__title-row">
+<section class="gdc-product-selector__wrapper section--{{ section.id }}">
+  <div class="gdc-product-selector section--{{ section.id }}">
+    <div class="gdc-product-selector__title-row">
       <h2>{{ ss.title }}</h2>
       <a href="{{ ss.btn_url }}">{{ ss.btn_text }}</a>
     </div>
     
-    <div class="gdc-collection-selector__row">
+    <div class="gdc-product-selector__row">
       {% for block in section.blocks %}
-        {% if block.type == 'featured_collection' %}
-          <div class="gdc-collection-selector__card">
-            <a href="{{ block.settings.collection_item.url }}">
-              <div class="gdc-collection-selector__image">
-                {% render 'gdc-image' image: block.settings.collection_item.featured_image %}
+        {% if block.type == 'featured_product' %}
+          <div class="gdc-product-selector__card">
+            <a href="{{ block.settings.product_item.url }}">
+              <div class="gdc-product-selector__image">
+                {% render 'gdc-image' image: block.settings.product_item.featured_image %}
               </div>
               <h4>
-                {{ block.settings.collection_item.title }}
+                {{ block.settings.product_item.title }}
               </h4>
             </a>
           </div>
 
         <style>
-          .gdc-collection-selector__card {
+          .gdc-product-selector__card {
             flex-direction: column;
             margin: 20px 10px;
-            color: {{ ss.text_color }};
             width: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
             text-align: {{ ss.text_align }};
           }
 
-          .gdc-collection-selector__card h4 {
-            color: {{ ss.text_color }};
+          .gdc-product-selector__card h4 {
+            color: {{ ss.link_color }};
             margin-bottom: 0;
           }
         </style>
@@ -43,17 +42,17 @@
 </section>
 
 <style>
-  .gdc-collection-selector__wrapper.section--{{ section.id }} a {
+  .gdc-product-selector__wrapper.section--{{ section.id }} a {
     text-decoration: none;
-    color: {{ ss.text_color }} !important;
+    color: {{ ss.link_color }} !important;
   }
 
-  .gdc-collection-selector__wrapper.section--{{ section.id }} h2 {
+  .gdc-product-selector__wrapper.section--{{ section.id }} h2 {
     color: {{ ss.title_color }};
     margin: 0;
   }
 
-  .gdc-collection-selector__wrapper.section--{{ section.id }} {
+  .gdc-product-selector__wrapper.section--{{ section.id }} {
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
@@ -61,28 +60,28 @@
     background-color: {{ ss.bg_color }};
   }
   
-  .gdc-collection-selector.section--{{ section.id }} {
+  .gdc-product-selector.section--{{ section.id }} {
     width: {{ ss.section_width }}vw;
     margin: 0 auto;
   }
 
-  .gdc-collection-selector__row,
-  .gdc-collection-selector__card, 
-  .gdc-collection-selector__title-row {
+  .gdc-product-selector__row,
+  .gdc-product-selector__card, 
+  .gdc-product-selector__title-row {
     display: flex;
   }
   
-  .gdc-collection-selector__title-row {
+  .gdc-product-selector__title-row {
     justify-content: space-between;
     padding: 0 10px;
   }
 
-  .gdc-collection-selector__row {
+  .gdc-product-selector__row {
     flex-wrap: wrap; 
     justify-content: center;
   }
 
-  .gdc-collection-selector__image {
+  .gdc-product-selector__image {
     border-radius: {{ ss.border_radius }}px;
     width: 100%;
     {% if ss.image_shape == 'round' or ss.image_shape == 'square' %}
@@ -101,7 +100,7 @@
     overflow: hidden;
   }
 
-  .gdc-collection-selector__image img {
+  .gdc-product-selector__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -116,7 +115,7 @@
 
 {% schema %}
   {
-    "name": "GDC: Collection Selector", 
+    "name": "GDC: Product Selector", 
     "settings": [
       {
         "type": "header",
@@ -124,7 +123,7 @@
       },
       {
         "type": "range",
-        "id": "section_width",  
+        "id": "section_width",
         "label": "Section Width",
         "default": 90,
         "min": 50,
@@ -187,20 +186,20 @@
       {
         "type": "text",
         "id": "btn_text",
-        "label": "Button Text",
+        "label": "Link Text",
         "default": "View All"
       },
       {
         "type": "color",
         "id": "title_color",
-        "label": "Title Color",
+        "label": "Title Color", 
         "default": "#111"
       },
       {
         "type": "color",
-        "id": "text_color",
-        "label": "Link Text Color",
-        "default": "#111"
+        "id": "link_color",
+        "label": "Link Color",
+        "default": "#999"
       },
       {
         "type": "url",
@@ -285,7 +284,7 @@
     ],
     "presets": [
       {
-        "name": "GDC: Collection Selector",
+        "name": "GDC: Product Selector",
         "category": "GDC Custom Components"
       }
     ]
