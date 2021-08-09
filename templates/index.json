@@ -337,10 +337,17 @@
           "settings": {
             "collection_item": "animation"
           }
+        },
+        "fa529e42-c2fb-4aa4-b0e3-2ba277403aa6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "environmental"
+          }
         }
       },
       "block_order": [
-        "8a7195e9-af20-4d54-a191-eb0371230dbe"
+        "8a7195e9-af20-4d54-a191-eb0371230dbe",
+        "fa529e42-c2fb-4aa4-b0e3-2ba277403aa6"
       ],
       "settings": {
         "section_width": 90,
