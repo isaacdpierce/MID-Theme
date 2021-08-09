@@ -2,12 +2,13 @@
 
 <section class="gdc-shapes__wrapper section--{{ section.id }}">
   SHAPES 
-  <div style="width: 100px; height: 100px; background-color: blueviolet;" >
+  
 
   </div>
   {% for block in section.blocks %}
   {%- assign bs = block.settings -%}
     {% if block.type == "shape" %}
+    <div style="width: 10px; height: 10px; background-color: blueviolet;" ></div>
       <div class="gdc-shape block--{{ block.id }}"></div>
       <style>
         .gdc-shape.block--{{ block.id }} {
