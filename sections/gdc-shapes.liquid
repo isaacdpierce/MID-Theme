@@ -24,6 +24,8 @@
   }
 
   .gdc-shape {
+    width: {{ bs.width }};
+    height: {{ bs.height }};
     background-color: {{ bs.bg_color }};
   }
 
@@ -97,7 +99,7 @@
           },
           {
             "type": "range",
-            "id": "shape_width",
+            "id": "width",
             "label": "Shape Width",
             "default": 50,
             "min": 10,
@@ -107,7 +109,7 @@
           },
           {
             "type": "range",
-            "id": "shape_height",
+            "id": "height",
             "label": "Shape Height",
             "default": 50,
             "min": 10,
