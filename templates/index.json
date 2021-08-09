@@ -451,7 +451,7 @@
         "b_margin": 0,
         "t_padding": 30,
         "b_padding": 0,
-        "bg_color": "#ededed",
+        "bg_color": "#ffffff",
         "title": "Genres",
         "btn_text": "View All",
         "title_color": "#111111",
@@ -518,6 +518,18 @@
         "btn_color": "#298696",
         "btn_text_color": "#fafafa"
       }
+    },
+    "1628532440351cadbd": {
+      "type": "gdc-shapes",
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 20,
+        "b_padding": 20,
+        "bg_color": "#ffffff",
+        "h_position": 0,
+        "spacer": 10
+      }
     }
   },
   "order": [
@@ -529,6 +541,7 @@
     "1628341280d439b522",
     "1628343896315b3f3f",
     "16285145184278a456",
-    "1628524982714abcb4"
+    "1628524982714abcb4",
+    "1628532440351cadbd"
   ]
 }
