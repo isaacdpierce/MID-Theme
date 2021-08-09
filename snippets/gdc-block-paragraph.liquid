@@ -13,7 +13,6 @@
 </div>
 
 <style>
-  .gdc-block__paragraph.section--{{ section.id }} h5,
   .gdc-block__paragraph-wrapper.block--{{ block.id }} {
     margin-top: {{ block.settings.t_margin }}px;
     margin-bottom: {{ block.settings.b_margin }}px;
@@ -22,13 +21,16 @@
     background-color: {{ block.settings.bg_color }};
   }
 
-  .gdc-block__paragraph.section--{{ section.id }} h5 {
-    font-size: {{ ss.subtitle_size }}px;
+  .gdc-block__paragraph.block--{{ section.id }} h5,
+  .gdc-block__paragraph.block--{{ section.id }} h2 {
+    color: {{ block.settings.font_color }};
+    text-align: {{ block.settings.text_align }};
+    margin: 0;
+    margin-bottom: 5px;
   }
 
-  .gdc-block__paragraph.block--{{ block.id }} h2 {
-    color: {{ block.settings.font_color }};
-    text-align: {{ block.settings.title_align }};
+  .gdc-block__paragraph.section--{{ section.id }} h5 {
+    font-size: {{ block.settings.subtitle_size }}px;
   }
 
   .gdc-block__paragraph.block--{{ block.id }} p {
