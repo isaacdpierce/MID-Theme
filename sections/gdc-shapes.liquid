@@ -11,7 +11,7 @@
           width: {{ block.settings.width }}px;
           height: {{ block.settings.height }}px;
           background-color: {{ block.settings.bg_color }};
-          margin-right: {{ block.settings.spacer }}px;
+          margin-right: {{ ss.spacer }}px;
           border-radius: {{ block.settings.border_radius }}px;
           display: inline-block
           
@@ -103,6 +103,16 @@
         "max": 100,
         "step": 1,
         "unit": "%" 
+      },
+      {
+        "type": "range",
+        "id": "spacer",
+        "label": "Space between shapes",
+        "default": 10,
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "unit": "px" 
       }
     ],
     "blocks": [
