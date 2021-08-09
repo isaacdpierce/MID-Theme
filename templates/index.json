@@ -388,7 +388,7 @@
         "title": "Genres",
         "btn_text": "View All",
         "title_color": "#111111",
-        "link_color": "#999999",
+        "link_color": "#565656",
         "btn_url": "",
         "column_count": 6,
         "border_radius": 100,
