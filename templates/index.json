@@ -439,7 +439,7 @@
         "t_padding": 0,
         "b_padding": 10,
         "bg_color": "#ffffff",
-        "h_position": 0,
+        "h_position": 3,
         "spacer": 5
       }
     },
