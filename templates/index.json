@@ -49,8 +49,8 @@
           "type": "shape",
           "settings": {
             "bg_color": "#72c5da",
-            "width": 50,
-            "height": 50,
+            "width": 40,
+            "height": 40,
             "spacer": 10,
             "border_radius": 10
           }
@@ -59,8 +59,8 @@
           "type": "shape",
           "settings": {
             "bg_color": "#daf1f4",
-            "width": 50,
-            "height": 50,
+            "width": 40,
+            "height": 42,
             "spacer": 10,
             "border_radius": 10
           }
