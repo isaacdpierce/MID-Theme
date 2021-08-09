@@ -476,16 +476,6 @@
     "162852923604725074": {
       "type": "gdc-shapes",
       "blocks": {
-        "e7489c2d-7252-45a5-9983-d1c5b86d8875": {
-          "type": "shape",
-          "settings": {
-            "bg_color": "#297f96",
-            "width": 140,
-            "height": 140,
-            "spacer": 10,
-            "border_radius": 0
-          }
-        },
         "db94c746-5ae0-49e5-9f5e-8d2143d305f2": {
           "type": "shape",
           "settings": {
@@ -505,12 +495,22 @@
             "spacer": 10,
             "border_radius": 0
           }
+        },
+        "e3e57d3b-4fe7-4218-92a1-14653240d04e": {
+          "type": "shape",
+          "settings": {
+            "bg_color": "#297F96",
+            "width": 50,
+            "height": 50,
+            "spacer": 10,
+            "border_radius": 0
+          }
         }
       },
       "block_order": [
-        "e7489c2d-7252-45a5-9983-d1c5b86d8875",
         "db94c746-5ae0-49e5-9f5e-8d2143d305f2",
-        "6d0e3334-2e02-49fd-9e0e-798eb2ad3e80"
+        "6d0e3334-2e02-49fd-9e0e-798eb2ad3e80",
+        "e3e57d3b-4fe7-4218-92a1-14653240d04e"
       ],
       "settings": {
         "t_margin": 0,
