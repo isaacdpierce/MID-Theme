@@ -41,7 +41,6 @@
             "bg_color": "#297f96",
             "width": 40,
             "height": 40,
-            "spacer": 10,
             "border_radius": 10
           }
         },
@@ -51,7 +50,6 @@
             "bg_color": "#72c5da",
             "width": 40,
             "height": 40,
-            "spacer": 10,
             "border_radius": 10
           }
         },
@@ -61,7 +59,6 @@
             "bg_color": "#daf1f4",
             "width": 40,
             "height": 42,
-            "spacer": 10,
             "border_radius": 10
           }
         }
@@ -77,7 +74,8 @@
         "t_padding": 20,
         "b_padding": 10,
         "bg_color": "#ffffff",
-        "h_position": 2
+        "h_position": 2,
+        "spacer": 5
       }
     },
     "1628513118852fd5f0": {
