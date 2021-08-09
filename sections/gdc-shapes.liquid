@@ -39,7 +39,6 @@
     position: relative;
     z-index: 99;
     transform: translateX({{ ss.h_position }}%);
-    transform: translateY({{ ss.v_position }}%);
   }
 
 </style>
@@ -105,16 +104,6 @@
         "default": 0,
         "min": 0,
         "max": 100,
-        "step": 1,
-        "unit": "%" 
-      },
-      {
-        "type": "range",
-        "id": "v_position",
-        "label": "Vertical Position",
-        "default": 0,
-        "min": -50,
-        "max": 50,
         "step": 1,
         "unit": "%" 
       }
