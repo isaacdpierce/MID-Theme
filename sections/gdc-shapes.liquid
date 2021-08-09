@@ -1,11 +1,18 @@
 {%- assign ss = section.settings -%}
 
-<section>
+<section class="gdc-shapes__wrapper">
   SHAPES 
+  {% for block in section.blocks %}
+    {% if block.type == "shape" %}
+      <div class="gdc-shape"></div>
+    {% endif %}
+  {% endfor %}
+
 </section>
 
 <style>
   .gdc-shapes__wrapper.section--{{ section.id }} {
+    display: flex;
     margin-top: {{ ss.t_margin }}px;
     margin-bottom: {{ ss.b_margin }}px;
     padding-top: {{ ss.t_padding }}px;
