@@ -416,6 +416,25 @@
         "text_align": "center",
         "image_shape": "round"
       }
+    },
+    "1628524982714abcb4": {
+      "type": "gdc-logo-list-text",
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ededed",
+        "enable_parallax": false,
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<\/p>",
+        "text_align": "left",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_color": "#ededed",
+        "btn_text_color": "#333"
+      }
     }
   },
   "order": [
@@ -425,6 +444,7 @@
     "16285158056b4d43d0",
     "1628341280d439b522",
     "1628343896315b3f3f",
-    "16285145184278a456"
+    "16285145184278a456",
+    "1628524982714abcb4"
   ]
 }
