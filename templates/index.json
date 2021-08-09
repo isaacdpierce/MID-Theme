@@ -272,6 +272,17 @@
     },
     "1628513118852fd5f0": {
       "type": "gdc-selector-products",
+      "blocks": {
+        "5255066d-4004-4d97-a53d-d4e1d76e2858": {
+          "type": "featured_product",
+          "settings": {
+            "product_item": "flat-rocks"
+          }
+        }
+      },
+      "block_order": [
+        "5255066d-4004-4d97-a53d-d4e1d76e2858"
+      ],
       "settings": {
         "section_width": 90,
         "t_margin": 0,
@@ -282,7 +293,7 @@
         "title": "New Releases",
         "btn_text": "View All",
         "title_color": "#111",
-        "text_color": "#111",
+        "text_color": "#c21a1a",
         "btn_url": "shopify:\/\/collections",
         "column_count": 5,
         "border_radius": 0,
