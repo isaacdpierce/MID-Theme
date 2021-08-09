@@ -530,10 +530,20 @@
             "height": 40,
             "border_radius": 10
           }
+        },
+        "e913de1c-29fb-4cad-a44f-059b0f68fdb3": {
+          "type": "shape",
+          "settings": {
+            "bg_color": "#72c5da",
+            "width": 40,
+            "height": 40,
+            "border_radius": 10
+          }
         }
       },
       "block_order": [
-        "e0451ec8-cb90-458b-a85d-7f2a8a962832"
+        "e0451ec8-cb90-458b-a85d-7f2a8a962832",
+        "e913de1c-29fb-4cad-a44f-059b0f68fdb3"
       ],
       "settings": {
         "t_margin": 0,
