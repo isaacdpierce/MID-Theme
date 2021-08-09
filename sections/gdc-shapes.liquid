@@ -12,7 +12,7 @@
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
   }
-  
+
 </style>
 
 {% schema %}
@@ -80,6 +80,16 @@
             "id": "bg_color",
             "label": "Background Color",
             "default": "#ededed"
+          },
+          {
+            "type": "range",
+            "id": "shape_width",
+            "label": "shape_height",
+            "default": 50,
+            "min": 10,
+            "max": 350,
+            "step": 10,
+            "unit": "px" 
           }
         ]
       }
