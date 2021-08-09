@@ -84,7 +84,7 @@
         "text_color": "#c2c2c2",
         "title": "New Releases",
         "btn_text": "View All",
-        "item_url": "shopify:\/\/collections",
+        "btn_url": "",
         "column_count": 5,
         "border_radius": 20,
         "text_align": "left",
@@ -328,6 +328,26 @@
         "btn_color": "#75ccdd",
         "btn_text_color": "#1a1b18"
       }
+    },
+    "1628512390abb54c6f": {
+      "type": "gdc-productor-selector",
+      "settings": {
+        "section_width": 100,
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ededed",
+        "title_color": "#111",
+        "text_color": "#111",
+        "title": "Genres",
+        "btn_text": "View All",
+        "btn_url": "",
+        "column_count": 5,
+        "border_radius": 0,
+        "text_align": "left",
+        "image_shape": "rectangle"
+      }
     }
   },
   "order": [
@@ -336,6 +356,7 @@
     "featured_products",
     "image_text",
     "1628341280d439b522",
-    "1628343896315b3f3f"
+    "1628343896315b3f3f",
+    "1628512390abb54c6f"
   ]
 }
