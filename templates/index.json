@@ -480,8 +480,8 @@
           "type": "shape",
           "settings": {
             "bg_color": "#297F96",
-            "width": 50,
-            "height": 50,
+            "width": 140,
+            "height": 140,
             "spacer": 10,
             "border_radius": 0
           }
