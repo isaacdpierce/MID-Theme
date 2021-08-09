@@ -357,7 +357,7 @@
         "column_count": 5,
         "border_radius": 100,
         "text_align": "left",
-        "image_shape": "rectangle"
+        "image_shape": "round"
       }
     }
   },
