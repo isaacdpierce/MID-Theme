@@ -420,7 +420,7 @@
     "1628524691c9cf591e": {
       "type": "gdc-hero-image-text",
       "settings": {
-        "hero_height": 500,
+        "hero_height": 400,
         "hero_width": 100,
         "bg_color": "#868282",
         "t_margin": 0,
@@ -428,6 +428,7 @@
         "v_padding": 0,
         "h_padding": 0,
         "border_radius": 0,
+        "image": "shopify:\/\/shop_images\/mid-donate-blue.jpg",
         "img_h_position": 50,
         "img_v_position": 50,
         "opacity": 100,
