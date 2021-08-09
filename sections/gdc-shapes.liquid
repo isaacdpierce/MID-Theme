@@ -2,6 +2,9 @@
 
 <section class="gdc-shapes__wrapper section--{{ section.id }}">
   SHAPES 
+  <div style="width: 100px; height: 100px; background-color: blueviolet;" >
+
+  </div>
   {% for block in section.blocks %}
   {%- assign bs = block.settings -%}
     {% if block.type == "shape" %}
