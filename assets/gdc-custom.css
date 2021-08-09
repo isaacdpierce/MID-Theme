@@ -134,7 +134,8 @@
   margin-bottom: 30px;
 }
 
-.gdc-hero-image__button {
+.gdc-hero-image__button,
+.gdc-logo-list__btn {
   margin-top: 30px;
 }
 
