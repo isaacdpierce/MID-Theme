@@ -32,65 +32,6 @@
         "adapt_height_first_image": false
       }
     },
-    "16283574928d6119e3": {
-      "type": "gdc-productor-selector",
-      "blocks": {
-        "6a41dfd7-0246-4c92-8dc7-a57e100250a1": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "flat-rocks"
-          }
-        },
-        "cce5799a-d61b-45a7-b215-5a37395fe115": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "dugout-canoe"
-          }
-        },
-        "47804d3c-39d6-49d9-b0ca-2d6ba3c8c4e8": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "haiti-betrayed"
-          }
-        },
-        "66f4d68c-1acd-4784-8a43-4c2961bcc2d4": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "unceded-chiefs"
-          }
-        },
-        "cefc2306-d5c9-4910-94c2-78f07cd393f6": {
-          "type": "featured_product",
-          "settings": {
-            "product_item": "lost-years"
-          }
-        }
-      },
-      "block_order": [
-        "6a41dfd7-0246-4c92-8dc7-a57e100250a1",
-        "cce5799a-d61b-45a7-b215-5a37395fe115",
-        "47804d3c-39d6-49d9-b0ca-2d6ba3c8c4e8",
-        "66f4d68c-1acd-4784-8a43-4c2961bcc2d4",
-        "cefc2306-d5c9-4910-94c2-78f07cd393f6"
-      ],
-      "settings": {
-        "section_width": 90,
-        "t_margin": 0,
-        "b_margin": 0,
-        "t_padding": 30,
-        "b_padding": 30,
-        "bg_color": "#545454",
-        "title": "New Releases",
-        "btn_text": "View All",
-        "title_color": "#ffffff",
-        "text_color": "#c2c2c2",
-        "btn_url": "",
-        "column_count": 5,
-        "border_radius": 20,
-        "text_align": "left",
-        "image_shape": "rectangle"
-      }
-    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -328,14 +269,34 @@
         "btn_color": "#75ccdd",
         "btn_text_color": "#1a1b18"
       }
+    },
+    "1628513118852fd5f0": {
+      "type": "gdc-selector-products",
+      "settings": {
+        "section_width": 90,
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 0,
+        "b_padding": 0,
+        "bg_color": "#ffffff",
+        "title": "New Releases",
+        "btn_text": "View All",
+        "title_color": "#111",
+        "text_color": "#111",
+        "btn_url": "",
+        "column_count": 5,
+        "border_radius": 0,
+        "text_align": "left",
+        "image_shape": "rectangle"
+      }
     }
   },
   "order": [
     "image_banner",
-    "16283574928d6119e3",
     "featured_products",
     "image_text",
     "1628341280d439b522",
-    "1628343896315b3f3f"
+    "1628343896315b3f3f",
+    "1628513118852fd5f0"
   ]
 }
