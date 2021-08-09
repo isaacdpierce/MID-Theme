@@ -137,78 +137,6 @@
         "image_shape": "rectangle"
       }
     },
-    "image_text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sail-to-the-sunrise.jpg",
-        "height": "adapt",
-        "border_radius": 20,
-        "color_scheme": "background-1",
-        "layout": "image_first"
-      }
-    },
-    "16285158056b4d43d0": {
-      "type": "image-with-text",
-      "blocks": {
-        "16285158056b4d43d0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text"
-          }
-        },
-        "16285158056b4d43d0-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "16285158056b4d43d0-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16285158056b4d43d0-0",
-        "16285158056b4d43d0-1",
-        "16285158056b4d43d0-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/film-reels.png",
-        "height": "adapt",
-        "border_radius": 20,
-        "color_scheme": "background-1",
-        "layout": "text_first"
-      }
-    },
     "1628341280d439b522": {
       "type": "gdc-grid-image-text",
       "blocks": {
@@ -356,47 +284,6 @@
         "font_color": "#000000"
       }
     },
-    "1628343896315b3f3f": {
-      "type": "gdc-hero-image-text",
-      "settings": {
-        "hero_height": 400,
-        "hero_width": 95,
-        "bg_color": "#fefefe",
-        "t_margin": 0,
-        "b_margin": 70,
-        "v_padding": 0,
-        "h_padding": 0,
-        "border_radius": 19,
-        "image": "shopify:\/\/shop_images\/hero-background.png",
-        "img_h_position": 50,
-        "img_v_position": 50,
-        "opacity": 100,
-        "blur": 0,
-        "brightness": 70,
-        "contrast": 100,
-        "grey_scale": 0,
-        "hue_rotate": 0,
-        "sepia": 0,
-        "saturate": 100,
-        "text_max_width": 800,
-        "text_h_pos": "center",
-        "text_v_pos": "center",
-        "text_color": "#ffffff",
-        "text_bg_color": "#000000",
-        "bg_opacity": 0,
-        "text_align": "center",
-        "title": "Submit Your Film for Acquisition",
-        "title_size": 48,
-        "subtitle": "",
-        "subtitle_size": 24,
-        "text": "<p>We select a limited number of completed works for distribution each year, and focus on representing work by Canadian artists and producers.<br\/><\/p>",
-        "text_size": 19,
-        "btn_text": "SUBMIT A FILM",
-        "btn_url": "",
-        "btn_color": "#75ccdd",
-        "btn_text_color": "#1a1b18"
-      }
-    },
     "1628532440351cadbd": {
       "type": "gdc-shapes",
       "blocks": {
@@ -509,6 +396,119 @@
         "image_shape": "round"
       }
     },
+    "image_text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sail-to-the-sunrise.jpg",
+        "height": "adapt",
+        "border_radius": 20,
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "16285158056b4d43d0": {
+      "type": "image-with-text",
+      "blocks": {
+        "16285158056b4d43d0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16285158056b4d43d0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16285158056b4d43d0-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16285158056b4d43d0-0",
+        "16285158056b4d43d0-1",
+        "16285158056b4d43d0-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/film-reels.png",
+        "height": "adapt",
+        "border_radius": 20,
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
+    "1628343896315b3f3f": {
+      "type": "gdc-hero-image-text",
+      "settings": {
+        "hero_height": 400,
+        "hero_width": 95,
+        "bg_color": "#fefefe",
+        "t_margin": 50,
+        "b_margin": 50,
+        "v_padding": 0,
+        "h_padding": 0,
+        "border_radius": 19,
+        "image": "shopify:\/\/shop_images\/hero-background.png",
+        "img_h_position": 50,
+        "img_v_position": 50,
+        "opacity": 100,
+        "blur": 0,
+        "brightness": 70,
+        "contrast": 100,
+        "grey_scale": 0,
+        "hue_rotate": 0,
+        "sepia": 0,
+        "saturate": 100,
+        "text_max_width": 800,
+        "text_h_pos": "center",
+        "text_v_pos": "center",
+        "text_color": "#ffffff",
+        "text_bg_color": "#000000",
+        "bg_opacity": 0,
+        "text_align": "center",
+        "title": "Submit Your Film for Acquisition",
+        "title_size": 48,
+        "subtitle": "",
+        "subtitle_size": 24,
+        "text": "<p>We select a limited number of completed works for distribution each year, and focus on representing work by Canadian artists and producers.<br\/><\/p>",
+        "text_size": 19,
+        "btn_text": "SUBMIT A FILM",
+        "btn_url": "",
+        "btn_color": "#75ccdd",
+        "btn_text_color": "#1a1b18"
+      }
+    },
     "1628524982714abcb4": {
       "type": "gdc-logo-list-text",
       "blocks": {
@@ -540,13 +540,13 @@
         "5f88e977-12fd-45fb-ab3d-09563aaabef7"
       ],
       "settings": {
-        "t_margin": 0,
+        "t_margin": 70,
         "b_margin": 0,
         "t_padding": 40,
         "b_padding": 40,
         "bg_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/mid-donate-blue.jpg",
-        "enable_parallax": true,
+        "enable_parallax": false,
         "title": "Brought to you by",
         "subtitle": "",
         "text": "<p>We are a non-profit organization dedicated to promoting and advocating for Filmmakers.<br\/>We rely on the generous support of these organizations, compnies, and individuals like you.<\/p>",
@@ -562,12 +562,12 @@
     "image_banner",
     "162852923604725074",
     "1628513118852fd5f0",
-    "image_text",
-    "16285158056b4d43d0",
     "1628341280d439b522",
-    "1628343896315b3f3f",
     "1628532440351cadbd",
     "16285145184278a456",
+    "image_text",
+    "16285158056b4d43d0",
+    "1628343896315b3f3f",
     "1628524982714abcb4"
   ]
 }

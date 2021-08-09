@@ -4,6 +4,8 @@
     "colors_accent_2": "#ffe3bd",
     "colors_outline_button_labels": "#297f96",
     "colors_background_2": "#e1f7fa",
+    "type_header_font": "montserrat_n6",
+    "type_body_font": "assistant_n4",
     "button_style": "round-slight",
     "input_style": "round-slight",
     "accent_icons": "accent-1",
@@ -45,7 +47,7 @@
           "footer-0"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Sign up to our emails",
           "show_social": false,
