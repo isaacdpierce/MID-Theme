@@ -91,20 +91,6 @@
         "image_shape": "rectangle"
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "indoor",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
@@ -435,7 +421,6 @@
   "order": [
     "image_banner",
     "1628513118852fd5f0",
-    "featured_products",
     "image_text",
     "16285158056b4d43d0",
     "1628341280d439b522",
