@@ -39,27 +39,27 @@
           "type": "shape",
           "settings": {
             "bg_color": "#297f96",
-            "width": 40,
-            "height": 40,
-            "border_radius": 10
+            "width": 22,
+            "height": 24,
+            "border_radius": 5
           }
         },
         "6d0e3334-2e02-49fd-9e0e-798eb2ad3e80": {
           "type": "shape",
           "settings": {
             "bg_color": "#72c5da",
-            "width": 40,
-            "height": 40,
-            "border_radius": 10
+            "width": 24,
+            "height": 24,
+            "border_radius": 5
           }
         },
         "e3e57d3b-4fe7-4218-92a1-14653240d04e": {
           "type": "shape",
           "settings": {
             "bg_color": "#daf1f4",
-            "width": 40,
-            "height": 42,
-            "border_radius": 10
+            "width": 24,
+            "height": 24,
+            "border_radius": 5
           }
         }
       },
@@ -403,7 +403,7 @@
         "e0451ec8-cb90-458b-a85d-7f2a8a962832": {
           "type": "shape",
           "settings": {
-            "bg_color": "#297F96",
+            "bg_color": "#297f96",
             "width": 40,
             "height": 40,
             "border_radius": 10
