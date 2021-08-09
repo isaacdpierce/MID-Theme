@@ -20,20 +20,6 @@
               </h4>
             </a>
           </div>
-
-        <style>
-          .gdc-product-selector__card.section--{{ section.id }} {
-            flex-direction: column;
-            margin: 20px 10px;
-            width: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
-            text-align: {{ ss.text_align }};
-          }
-
-          .gdc-product-selector__card.section--{{ section.id }} h4 {
-            color: {{ ss.link_color }};
-            margin-bottom: 0;
-          }
-        </style>
       {% endif %}
     {% endfor %}
   </div>
@@ -81,6 +67,18 @@
     justify-content: center;
   }
 
+  .gdc-product-selector__card.section--{{ section.id }} {
+    flex-direction: column;
+    margin: 20px 10px;
+    width: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
+    text-align: {{ ss.text_align }};
+  }
+
+  .gdc-product-selector__card.section--{{ section.id }} h4 {
+    color: {{ ss.link_color }};
+    margin-bottom: 0;
+  }
+
   .gdc-product-selector__image.section--{{ section.id }} {
     border-radius: {{ ss.border_radius }}px;
     width: 100%;
@@ -105,6 +103,7 @@
     height: 100%;
     object-fit: cover;
   }
+
 
   /* @media screen and (max-width: 750px) {
     .gdc-product-selector__row {
