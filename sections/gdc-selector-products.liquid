@@ -10,7 +10,7 @@
     <div class="gdc-product-selector__row">
       {% for block in section.blocks %}
         {% if block.type == 'featured_product' %}
-          <div class="gdc-product-selector__card">
+          <div class="gdc-product-selector__card section--{{ section.id }}">
             <a href="{{ block.settings.product_item.url }}">
               <div class="gdc-product-selector__image">
                 {% render 'gdc-image' image: block.settings.product_item.featured_image %}
@@ -22,14 +22,14 @@
           </div>
 
         <style>
-          .gdc-product-selector__card {
+          .gdc-product-selector__card.section--{{ section.id }} {
             flex-direction: column;
             margin: 20px 10px;
             width: calc({{ ss.section_width }}vw / {{ ss.column_count }} - 20px);
             text-align: {{ ss.text_align }};
           }
 
-          .gdc-product-selector__card h4 {
+          .gdc-product-selector__card.section--{{ section.id }} h4 {
             color: {{ ss.link_color }};
             margin-bottom: 0;
           }
