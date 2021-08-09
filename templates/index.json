@@ -326,7 +326,7 @@
         "column_count": 5,
         "border_radius": 20,
         "text_align": "left",
-        "image_shape": "round"
+        "image_shape": "rectangle"
       }
     },
     "16285145184278a456": {
@@ -351,8 +351,8 @@
         "bg_color": "#ededed",
         "title": "Genres",
         "btn_text": "View All",
-        "title_color": "#111",
-        "link_color": "#999",
+        "title_color": "#111111",
+        "link_color": "#999999",
         "btn_url": "",
         "column_count": 5,
         "border_radius": 100,
