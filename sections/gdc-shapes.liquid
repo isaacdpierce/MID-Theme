@@ -6,17 +6,16 @@
 
   </div>
   {% for block in section.blocks %}
-  {%- assign bs = block.settings -%}
     {% if block.type == "shape" %}
     <div style="width: 10px; height: 10px; background-color: blueviolet; margin-right: 5px;" ></div>
       <div class="gdc-shape block--{{ block.id }}"></div>
       <style>
         .gdc-shape.block--{{ block.id }} {
-          width: {{ bs.width }}px;
-          height: {{ bs.height }}px;
-          background-color: {{ bs.bg_color }};
-          margin-right: {{ bs.spacer }}px;
-          border-radius: {{ bs.border_radius }}px;
+          width: {{ block.settings.width }}px;
+          height: {{ block.settings.height }}px;
+          background-color: {{ block.settings.bg_color }};
+          margin-right: {{ block.settings.spacer }}px;
+          border-radius: {{ block.settings.border_radius }}px;
         }
        </style>
     {% endif %}
