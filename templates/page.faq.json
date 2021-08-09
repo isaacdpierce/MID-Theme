@@ -5,32 +5,35 @@
       "settings": {
       }
     },
-    "form": {
-      "type": "contact-form",
-      "settings": {
-      }
-    },
     "1628286473b27c97de": {
       "type": "gdc-accordion",
       "blocks": {
         "56bef71e-e994-4aad-bd91-b5eda8fad684": {
           "type": "accordion_section",
           "settings": {
-            "title": "What a good question",
-            "content": "<p>Thanks for the response<\/p>"
+            "title": "Do you accept orders from outside North America?",
+            "content": "<p>We do have international rights for many works in the collection but not all. Each film's listing includes \"Availablilty\" which indicates the countries we are able to license distribution to. If you have questions or would like assistance, please <a href=\"\/pages\/contact\" title=\"Contact\">contact our office<\/a>.<\/p><p>All pricing shown is for work created in the NTSC system of video. DVDs available for sale are DVD-R copies and are encoded as NTSC \"all region\" or Region Zero. While they are compatible with most DVD playback equipment, please check your playback requirements before ordering as refunds are not offered on any international orders.<\/p><p>If you require a single copy in a different system of video (PAL or Secam), please contact our office and we can quote extra charges that may apply.<\/p>"
+          }
+        },
+        "d02e4dac-7c7c-4bde-986b-554b1fb572cb": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "What is the procedure to submit something for distribution?",
+            "content": "<p><strong>Completed works:<\/strong><br\/>We select a limited number of completed works for distribution each year, and focus on representing work by Canadian artists and producers. Please do not send unsolicited preview DVDs.<\/p><p>Please contact us first by <a href=\"mailto:mailbox@movingimages.ca\">email<\/a> and provide the following information:<\/p><p>• title, length, copyright date and a synopsis of the work<br\/>• a link to a clip or trailer, if available<br\/>• your full contact information including phone number<\/p><p>We will respond to your inquiry as promptly as we can. During our busiest promotional periods--March-May and September-December, a reply may be delayed. We are able review new works for distribution more promptly in the months of January and February and from early May to the end of August.<\/p><p><strong>New projects:<\/strong><br\/>To discuss possible future distribution for a project you are developing, please contact us by <a href=\"mailto:mailbox@movingimages.ca\">email<\/a>. If you need a letter of support and indication of distribution interest we require \"first right of refusal\" for distribution of the work when it is completed.<\/p>"
           }
         }
       },
       "block_order": [
-        "56bef71e-e994-4aad-bd91-b5eda8fad684"
+        "56bef71e-e994-4aad-bd91-b5eda8fad684",
+        "d02e4dac-7c7c-4bde-986b-554b1fb572cb"
       ],
       "settings": {
-        "bg_color": "#fefefe",
+        "bg_color": "rgba(0,0,0,0)",
         "t_margin": 0,
         "b_margin": 0,
         "v_padding": 0,
-        "ind_color": "",
-        "tab_color": "",
+        "ind_color": "#72c5da",
+        "tab_color": "rgba(0,0,0,0)",
         "tab_text_color": "",
         "content_text_color": ""
       }
@@ -38,7 +41,6 @@
   },
   "order": [
     "main",
-    "form",
     "1628286473b27c97de"
   ]
 }
