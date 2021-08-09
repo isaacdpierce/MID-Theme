@@ -8,16 +8,10 @@
     "16285451714b0e4014": {
       "type": "collection-list",
       "blocks": {
-        "16285451714b0e4014-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "indigenous"
-          }
-        },
         "16285451714b0e4014-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "courtney-montour-1"
+            "collection": "environmental"
           }
         },
         "16285451714b0e4014-2": {
@@ -25,12 +19,18 @@
           "settings": {
             "collection": "immigration"
           }
+        },
+        "16285451714b0e4014-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "indigenous"
+          }
         }
       },
       "block_order": [
-        "16285451714b0e4014-0",
         "16285451714b0e4014-1",
-        "16285451714b0e4014-2"
+        "16285451714b0e4014-2",
+        "16285451714b0e4014-0"
       ],
       "settings": {
         "title": "",
