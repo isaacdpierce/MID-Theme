@@ -31,15 +31,12 @@
     padding-top: {{ ss.t_padding }}px;
     padding-bottom: {{ ss.b_padding }}px;
     background-color: {{ ss.bg_color }};
+    position: relative;
   }
 
   .gdc-shapes__row.section--{{ section.id }}  {
     width: 100%;
-    position: relative;
     display: flex;
-  }
-
-  .gdc-shape.block--{{ block.id }} {
     position: absolute;
     left: {{ ss.h_position }}%;
   }
