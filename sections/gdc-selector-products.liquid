@@ -81,7 +81,7 @@
     justify-content: center;
   }
 
-  .gdc-product-selector__image {
+  .gdc-product-selector__image.section--{{ section.id }} {
     border-radius: {{ ss.border_radius }}px;
     width: 100%;
     {% if ss.image_shape == 'round' or ss.image_shape == 'square' %}
