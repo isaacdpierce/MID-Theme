@@ -8,7 +8,7 @@
   {% for block in section.blocks %}
   {%- assign bs = block.settings -%}
     {% if block.type == "shape" %}
-    <div style="width: 10px; height: 10px; background-color: blueviolet;" ></div>
+    <div style="width: 10px; height: 10px; background-color: blueviolet; margin-right: 5px;" ></div>
       <div class="gdc-shape block--{{ block.id }}"></div>
       <style>
         .gdc-shape.block--{{ block.id }} {
