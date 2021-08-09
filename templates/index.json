@@ -483,7 +483,7 @@
             "width": 50,
             "height": 50,
             "spacer": 10,
-            "border_radius": 0
+            "border_radius": 10
           }
         },
         "6d0e3334-2e02-49fd-9e0e-798eb2ad3e80": {
@@ -493,7 +493,7 @@
             "width": 50,
             "height": 50,
             "spacer": 10,
-            "border_radius": 0
+            "border_radius": 10
           }
         },
         "e3e57d3b-4fe7-4218-92a1-14653240d04e": {
