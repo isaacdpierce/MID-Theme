@@ -39,8 +39,8 @@
           "type": "shape",
           "settings": {
             "bg_color": "#297f96",
-            "width": 50,
-            "height": 50,
+            "width": 40,
+            "height": 40,
             "spacer": 10,
             "border_radius": 10
           }
