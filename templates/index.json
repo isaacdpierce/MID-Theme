@@ -355,13 +355,27 @@
           "settings": {
             "collection_item": "politics"
           }
+        },
+        "7eb1aabf-d3c9-416c-9110-72ceaae27d33": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "immigration"
+          }
+        },
+        "f0574b6d-b493-42e9-873c-b2804b2b84c6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection_item": "steven-davies-1"
+          }
         }
       },
       "block_order": [
         "8a7195e9-af20-4d54-a191-eb0371230dbe",
         "fa529e42-c2fb-4aa4-b0e3-2ba277403aa6",
         "fedf042e-c9b4-4a45-86ad-609bbd0c5664",
-        "be20aa8c-a76b-4978-b142-51dd931d824c"
+        "be20aa8c-a76b-4978-b142-51dd931d824c",
+        "7eb1aabf-d3c9-416c-9110-72ceaae27d33",
+        "f0574b6d-b493-42e9-873c-b2804b2b84c6"
       ],
       "settings": {
         "section_width": 90,
