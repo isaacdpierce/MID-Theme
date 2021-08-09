@@ -24,9 +24,11 @@
   }
 
   .gdc-shape {
-    width: {{ bs.width }};
-    height: {{ bs.height }};
+    width: {{ bs.width }}px;
+    height: {{ bs.height }}px;
     background-color: {{ bs.bg_color }};
+    margin-right: {{ bs.spacer }}px;
+    border-radius: {{ bs.border_radius }}px;
   }
 
 </style>
@@ -95,7 +97,7 @@
             "type": "color",
             "id": "bg_color",
             "label": "Background Color",
-            "default": "#ededed"
+            "default": "#297F96"
           },
           {
             "type": "range",
@@ -115,6 +117,26 @@
             "min": 10,
             "max": 350,
             "step": 10,
+            "unit": "px" 
+          },
+          {
+            "type": "range",
+            "id": "spacer",
+            "label": "Space between shapes",
+            "default": 10,
+            "min": 10,
+            "max": 40,
+            "step": 1,
+            "unit": "px" 
+          },
+          {
+            "type": "range",
+            "id": "border_radius",
+            "label": "Rounded Corners",
+            "default": 0,
+            "min": 0,
+            "max": 50,
+            "step": 1,
             "unit": "px" 
           }
         ]
