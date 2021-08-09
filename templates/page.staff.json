@@ -5,14 +5,65 @@
       "settings": {
       }
     },
-    "form": {
-      "type": "contact-form",
+    "16285407207afe2579": {
+      "type": "gdc-hero-split",
       "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "hero_height": 400,
+        "bg_color_left": "rgba(0,0,0,0)",
+        "bg_color_right": "rgba(0,0,0,0)",
+        "show_image_containers": false,
+        "image_one": "shopify:\/\/shop_images\/Karen_Wong.jpg",
+        "image_left_height": 100,
+        "image_left_width": 75,
+        "image_left_fit": "contain",
+        "image_left_h_pos": 50,
+        "image_left_v_pos": 50,
+        "image_left_opacity": 1,
+        "image_right_height": 100,
+        "image_right_width": 100,
+        "image_right_fit": "cover",
+        "image_right_h_pos": 50,
+        "image_right_v_pos": 50,
+        "image_right_opacity": 1,
+        "left_text_width": 63,
+        "left_text_h_pos": "center",
+        "left_text_v_pos": "center",
+        "left_text_margin": 0,
+        "left_text_color": "#fff",
+        "left_text_bg_color": "#000000",
+        "left_bg_opacity": 90,
+        "left_text_align": "left",
+        "left_title": "",
+        "left_title_size": 36,
+        "left_subtitle": "",
+        "left_subtitle_size": 24,
+        "left_text": "",
+        "left_text_size": 16,
+        "left_btn_text": "",
+        "left_btn_url": "",
+        "right_text_width": 100,
+        "right_text_h_pos": "center",
+        "right_text_v_pos": "center",
+        "right_text_margin": 20,
+        "right_text_color": "#000",
+        "right_text_bg_color": "#fff",
+        "right_bg_opacity": 90,
+        "right_text_align": "left",
+        "right_title": "Karen Wong",
+        "right_title_size": 36,
+        "right_subtitle": "Director of Operations",
+        "right_subtitle_size": 18,
+        "right_text": "<p>Karen Wong has a Bachelor's of Commerce from UBC and began a career in accounting. In 2000, she transitioned to film and television as a production accountant, and eventually into producing.  She has steadily worked to support independent creators to produce many short works, webseries, series television and several feature films. Karen brings a solid commitment to equity, diversity and respect for artists. <\/p>",
+        "right_text_size": 17,
+        "right_btn_text": "",
+        "right_btn_url": ""
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "16285407207afe2579"
   ]
 }
