@@ -472,6 +472,29 @@
         "btn_color": "#298696",
         "btn_text_color": "#fafafa"
       }
+    },
+    "162852921639555b88": {
+      "type": "gdc-shapes",
+      "blocks": {
+        "dd249b65-cc45-4f59-941f-f960535fbe11": {
+          "type": "shape",
+          "settings": {
+            "bg_color": "#297f96",
+            "width": 50,
+            "height": 50
+          }
+        }
+      },
+      "block_order": [
+        "dd249b65-cc45-4f59-941f-f960535fbe11"
+      ],
+      "settings": {
+        "t_margin": 0,
+        "b_margin": 0,
+        "t_padding": 20,
+        "b_padding": 20,
+        "bg_color": "#ededed"
+      }
     }
   },
   "order": [
@@ -482,6 +505,7 @@
     "1628341280d439b522",
     "1628343896315b3f3f",
     "16285145184278a456",
-    "1628524982714abcb4"
+    "1628524982714abcb4",
+    "162852921639555b88"
   ]
 }
