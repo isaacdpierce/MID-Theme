@@ -23,7 +23,11 @@
     margin: 0;
     margin-bottom: 5px;
   }
-  
+
+  .gdc-section__paragraph.section--{{ section.id }}:last-of-type p {
+    margin-bottom: 0; 
+  }
+
   .gdc-section__paragraph.section--{{ section.id }} h2 {
     position: relative;
     font-size: {{ ss.title_size }}px;
