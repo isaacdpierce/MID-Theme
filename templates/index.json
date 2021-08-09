@@ -361,7 +361,7 @@
         "title_color": "#111111",
         "link_color": "#999999",
         "btn_url": "",
-        "column_count": 5,
+        "column_count": 6,
         "border_radius": 100,
         "text_align": "center",
         "image_shape": "round"
