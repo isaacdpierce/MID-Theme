@@ -526,13 +526,6 @@
             "link": ""
           }
         },
-        "c20c48a7-f7c9-462c-a599-87f985ee74ee": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MID_Logo2021_Horizontal_White_85195481-fc20-4e8f-8628-3e15becb5b29.png",
-            "link": ""
-          }
-        },
         "5f88e977-12fd-45fb-ab3d-09563aaabef7": {
           "type": "logo_image",
           "settings": {
@@ -544,7 +537,6 @@
       "block_order": [
         "4a39bcef-3c70-4ebb-a95a-3467cb562f97",
         "c154473e-6104-4051-b0fa-cc586d61b213",
-        "c20c48a7-f7c9-462c-a599-87f985ee74ee",
         "5f88e977-12fd-45fb-ab3d-09563aaabef7"
       ],
       "settings": {
@@ -559,10 +551,10 @@
         "subtitle": "",
         "text": "<p>We are a non-profit organization dedicated to promoting and advocating for Filmmakers.<br\/>We rely on the generous support of these organizations, compnies, and individuals like you.<\/p>",
         "text_align": "center",
-        "btn_text": "Donate",
+        "btn_text": "<strong>DONATE<\/strong>",
         "btn_url": "https:\/\/movingimagesdistribution.myshopify.com\/products\/flat-rocks",
-        "btn_color": "#298696",
-        "btn_text_color": "#fafafa"
+        "btn_color": "#ffffff",
+        "btn_text_color": "#297f96"
       }
     }
   },
