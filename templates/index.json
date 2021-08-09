@@ -419,6 +419,42 @@
     },
     "1628524982714abcb4": {
       "type": "gdc-logo-list-text",
+      "blocks": {
+        "4a39bcef-3c70-4ebb-a95a-3467cb562f97": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MID_Logo2021_Horizontal_White_85195481-fc20-4e8f-8628-3e15becb5b29.png",
+            "link": ""
+          }
+        },
+        "c154473e-6104-4051-b0fa-cc586d61b213": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MID_Logo2021_Horizontal_White_85195481-fc20-4e8f-8628-3e15becb5b29.png",
+            "link": ""
+          }
+        },
+        "c20c48a7-f7c9-462c-a599-87f985ee74ee": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MID_Logo2021_Horizontal_White_85195481-fc20-4e8f-8628-3e15becb5b29.png",
+            "link": ""
+          }
+        },
+        "5f88e977-12fd-45fb-ab3d-09563aaabef7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MID_Logo2021_Horizontal_White_85195481-fc20-4e8f-8628-3e15becb5b29.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4a39bcef-3c70-4ebb-a95a-3467cb562f97",
+        "c154473e-6104-4051-b0fa-cc586d61b213",
+        "c20c48a7-f7c9-462c-a599-87f985ee74ee",
+        "5f88e977-12fd-45fb-ab3d-09563aaabef7"
+      ],
       "settings": {
         "t_margin": 0,
         "b_margin": 0,
@@ -431,7 +467,7 @@
         "subtitle": "",
         "text": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<\/p>",
         "text_align": "center",
-        "btn_text": "",
+        "btn_text": "Donate",
         "btn_url": "",
         "btn_color": "#ededed",
         "btn_text_color": "#333333"
