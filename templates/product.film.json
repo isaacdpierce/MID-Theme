@@ -5,8 +5,9 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "{{ product.metafields.film_info.director.value }}",
+            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
@@ -89,7 +90,7 @@
           "type": "accordion_section",
           "settings": {
             "title": "Order Info",
-            "content": "<p><strong>Best Human Rights Film, Toronto International Women Film Festival 2020 <br\/>Best Poster, Toronto International Women Film Festival 2020 <br\/>Silver Award, Spotlight Documentary Film Awards 2020<\/strong><br\/><br\/>Social Justice Film Festival 2020<br\/>Seeds and Parks Festival 2020<br\/>North Dakota Human Rights Festival 2020<br\/>BedStuy Film Festival 2020<br\/>Chicago South Side Film Festival 2020<br\/>Toronto International Women Film Festival 2020<br\/>Imagine This Women’s International Film Festival 2020<br\/>Reel Sisters of the Diaspora Film Festival & Lecture Series 2020<br\/>International Social Change Film Festival 2020<br\/>International Black & Diversity Film Festival 2021<\/p>"
+            "content": ""
           }
         },
         "6fd6728d-deaf-47f9-b3a3-b4fd5428077d": {
@@ -105,12 +106,28 @@
             "title": "DSL Terms",
             "content": "<p>Content...<\/p>"
           }
+        },
+        "931f548d-73c0-428a-8e8f-08b94196b399": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "Exhibition Rights & Volume Discounts",
+            "content": "<p><a href=\"https:\/\/movingimagesdistribution.myshopify.com\/pages\/contact\" title=\"Contact Us\">Please inquire<\/a> for licenses for exhibition or volume discounts for multiple single copies for educational use or licensed duplication for educational use.<\/p>"
+          }
+        },
+        "59a6b945-dc5d-4057-a444-a2391a790393": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "Copyright",
+            "content": "<p>The creators of all works distributed by Moving Images Distribution hold copyright for their work. All purchasers are to specify use required precisely at time of ordering and agree to comply with all copyright, trademark and intellectual property law. No materials purchased may be used outside the rights acquired at time of purchase or may be reproduced in whole or in part by any method now known or not yet known. No materials purchased without specific broadcast license and agreement may be broadcast, retransmitted or exhibited in whole or in part without a specific license agreement from Moving Images Distribution for such use.<\/p>"
+          }
         }
       },
       "block_order": [
         "a64c3d56-074b-46ac-8d99-44ecb60e4221",
         "6fd6728d-deaf-47f9-b3a3-b4fd5428077d",
-        "0a272eb4-3808-4a12-9888-73f154afb186"
+        "0a272eb4-3808-4a12-9888-73f154afb186",
+        "931f548d-73c0-428a-8e8f-08b94196b399",
+        "59a6b945-dc5d-4057-a444-a2391a790393"
       ],
       "settings": {
         "bg_color": "#f9f9f9",
@@ -120,7 +137,7 @@
         "ind_color": "#62cbdf",
         "tab_color": "rgba(0,0,0,0)",
         "tab_text_color": "#438b99",
-        "content_text_color": "#77d6e9"
+        "content_text_color": "#111111"
       }
     },
     "1628099138a7fc5a43": {
