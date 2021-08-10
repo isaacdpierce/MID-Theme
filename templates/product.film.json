@@ -156,27 +156,11 @@
             "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
             "link": ""
           }
-        },
-        "1628099138a7fc5a43-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
-            "link": ""
-          }
-        },
-        "1628099138a7fc5a43-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/MID-logo-blue.png",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "1628099138a7fc5a43-0",
-        "1628099138a7fc5a43-1",
-        "1628099138a7fc5a43-2",
-        "1628099138a7fc5a43-3"
+        "1628099138a7fc5a43-1"
       ],
       "settings": {
         "t_margin": 0,
@@ -185,7 +169,7 @@
         "b_padding": 40,
         "bg_color": "#75ccdd",
         "image": "shopify:\/\/shop_images\/mid-donate-blue.jpg",
-        "enable_parallax": true,
+        "enable_parallax": false,
         "title": "Brought to you by",
         "subtitle": "",
         "text": "<p>We are a non-profit organization dedicated to promoting and advocating for Filmmakers.<br\/>We rely on the generous support of these organizations, compnies, and individuals like you.<\/p>",
