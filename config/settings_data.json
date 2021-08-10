@@ -9,6 +9,10 @@
     "button_style": "round-slight",
     "input_style": "round-slight",
     "accent_icons": "accent-1",
+    "checkout_logo_image": "shopify:\/\/shop_images\/MID_Logo2021__Horizontal_Colour.png",
+    "checkout_accent_color": "#297f96",
+    "checkout_button_color": "#297f96",
+    "checkout_error_color": "#db5729",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
