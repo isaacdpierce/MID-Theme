@@ -90,6 +90,47 @@
         "enable_video_looping": false
       }
     },
+    "1628269346e4dd2cf4": {
+      "type": "gdc-accordion",
+      "blocks": {
+        "a64c3d56-074b-46ac-8d99-44ecb60e4221": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "Order Info",
+            "content": "<p><strong>Best Human Rights Film, Toronto International Women Film Festival 2020 <br\/>Best Poster, Toronto International Women Film Festival 2020 <br\/>Silver Award, Spotlight Documentary Film Awards 2020<\/strong><br\/><br\/>Social Justice Film Festival 2020<br\/>Seeds and Parks Festival 2020<br\/>North Dakota Human Rights Festival 2020<br\/>BedStuy Film Festival 2020<br\/>Chicago South Side Film Festival 2020<br\/>Toronto International Women Film Festival 2020<br\/>Imagine This Women’s International Film Festival 2020<br\/>Reel Sisters of the Diaspora Film Festival & Lecture Series 2020<br\/>International Social Change Film Festival 2020<br\/>International Black & Diversity Film Festival 2021<\/p>"
+          }
+        },
+        "6fd6728d-deaf-47f9-b3a3-b4fd5428077d": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "FAQ",
+            "content": "<p>Content...<\/p>"
+          }
+        },
+        "0a272eb4-3808-4a12-9888-73f154afb186": {
+          "type": "accordion_section",
+          "settings": {
+            "title": "DSL Terms",
+            "content": "<p>Content...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a64c3d56-074b-46ac-8d99-44ecb60e4221",
+        "6fd6728d-deaf-47f9-b3a3-b4fd5428077d",
+        "0a272eb4-3808-4a12-9888-73f154afb186"
+      ],
+      "settings": {
+        "bg_color": "#f9f9f9",
+        "t_margin": 0,
+        "b_margin": 0,
+        "v_padding": 50,
+        "ind_color": "#62cbdf",
+        "tab_color": "rgba(0,0,0,0)",
+        "tab_text_color": "#438b99",
+        "content_text_color": "#77d6e9"
+      }
+    },
     "1628099138a7fc5a43": {
       "type": "gdc-logo-list-text",
       "blocks": {
@@ -146,47 +187,6 @@
         "btn_text_color": "#ffffff"
       }
     },
-    "1628269346e4dd2cf4": {
-      "type": "gdc-accordion",
-      "blocks": {
-        "a64c3d56-074b-46ac-8d99-44ecb60e4221": {
-          "type": "accordion_section",
-          "settings": {
-            "title": "Order Info",
-            "content": "<p><strong>Best Human Rights Film, Toronto International Women Film Festival 2020 <br\/>Best Poster, Toronto International Women Film Festival 2020 <br\/>Silver Award, Spotlight Documentary Film Awards 2020<\/strong><br\/><br\/>Social Justice Film Festival 2020<br\/>Seeds and Parks Festival 2020<br\/>North Dakota Human Rights Festival 2020<br\/>BedStuy Film Festival 2020<br\/>Chicago South Side Film Festival 2020<br\/>Toronto International Women Film Festival 2020<br\/>Imagine This Women’s International Film Festival 2020<br\/>Reel Sisters of the Diaspora Film Festival & Lecture Series 2020<br\/>International Social Change Film Festival 2020<br\/>International Black & Diversity Film Festival 2021<\/p>"
-          }
-        },
-        "6fd6728d-deaf-47f9-b3a3-b4fd5428077d": {
-          "type": "accordion_section",
-          "settings": {
-            "title": "FAQ",
-            "content": "<p>Content...<\/p>"
-          }
-        },
-        "0a272eb4-3808-4a12-9888-73f154afb186": {
-          "type": "accordion_section",
-          "settings": {
-            "title": "DSL Terms",
-            "content": "<p>Content...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "a64c3d56-074b-46ac-8d99-44ecb60e4221",
-        "6fd6728d-deaf-47f9-b3a3-b4fd5428077d",
-        "0a272eb4-3808-4a12-9888-73f154afb186"
-      ],
-      "settings": {
-        "bg_color": "#454343",
-        "t_margin": 0,
-        "b_margin": 0,
-        "v_padding": 50,
-        "ind_color": "#62cbdf",
-        "tab_color": "rgba(0,0,0,0)",
-        "tab_text_color": "#438b99",
-        "content_text_color": "#77d6e9"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -200,8 +200,8 @@
   },
   "order": [
     "main",
-    "1628099138a7fc5a43",
     "1628269346e4dd2cf4",
+    "1628099138a7fc5a43",
     "product-recommendations"
   ]
 }
